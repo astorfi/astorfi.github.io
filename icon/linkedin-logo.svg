@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" version="1.0">	<defs>
+<svg xmlns="http://www.w3.org/2000/svg" height="200" width="200" version="1.0">
+	<defs>
 		<linearGradient id="linearGradient3003" y2="425.4" gradientUnits="userSpaceOnUse" x2="-395.85" gradientTransform="matrix(-0.50335197,0,0,0.50335205,-148.17928,-158.80197)" y1="274.71" x1="-344.15">
 			<stop stop-color="#FFF" offset="0"/>
 			<stop stop-color="#FFF" stop-opacity="0" offset="1"/>
