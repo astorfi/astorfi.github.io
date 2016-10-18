@@ -36,20 +36,20 @@
 -->
   <div id="headerblob">
     
-    <img src="me2.jpg" class="img-circle imgme">
+    <img src="img/self/image.jpg" class="img-circle imgme">
     <div id="headertext">
       <div id="htname">Amirsina Torfi</div>
       <div id="htdesc">West Virginia University Computer Science and Electrical Engineering Ph.D. student</div>
       <div id="htem">amirsina.torfi _at_ gmail.com</div>
       <div id="icons">
         <div class="svgico">
-          <a href="https://twitter.com/amirsina_torfi"><img src="icons/twitter-logo.svg"></a>
+          <a href="https://twitter.com/amirsina_torfi"><img src="icon/twitter-logo.svg" width="56px"></a>
         </div>
         <div class="svgico">
-          <a href="https://www.linkedin.com/in/amirsinatorfi"><img src="icons/linkedin-logo.svg"></a>
+          <a href="https://www.linkedin.com/in/amirsinatorfi"><img src="icon/linkedin-logo.svg" width="56px"></a>
         </div>
         <div class="svgico">
-          <a href="https://github.com/astorfi"><img src="icons/github-logo.svg" width="56px"></a>
+          <a href="https://github.com/astorfi"><img src="icon/github-logo.svg" width="56px"></a>
         </div>
       </div>
     </div>
@@ -476,41 +476,41 @@
 <hr class="soft">
 
 <div class="container">
-  <h2>Pet Projects</h2>
+  <h2>Projects</h2>
   <div class="row">
 
     <div class="col-md-4">
       <div class="pp">
-        <a href="http://www.arxiv-sanity.com/">
-          <img src="img/sanity.jpeg" class="imgb">
+        <a href="https://astorfi.github.io/Tensorflow-Siamese/">
+          <img src="img/project/siamese.png" class="imgb">
         </a>
-        <div class="ppt">Arxiv Sanity Preserver</div>
+        <div class="ppt">Discriminative Learning Approaches for Face Verification</div>
         <div class="ppd">
-        There are way too many Arxiv papers. This project is an attempt to make them searchable and sortable in the pretty interface. The <i>sort by tfidf similarity</i> feature works very well and can be quite useful. My aim is to expand on this project over time, e.g. add a social layer, or create custom paper classifiers / notifications, etc.
+        The Siamese architecture is used for training a similarity metric from data. The method is used for recognition or verification applications where the number of classes is very large and not known during training, and where the number of training samples for a single class is very small and the class is not important. The idea is to learn a function that maps input patterns into a target space with the impostor pairs(pairs which do not belong to the same class) become as separated as possible and genuine pairs(pairs which belong to the same class) become as close as possible using the simple distance metrics. The project is aimed to implement discriminating algorithm for face verification applications. Tensorflow has been used as the deep learning framework.
         </div>
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="pp">
-        <a href="http://cs.stanford.edu/people/karpathy/convnetjs/">
-        <img src="img/convnetlogo3.png" class="imgb">
+        <a href="http://astorfi.github.io/QR_Code/">
+        <img src="img/project/qrcode.png" class="imgb">
         </a>
-        <div class="ppt">ConvNetJS</div>
+        <div class="ppt">QR Code Pattern Recognition and Message Extraction</div>
         <div class="ppd">
-          ConvNetJS is Deep Learning / Neural Networks library written entirely in Javascript. This enables nice web-based demos that train Convolutional Neural Networks (or ordinary ones) entirely in the browser. Many web demos included. I did an interview with Data Science Weekly about the library and some of its back story <a href="http://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview">here</a>.
+          The goal of this project is to successfully detect and reconstruct perfect QR-code pattern and then decode and extract the message and information within. Usually the QR-code images are corrupted, Blurred or at least rotated which make the pattern recognition harder than simple scenarios. In this situation robust algorithms can effectively recognize specfic patterns in the image and reconstruct the main matrix of quick response code. In the first part of this project the implemented software, which is developed using MATLAB, successfully recognize the main QR pattern and then extract the QR-Matrix. Then by using decoding techniques, the message is extracted from the QR-code. Note that this project is restricted to QR codes version-1 through version-6..
         </div>
         
       </div>
     </div>
     <div class="col-md-4">
       <div class="pp">
-        <a href="http://cs.stanford.edu/people/karpathy/reinforcejs/">
-          <img src="img/mdpdp.jpeg" class="imgb">
+        <a href="https://github.com/astorfi/Create-LMDB-from-Numpy/">
+          <img src="img/project/numpy.jpg" class="imgb">
         </a>
-        <div class="ppt">REINFORCEjs</div>
+        <div class="ppt">Create LMDB file from Numpy -- A Pythonic Approach for Creating Caffe DATA files</div>
         <div class="ppd">
-           <a href="http://cs.stanford.edu/people/karpathy/reinforcejs/">REINFORCEjs</a> is a Reinforcement Learning library that implements several common RL algorithms supported with fun web demos. The library includes DP,TD,DQN algorithms and sketches of stochastic/deterministic Policy Gradients.
+           Caffe as a deep learning framework supports different file formats. LMDB and HDF5 are the ones which are of great interest. Caffe users usually prefer LMDB due to speed and memory matters. However there is a necessity to transform usual file formats to the formats adaptable by the Caffe framework. Numpy is a famous package by python which makes it very simple to create ".npy" file from features which have to be used for machine learning and classification purposes. This project is aimed to transform a pack of numpy files to a single LMDB file.
         </div>
       </div>
     </div>
@@ -523,17 +523,22 @@
 
   <div id="moreprojects">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="pp">
           <a href="https://github.com/karpathy/ulogme">
-            <img src="img/ulogme-small.jpeg" class="imgsm">
+            <img src="img/project/hist.png" class="imgb">
           </a>
-          <div class="ppt">ulogme</div>
+          <div class="ppt">Local Histogram Equalization</div>
           <div class="ppd">
-             ulogme tracks your active windows / keystroke frequencies / notes throughout the entire day and visualizes the results in beautiful d3js timelines. Check out my <a href="http://karpathy.github.io/2014/08/03/quantifying-productivity/">blog post introducing the project</a> to learn more.
+             The project aim is to locally equalize the histogram of an image which has been proven to be more effective than the normal Histogram Localization. By the adjusments made by Histogram Equalization the intensities would be better distributed on the histogram which
+	   led to specific areas of lower local contrast gain a higher contrast. Parallel computing is used to accelerating the process. 
+            OpenCV, the Computer Vision open-sourced library has been implemented as a dependency. 
           </div>
         </div>
       </div>
+ </div>
+<!--
+
       <div class="col-md-3">
         <div class="pp">
           <a href="http://cs.stanford.edu/people/karpathy/nipspreview/">
@@ -630,6 +635,9 @@
     </div>
   </div>
 
+-->
+
+
 </div>
 
 
@@ -648,7 +656,7 @@ This part is for different uncategorized elements!!
 
       <div class="miscitem">
         <div class="miscimg">
-          <img src="img/mics/feed.png" class="img-circle">
+          <img src="icon/linkedin-logo.svg" class="img-circle">
         </div>
         <div class="miscd">
           My <a href="http://karpathy.github.io/">Linkedin</a> page which you can find more detailed information about my academic background.
@@ -688,7 +696,7 @@ This part is for different uncategorized elements!!
 
       <div class="miscitem">
         <div class="miscimg">
-          <img src="img/twitterblue.svg" class="img-circle">
+          <img src="icon/twitter-logo.svg" class="img-circle">
         </div>
         <div class="miscd">
           Find me on <a href="https://twitter.com/amirsina_torfi">Twitter</a>, <a href="https://github.com/astorfi">Github</a>, and <a href="https://www.goodreads.com/amirsinatorfi">Goodreads</a>.
