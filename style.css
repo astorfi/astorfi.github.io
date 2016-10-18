@@ -34,7 +34,7 @@ html, body {
 .imgme {
   border: 3px solid white;
   /* box-shadow: #AAA 0px 0px 4px 0px; */
-  float: right;
+  float: left;
   /* margin: 0 0 10px 10px;*/
 }
 #htname {
