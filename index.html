@@ -66,7 +66,7 @@
                 </div>
                 <div class="timelineitem">
                     <div class="tdate">2015</div>
-                    <div class="ttitle">Visiting Ph.D. student at University of Maryland College park</div>
+                    <div class="ttitle">Visiting Ph.D. student at University of Maryland College Park</div>
                     <div class="tdesc">Image Processing, Pattern Recognition</div>
                 </div>
                 <div class="timelineitem">
@@ -89,9 +89,9 @@
         </div>
 
         <div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
-            <b>self-portrayal</b>. Currently as a Ph.D. student I'm a research assistant at <a href="http://www.wvu.edu/" target="_blank">West Virginia University</a>. Previously I was a research assistant at Howard University and a Ph.D. visiting student at <a href="http://www.umd.edu/" target="_blank">University of Mariland College Park</a>. My research is mainly about Deep Learning and its applications in Computer Vision and Speech Processing. In particular, I am interested in implementing Convolutional Neural Networks and vision-inspired techniques in Speech Processing and Speaker Recognition. 
+            <b>self-portrayal</b>. Currently, as a Ph.D. student, I'm a research assistant at <a href="http://www.wvu.edu/" target="_blank">West Virginia University</a>. Previously I was a research assistant at Howard University and a Ph.D. visiting student at <a href="http://www.umd.edu/" target="_blank">University of Maryland College Park</a>. My research is mainly about Deep Learning and its applications in Computer Vision and Speech Processing. In particular, I am interested in implementing Convolutional Neural Networks and vision-inspired techniques in Speech Processing and Speaker Recognition. 
             <br><br>
-            My deep interest is in Machine Learning, Image Processing, Computer Vision and Deep Learning led to having an in-depth(hopefully!), practical understanding of machine learning techniques, with a specific emphasis on image processing and computer vision. In particular, gaining the practical knowledge of learning techniques including clustering, linear regression, SVM, decision trees, neural networks, LDA, PCA, and deep learning been as a consequence. I'm also experienced in transfer learning, data and image pre-processing techniques. Moreover, I'm interested in developing software packages and open-source projects. Please refer to my <a href="https://github.com/astorfi/" target="_blank">GitHub page</a> to take a look at my repositories.
+            My deep interest is in Machine Learning, Image Processing, Computer Vision and Deep Learning led to having an in-depth(hopefully!), practical understanding of machine learning techniques, with a specific emphasis on image processing and computer vision. In particular, gaining the practical knowledge of learning techniques including clustering, linear regression, SVM, decision trees, neural networks, LDA, PCA, and deep learning been as a consequence. I'm also experienced in transfer learning, data, and image pre-processing techniques. Moreover, I'm interested in developing software packages and open-source projects. Please refer to my <a href="https://github.com/astorfi/" target="_blank">GitHub page</a> to take a look at my repositories.
 
         </div>
         <!--
@@ -628,37 +628,38 @@ Have a look at the <a href="http://cs231n.github.io/">class notes</a>, the lectu
             <div class="row">
 
                 <div class="col-md-4">
-                    <div class="pp">
-                        <a href="https://github.com/astorfi/Tensorflow-Deep-Learning/tree/master/siamese-multi-layer-perceptron">
-                            <img src="img/project/siamese.png" class="imgb">
-                        </a>
-                        <div class="ppt">Discriminative Learning Approaches for Face Verification</div>
-                        <div class="ppd">
-                            The Siamese architecture is used for training a similarity metric from data. The method is used for recognition or verification applications where the number of classes is very large and not known during training, and where the number of training samples for a single class is very small and the class is not important. The idea is to learn a function that maps input patterns into a target space with the impostor pairs(pairs which do not belong to the same class) become as separated as possible and genuine pairs(pairs which belong to the same class) become as close as possible using the simple distance metrics. The project is aimed to implement discriminating algorithm for face verification applications. Tensorflow has been used as the deep learning framework.
+                        <div class="pp">
+                            <a href="https://github.com/astorfi/TensorFlow-World">
+                                <img src="img/project/TensorFlow_World.gif" class="imgb">
+                            </a>
+                            <div class="ppt">TensorFlow-World</div>
+                            <div class="ppd">
+                                This open source project is aimed to provide simple and ready-to-use tutorials for TensorFlow.
+                                The main goal of this project is providing well-documented tutorials and less-complicated codes
+                            </div>
                         </div>
                     </div>
-                </div>
 
                 <div class="col-md-4">
                     <div class="pp">
-                        <a href="http://astorfi.github.io/QR_Code/">
-                            <img src="img/project/qrcode.png" class="imgb">
+                        <a href="https://github.com/astorfi/lip-reading-deeplearning">
+                            <img src="img/project/lipreading.gif" class="imgb">
                         </a>
-                        <div class="ppt">QR Code Pattern Recognition and Message Extraction</div>
+                        <div class="ppt">Lip Reading - Cross Audio-Visual Recognition</div>
                         <div class="ppd">
-                            The goal of this project is to successfully detect and reconstruct perfect QR-code pattern and then decode and extract the message and information within. Usually the QR-code images are corrupted, Blurred or at least rotated which make the pattern recognition harder than simple scenarios. In this situation robust algorithms can effectively recognize specfic patterns in the image and reconstruct the main matrix of quick response code. In the first part of this project the implemented software, which is developed using MATLAB, successfully recognize the main QR pattern and then extract the QR-Matrix. Then by using decoding techniques, the message is extracted from the QR-code. Note that this project is restricted to QR codes version-1 through version-6..
-                        </div>
+                            This project is aimed to provide the implementation for Coupled 3D Convolutional Neural Networks for audio-visual matching. Lip-reading can be a specific application for this work. 
+                            </div>
 
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="pp">
-                        <a href="https://github.com/astorfi/Create-LMDB-from-Numpy/">
-                            <img src="img/project/numpy.jpg" class="imgb">
+                        <a href="https://github.com/astorfi/3D-convolutional-speaker-recognition">
+                            <img src="img/project/conv_gif.gif" class="imgb">
                         </a>
-                        <div class="ppt">Create LMDB file from Numpy -- A Pythonic Approach for Creating Caffe DATA files</div>
+                        <div class="ppt">3D Convolutional Neural Networks for Speaker Verification</div>
                         <div class="ppd">
-                            Caffe as a deep learning framework supports different file formats. LMDB and HDF5 are the ones which are of great interest. Caffe users usually prefer LMDB due to speed and memory matters. However there is a necessity to transform usual file formats to the formats adaptable by the Caffe framework. Numpy is a famous package by python which makes it very simple to create ".npy" file from features which have to be used for machine learning and classification purposes. This project is aimed to transform a pack of numpy files to a single LMDB file.
+                             This code is aimed to provide the implementation for Speaker Verification (SR) by using 3D convolutional neural networks following the SR protocol.
                         </div>
                     </div>
                 </div>
@@ -670,40 +671,80 @@ Have a look at the <a href="http://cs231n.github.io/">class notes</a>, the lectu
             </div>
 
             <div id="moreprojects">
+                
                 <div class="row">
-                    <div class="col-md-4">
+
+                <div class="col-md-4">
+                        <div class="pp">
+                            <a href="https://github.com/astorfi/speech_feature_extraction">
+                                <img src="img/project/Speech_GIF.gif" class="imgb">
+                            </a>
+                            <div class="ppt">SpeechPy - Speech Feature Extraction Library</div>
+                            <div class="ppd">
+                                SpeechPy is a speech processing package consists of Python scripts and routines for speech feature extraction.
+                                Features such as MFCCs, MFECs are supported.
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col-md-4">
+                    <div class="pp">
+                        <a href="http://astorfi.github.io/QR_Code/">
+                            <img src="img/project/qrcode.png" class="imgb">
+                        </a>
+                        <div class="ppt">QR Code Pattern Recognition and Message Extraction</div>
+                        <div class="ppd">
+                            The goal of this project is to successfully detect and reconstruct perfect QR-code pattern and then decode and extract the message and information within. 
+                            </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pp">
+                        <a href="https://github.com/astorfi/pythonic-automatic-email">
+                            <img src="img/project/multipleemail.gif" class="imgb">
+                        </a>
+                        <div class="ppt">Sending Multiple Customized Emails Uing Gmail API & Python</div>
+                        <div class="ppd">
+                             This project is aimed to provide an interface to send multiple automated emails with customized features.
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+
+            </div>
+                
+                <div class="row">
+
+                <div class="col-md-4">
                         <div class="pp">
                             <a href="https://github.com/astorfi/Local-Histogram-Equalization">
                                 <img src="img/project/hist.png" class="imgb">
                             </a>
                             <div class="ppt">Local Histogram Equalization</div>
                             <div class="ppd">
-                                The project aim is to locally equalize the histogram of an image which has been proven to be more effective than the normal Histogram Localization. By the adjusments made by Histogram Equalization the intensities would be better distributed on the histogram which
-                                led to specific areas of lower local contrast gain a higher contrast. Parallel computing is used to accelerating the process. 
-                                OpenCV, the famous Computer Vision open-source library has been implemented as a dependency. 
+                                The project aim is to locally equalize the histogram of an image which has been proven to be more effective than the normal Histogram Localization.
                             </div>
                         </div>
                     </div>
 
-                        <div class="col-md-4">
-                            <div class="pp">
-                                <a href="https://github.com/astorfi/Tensorflow-Deep-Learning/tree/master/siamese-convolutional-neural-network">
-                                    <img src="img/project/siamesecnn.png" class="imgb">
-                                </a>
-                                <div class="ppt">Siamese Convolutional Neural Network</div>
-                                <div class="ppd">
-                                    The project is aimed to implement the Siamese architecture using Convolutional Neural Network. 
-                                    TensorFlow has been used as the deep learning framework. The approach is to learn a nonlinear
-                                    mapping that learns a similarity metric from the data itself for face verification which suggests 
-                                    a more data-driven solution compared to the traditional facial texture analysis methods. 
-
-                                </div>
-                            </div>
-                        </div>	    
-
-
-
+                <div class="col-md-4">
+                    <div class="pp">
+                        <a href="https://github.com/astorfi/Create-LMDB-from-Numpy/">
+                            <img src="img/project/numpy.jpg" class="imgb">
+                        </a>
+                        <div class="ppt">Create LMDB file from Numpy -- A Pythonic Approach for Creating Caffe DATA files</div>
+                        <div class="ppd">
+                             This project is aimed to transform a pack of numpy files to a single LMDB file.
+                        </div>
                     </div>
+                </div>
+                    
+                    
+
+            </div>
  
 
 
