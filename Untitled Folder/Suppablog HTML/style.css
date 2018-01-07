@@ -1664,7 +1664,10 @@ hr.soft {
 }
 .pubimg img {
   max-width: 100%;
+  height:auto;
 }
+
+
 .puba {
   font-size: 18px;
   color: #900;
