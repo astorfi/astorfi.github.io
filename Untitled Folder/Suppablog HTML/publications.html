@@ -2,6 +2,25 @@
 <html lang="en-US">
 
 <head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>-->
+
+
+        <!-- Tracking code -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'trachingID']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
     <title>Publications</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Template by Colorlib" />
@@ -26,7 +45,9 @@
 </head>
 
 
-<body class="single-post">
+<!--<body class="single-post">-->
+<body onload="start()">
+    
 
     <!-- Preloader Gif -->
     <table class="doc-loader">
@@ -105,306 +126,86 @@
                 <h1 class="entry-title">
                     Publications
                 </h1>
-                
-                
-                
-                
+
+
+
+
                 <div id="pubs">
 
-<div class="pubwrap">
-<img src="thesis.jpg" style="width:100%">
-<div class="pubd" style="display:inline-block"><a href="main.pdf">[PDF]</a> Connecting Images and Natural Language, </div>
-<div class="puba" style="display:inline-block">Andrej Karpathy, </div>
-<div class="pubv" style="display:inline-block">PhD Thesis, 2016</div>
-</div>
+<!--
+                    <div class="pubwrap">
+                        <img src="thesis.jpg" style="width:100%">
+                        <div class="pubd" style="display:inline-block"><a href="main.pdf">[PDF]</a> asd, </div>
+                        <div class="puba" style="display:inline-block">Amirsina, </div>
+                        <div class="pubv" style="display:inline-block">PhD Thesis, 2016</div>
+                    </div>
+-->
 
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="densecap.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</div>
-<div class="pubd">Efficiently identify and caption all the things in an image with a single forward pass of a network. Our model is fully differentiable and trained end-to-end without any pipelines. The model is also very efficient (processes a 720x600 image in only 240ms), and evaluation on a large-scale dataset of 94,000 images and 4,100,000 region captions shows that it outperforms baselines based on previous approaches.</div>
-<div class="puba">Justin Johnson*, Andrej Karpathy*, Li Fei-Fei</div>
-<div class="pubv">CVPR 2016 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="densecap">Project</a></li>
-<li><a href="densecap.pdf">PDF</a></li>
-<li><a href="https://github.com/jcjohnson/densecap">Code (Github)</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<img src="densecap_more.jpg" style="max-width:100%; margin-top:30px;">
-</div>
-</div>
+                    <div class="pubwrap">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pubimg">
+                                    <img src="densecap.png">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pub">
+                                    <div class="pubt">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</div>
+                                    <div class="pubd">Efficiently identify and caption all the things in an image with a single forward pass of a network. Our model is fully differentiable and trained end-to-end without any pipelines. The model is also very efficient (processes a 720x600 image in only 240ms), and evaluation on a large-scale dataset of 94,000 images and 4,100,000 region captions shows that it outperforms baselines based on previous approaches.</div>
+                                    <div class="puba">Justin Johnson*, Andrej Karpathy*, Li Fei-Fei</div>
+                                    <div class="pubv">CVPR 2016 (Oral)</div>
+                                    <div class="publ">
+                                        <ul>
+                                            <li><a href="densecap">Project</a></li>
+                                            <li><a href="densecap.pdf">PDF</a></li>
+                                            <li><a href="https://github.com/jcjohnson/densecap">Code (Github)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="densecap_more.jpg" style="max-width:100%; margin-top:30px;">
+                        </div>
+                    </div>
 
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="rnn/icon.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Visualizing and Understanding Recurrent Networks</div>
-<div class="pubd">We study both qualitatively and quantitatively
-the performance improvements of Recurrent Networks in Language Modeling tasks compared to finite-horizon models. Our analysis sheds light on the source of improvements
-, and identifies areas for further potential gains. Among some fun results we find LSTM cells that keep track of long-range dependencies such as line lengths, quotes and brackets.</div>
-<div class="puba">Andrej Karpathy*, Justin Johnson*, Li Fei-Fei</div>
-<div class="pubv">ICLR 2016 Workshop</div>
-<div class="publ">
-<ul>
-<li><a href="http://arxiv.org/abs/1506.02078">PDF</a></li>
-<li><a href="http://github.com/karpathy/char-rnn">Code (char-rnn)</a></li>
-<li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Blog Post</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
+                    
+                    </div>
+
+                <div class="showmore" id="showmorepubs">
+                    show more
+                </div>
+
+                <div id="morepubs">
 
 
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="rnn7.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Deep Visual-Semantic Alignments for Generating Image Descriptions</div>
-<div class="pubd">We present a model that generates natural language descriptions of full images and their regions. For generating sentences about a given image region we describe a Multimodal Recurrent Neural Network architecture. For inferring the latent alignments between segments of sentences and regions of images we describe a model based on a novel combination of Convolutional Neural Networks over image regions, bidirectional Recurrent Neural Networks over sentences, and a structured objective that aligns the two modalities through a multimodal embedding. This work was also featured in a recent <a href="http://www.nytimes.com/2014/11/18/science/researchers-announce-breakthrough-in-content-recognition-software.html">New York Times article</a>.</div>
-<div class="puba">Andrej Karpathy, Li Fei-Fei</div>
-<div class="pubv">CVPR 2015 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="cvpr2015.pdf">PDF</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/">Project</a></li>
-<li><a href="https://github.com/karpathy/neuraltalk2">Code (Github)</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/rankingdemo">Retrieval demo</a></li>
-<li><a href="http://techtalks.tv/talks/deep-visual-semantic-alignments-for-generating-image-descriptions/61593/">Presentation</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="mosaic_sm.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">ImageNet Large Scale Visual Recognition Challenge</div>
-<div class="pubd">Everything you wanted to know about ILSVRC: data collection, results, trends, current computer vision accuracy, even a stab at computer vision vs. human vision accuracy -- all here! My own contribution to this work were the <a href="http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/">human accuracy evaluation experiments</a>.
-</div>
-<div class="puba">Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, Li Fei-Fei</div>
-<div class="pubv">IJCV 2015</div>
-<div class="publ">
-<ul>
-<li><a href="http://arxiv.org/abs/1409.0575">PDF</a></li>
-<li><a href="http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/">Blog Post</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/fragimg3.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Deep Fragment Embeddings for Bidirectional Image-Sentence Mapping</div>
-<div class="pubd">We train a multi-modal embedding to associate fragments of images (objects) and sentences (noun and verb phrases) with a structured, max-margin objective. Our model enables efficient and interpretible retrieval of images from sentence descriptions (and vice versa).</div>
-<div class="puba">Andrej Karpathy, Armand Joulin, Li Fei-Fei</div>
-<div class="pubv">NIPS 2014</div>
-<div class="publ">
-<ul>
-<li><a href="nips2014.pdf">PDF</a></li>
-<li><a href="nips2014_supp.pdf">Supplemental</a></li>
-<li><a href="defrag/index.html">Code</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/defragvis/">Web Demo of Results</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/videonets.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Large-Scale Video Classification with Convolutional Neural Networks</div>
-<div class="pubd">We introduce Sports-1M: a dataset of 1.1 million YouTube videos with 487 classes of Sport. This dataset allowed us to train large Convolutional Neural Networks that learn spatio-temporal features from video rather than single, static images.</div>
-<div class="puba">Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul Sukthankar, Li Fei-Fei</div>
-<div class="pubv">CVPR 2014 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepvideo/">Project</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepvideo/deepvideo_cvpr2014.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/rnn.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Grounded Compositional Semantics for Finding and Describing Images with Sentences</div>
-<div class="pubd"> Our model learns to associate images and sentences in a common 
-
-We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. </div>
-<div class="puba">Richard Socher, Andrej Karpathy, Quoc V. Le, Christopher D. Manning, Andrew Y. Ng</div>
-<div class="pubv">TACL 2013</div>
-<div class="publ">
-<ul>
-<li><a href="http://nlp.stanford.edu/~socherr/SocherKarpathyLeManningNg_TACL2013.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/discovernet.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Emergence of Object-Selective Features in Unsupervised Feature Learning</div>
-<div class="pubd">
-We introduce an unsupervised feature learning algorithm that is trained explicitly with k-means for simple cells and a form of agglomerative clustering for complex cells. When trained on a large dataset of YouTube frames, the algorithm automatically discovers semantic concepts, such as faces.
-</div>
-<div class="puba">Adam Coates, Andrej Karpathy, Andrew Ng</div>
-<div class="pubv">NIPS 2012</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/people/karpathy/nips2012.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap" style="border-bottom: none; padding-bottom:0px; margin-bottom:30px;">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/quadruped.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Locomotion Skills for Simulated Quadrupeds</div>
-<div class="pubd">We develop an integrated set of gaits and skills for a physics-based simulation of a quadruped. The controllers use a representation based on gait graphs, a dual leg frame model, a flexible spine model, and the extensive use of internal virtual forces applied via the Jacobian transpose.</div>
-<div class="puba">Stelian Coros, Andrej Karpathy, Benjamin Jones, Lionel Reveret, Michiel van de Panne</div>
-<div class="pubv">SIGGRAPH 2011</div>
-<div class="publ">
-<ul>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2011-TOG-quadruped/index.html">Project</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="showmore" id="showmorepubs">
-show more
-</div>
-
-<div id="morepubs">
-
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/discovery.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Object Discovery in 3D scenes via Shape Analysis</div>
-<div class="pubd">Wouldn't it be great if our robots could drive around our environments and autonomously discovered and learned about objects? In this work we introduce a simple object discovery method that takes as input a scene mesh and outputs a ranked set of segments of the mesh that are likely to constitute objects.</div>
-<div class="puba">Andrej Karpathy, Stephen Miller, Li Fei-Fei</div>
-<div class="pubv">ICRA 2013</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/~karpathy/discovery/">PDF, Code, Data</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap" style="border-bottom: none;">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/curriculum.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Curriculum Learning for Motor Skills </div>
-<div class="pubd">
-My UBC Master's thesis project. My work was on curriculum learning for motor skills. In particular, I was working with a heavily underactuated (single joint) footed acrobot. The acrobot used a devised curriculum to learn a large variety of parameterized motor skill policies, skill connectivites, and also hierarchical skills that depended on previously acquired skills. Almost all of it from scratch. The project was heavily influenced by intuitions about human development and learning (i.e. trial and error learning, the idea of gradually building skill competencies). The ideas in this work were good, but at the time I wasn't savvy enough to formulate them in a mathematically elaborate way. The video is a fun watch!
-</div>
-<div class="puba">Andrej Karpathy, Michiel van de Panne</div>
-<div class="pubv">AI 2012</div>
-<div class="publ">
-<ul>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/index.html">Project</a></li>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/2012-AI-curriculum.pdf">PDF</a></li>
-<li><a href="http://vimeo.com/24446828">Video</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+                    <div class="pubwrap" style="border-bottom: none;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pubimg">
+                                    <img src="img/curriculum.png">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pub">
+                                    <div class="pubt">Curriculum Learning for Motor Skills </div>
+                                    <div class="pubd">
+                                        My UBC Master's thesis project. My work was on curriculum learning for motor skills. In particular, I was working with a heavily underactuated (single joint) footed acrobot. The acrobot used a devised curriculum to learn a large variety of parameterized motor skill policies, skill connectivites, and also hierarchical skills that depended on previously acquired skills. Almost all of it from scratch. The project was heavily influenced by intuitions about human development and learning (i.e. trial and error learning, the idea of gradually building skill competencies). The ideas in this work were good, but at the time I wasn't savvy enough to formulate them in a mathematically elaborate way. The video is a fun watch!
+                                    </div>
+                                    <div class="puba">Andrej Karpathy, Michiel van de Panne</div>
+                                    <div class="pubv">AI 2012</div>
+                                    <div class="publ">
+                                        <ul>
+                                            <li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/index.html">Project</a></li>
+                                            <li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/2012-AI-curriculum.pdf">PDF</a></li>
+                                            <li><a href="http://vimeo.com/24446828">Video</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -420,43 +221,42 @@ My UBC Master's thesis project. My work was on curriculum learning for motor ski
 
     <!--Load JavaScript-->
     <script src="jscript.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
-                    <script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var more_projects_shown = false;
 
-                        var more_projects_shown = false;
-                        function start() {
-                            $("#showmoreprojects").click(function() {
-                                if(!more_projects_shown) {
-                                    $("#moreprojects").slideDown('fast', function() {
-                                        $("#showmoreprojects").text('hide');
-                                    });
-                                    more_projects_shown = true;
-                                } else {
-                                    $("#moreprojects").slideUp('fast', function() {
-                                        $("#showmoreprojects").text('show more');
-                                    });
-                                    more_projects_shown = false;
-                                }
-                            });
+        function start() {
+            $("#showmoreprojects").click(function() {
+                if (!more_projects_shown) {
+                    $("#moreprojects").slideDown('fast', function() {
+                        $("#showmoreprojects").text('hide');
+                    });
+                    more_projects_shown = true;
+                } else {
+                    $("#moreprojects").slideUp('fast', function() {
+                        $("#showmoreprojects").text('show more');
+                    });
+                    more_projects_shown = false;
+                }
+            });
 
-                            var more_pubs_shown = false;
-                            $("#showmorepubs").click(function() {
-                                if(!more_pubs_shown) {
-                                    $("#morepubs").slideDown('fast', function() {
-                                        $("#showmorepubs").text('hide');
-                                    });
-                                    more_pubs_shown = true;
-                                } else {
-                                    $("#morepubs").slideUp('fast', function() {
-                                        $("#showmorepubs").text('show more');
-                                    });
-                                    more_pubs_shown = false;
-                                }
-                            });
+            var more_pubs_shown = false;
+            $("#showmorepubs").click(function() {
+                if (!more_pubs_shown) {
+                    $("#morepubs").slideDown('fast', function() {
+                        $("#showmorepubs").text('hide');
+                    });
+                    more_pubs_shown = true;
+                } else {
+                    $("#morepubs").slideUp('fast', function() {
+                        $("#showmorepubs").text('show more');
+                    });
+                    more_pubs_shown = false;
+                }
+            });
 
-                        }
-
-                    </script>
+        }
+    </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
     <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
