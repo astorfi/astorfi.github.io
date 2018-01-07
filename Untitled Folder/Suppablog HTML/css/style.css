@@ -1828,7 +1828,7 @@ hr.soft {
   
   /*Font*/
   font-family: Georgia, serif;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.2;
   color: #666;
   text-align: justify;
@@ -1913,9 +1913,9 @@ Main Components
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 2.0s;
+  -moz-transition: opacity 2.0s;
+  transition: opacity 2.0s;
 }
 .cd-horizontal-timeline::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -1930,7 +1930,7 @@ Main Components
   position: relative;
   height: 100px;
   width: 90%;
-  max-width: 800px;
+/*  max-width: 800px;*/
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -2127,6 +2127,7 @@ Main Components
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
+  
 }
 .cd-horizontal-timeline .events-content li {
   position: absolute;
@@ -2147,6 +2148,7 @@ Main Components
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+    
 }
 .cd-horizontal-timeline .events-content li.selected {
   /* visible event content */
@@ -2289,3 +2291,30 @@ Main Components
   }
 }
 
+
+h1 {
+    position: relative;
+    font-size: 40px;
+    z-index: 10;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 10px;
+    content: '\a0';
+    background-color: darkslateblue;
+}
+h1:before {
+    margin-left: -51%;
+    text-align: center;
+}
+h1:after {
+    margin-left: 1%;
+}
+.color {
+    background-color: #ccc;
+}
