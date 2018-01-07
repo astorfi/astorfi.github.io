@@ -424,15 +424,15 @@ body.open .site-content
 
 #blog-wrapper
 {
-    width: 50%;
+    width: 90%;
     margin-left: 0;
-    float: left;
+    float: center;
 }
 
 .blog-holder
 {
     padding-top: 100px;
-    max-width: 470px;
+/*    max-width: 2000px;*/
     padding-bottom: 85px;
 }
 
@@ -748,6 +748,7 @@ body.open .site-content
 
 /* DEFAULT PAGE */
 
+/*
 .page .page-header-image
 {
     line-height: 0;
@@ -760,6 +761,7 @@ body.open .site-content
     max-height: 100%;
     height: auto;
 }
+*/
 
 .page-template-default article
 {
@@ -1134,7 +1136,8 @@ body.open .site-content
 
     #blog-wrapper
     {
-        margin-top: 300px;
+        margin-top: auto;
+        margin-left: auto;
     }
 
     .featured-post-image
