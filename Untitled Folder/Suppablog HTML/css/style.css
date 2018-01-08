@@ -1717,10 +1717,12 @@ hr.soft {
   padding-top: 10px;
 }
 .publ li {
-  border: 1px solid #CCC;
+  border: 3px solid #CCC;
   padding: 5px;
+  color: aliceblue
   margin: 5px 2px;
   display: inline-block;
+  background-color: cornflowerblue
 }
 .pubwrap {
   padding-bottom: 20px;
