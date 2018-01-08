@@ -1,876 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="refresh" content="0; url=http://www.amirsinatorfi.com/">
-        <title>Amirsina Torfi Personal Website</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="style.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <title>Amirsina Torfi - Personal webpage</title>
+    <!--    This may disturb something-->
+    <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Template by Colorlib" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="author" content="Colorlib" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-        <!-- Tracking code -->
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-3698471-13']);
-            _gaq.push(['_trackPageview']);
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='css/clear.css' />
+    <link rel="stylesheet" type="text/css" href='css/common.css' />
+    <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' />
+    <link rel="stylesheet" type="text/css" href='css/carouFredSel.css' />
+    <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
+    <link rel="stylesheet" type="text/css" href='css/style.css' />
+    <script src="js/modernizr.js"></script>
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </head>
 
-    <body onload="start()">
+    <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
 
-        <div id="header" class="bg1">
-            <!--
-<div id="topnav">
-<ul>
-<li><a href="http://karpathy.github.io/">blog</a></li>
-</ul>
-</div>
--->
-            <div id="headerblob">
+    <style>
+        #left {
+            width: 80%;
+            float: left;
+        }
+        
+        #right {
+            margin-left: 50%;
+            width: 45%;
+            /* Change this to whatever the width of your left column is*/
+        }
+        
+        .clear {
+            clear: both;
+        }
+    </style>
 
-                <img src="img/self/image.png" class="img-circle imgme">
-                <div id="headertext">
-                    <div id="htname">Amirsina Torfi</div>
-                    <div id="htdesc">West Virginia University Computer Science and Electrical Engineering Ph.D. student</div>
-                    <div id="htem">amirsina.torfi _at_ gmail.com</div>
-                    <div id="icons">
-                        <div class="svgico">
-                            <a href="https://twitter.com/amirsina_torfi"><img src="icon/twitter-logo.svg" width="56px"></a>
-                        </div>
-                        <div class="svgico">
-                            <a href="https://www.linkedin.com/in/amirsinatorfi"><img src="icon/linkedin-logo.svg" width="56px"></a>
-                        </div>
-                        <div class="svgico">
-                            <a href="https://github.com/astorfi"><img src="icon/github-logo.jpg" width="56px"></a>
-                        </div>
-                        <div class="svgico">
-                            <a href="documents/CV.pdf"><img src="icon/CV_Logo.png" width="56px"></a>
-                        </div>
-                    </div>
-                </div>
+    <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body class="home blog">
+
+    <!-- Preloader Gif -->
+    <table class="doc-loader">
+        <tbody>
+            <tr>
+                <td>
+                    <img src="images/ajax-document-loader.gif" alt="Loading...">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Left Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="menu-left-part">
+            <div class="search-holder">
+                <label>
+                        <input type="search" class="search-field" placeholder="Type here to search..." value="" name="s" title="Search for:">
+                    </label>
             </div>
-        </div>
-
-        <div class="container">
-            <div id="timeline">
-                <div class="timelineitem">
-                    <div class="tdate">2016 -</div>
-                    <div class="ttitle">Ph.D. student at <a href="http://www.wvu.edu/" target="_blank">West Virginia University</a></div>
-                    <div class="tdesc">Machine Learning, Deep Learning, Computer Vision, Image Processing, Speech Processing, Biometrics</div>
-<!--                    <div class="tdesc">My adviser is <a href="http://www.statler.wvu.edu/faculty-staff/faculty/nasser-nasrabadi/">Dr. Nasser Nasrabadi.</a></div>-->
-                </div>
-                <div class="timelineitem">
-                    <div class="tdate">2015</div>
-                    <div class="ttitle">Visiting student at University of Maryland College Park</div>
-                    <div class="tdesc">Image Processing, Pattern Recognition</div>
-                </div>
-                <div class="timelineitem">
-                    <div class="tdate">2015</div>
-                    <div class="ttitle">Howard University graduate student</div>
-                    <div class="tdesc">Machine Learning, Language Processing, Image Processing</div>
-<!--                    <div class="tdesc">My adviser was <a href="http://www.eece.cea.howard.edu/user/2/">Dr. Mohamed Chouikha.</a></div>-->
-                </div>
-                <div class="timelineitem">
-                    <div class="tdate">2011 - 2014</div>
-                    <div class="ttitle">Iran University of Science and Technology: Master's Degree</div>
-                    <div class="tdesc">Communication Systems, Information Theory, Coding Theory.</div>
-                </div>
-                <div class="timelineitem">
-                    <div class="tdate">2006 - 2011 </div>
-                    <div class="ttitle">Iran University of Science and Technology: Bachelor's Degree</div>
-                    <div class="tdesc">Microstrip Antenna, SIW Technology, Waveguide.</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
-            <b>Self-portrayal</b>. Currently, as a Ph.D. student, I'm a research assistant at <a href="http://www.wvu.edu/" target="_blank">West Virginia University</a>. Previously I was a visiting student at <a href="http://www.umd.edu/" target="_blank">University of Maryland College Park</a>. My research is mainly about Deep Learning and its applications in Computer Vision and Speech Processing. In particular, I am interested in implementing Convolutional Neural Networks and vision-inspired techniques in Speech Processing and Speaker Recognition. 
-            <br><br>
-            My deep interest is in Machine Learning, Image Processing, Computer Vision and Deep Learning led to having an in-depth(hopefully!), practical understanding of machine learning techniques, with a specific emphasis on image processing and computer vision. In particular, gaining the practical knowledge of learning techniques including clustering, linear regression, SVM, decision trees, neural networks, LDA, PCA, and deep learning been as a consequence. I'm also experienced in transfer learning, data, and image pre-processing techniques. Moreover, I'm interested in developing software packages and open-source projects. Please refer to my <a href="https://github.com/astorfi/" target="_blank">GitHub page</a> to take a look at my repositories.
-
-        </div>
-        <!--
-<hr class="soft">
-
-<div class="container">
-<h2>Publications</h2>
-<div id="pubs">
-
-<div class="pubwrap">
-<img src="thesis.jpg" style="width:100%">
-<div class="pubd" style="display:inline-block"><a href="main.pdf">[PDF]</a> Connecting Images and Natural Language, </div>
-<div class="puba" style="display:inline-block">Andrej Karpathy, </div>
-<div class="pubv" style="display:inline-block">PhD Thesis, 2016</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="densecap.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</div>
-<div class="pubd">Efficiently identify and caption all the things in an image with a single forward pass of a network. Our model is fully differentiable and trained end-to-end without any pipelines. The model is also very efficient (processes a 720x600 image in only 240ms), and evaluation on a large-scale dataset of 94,000 images and 4,100,000 region captions shows that it outperforms baselines based on previous approaches.</div>
-<div class="puba">Justin Johnson*, Andrej Karpathy*, Li Fei-Fei</div>
-<div class="pubv">CVPR 2016 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="densecap">Project</a></li>
-<li><a href="densecap.pdf">PDF</a></li>
-<li><a href="https://github.com/jcjohnson/densecap">Code (Github)</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<img src="densecap_more.jpg" style="max-width:100%; margin-top:30px;">
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="rnn/icon.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Visualizing and Understanding Recurrent Networks</div>
-<div class="pubd">We study both qualitatively and quantitatively
-the performance improvements of Recurrent Networks in Language Modeling tasks compared to finite-horizon models. Our analysis sheds light on the source of improvements
-, and identifies areas for further potential gains. Among some fun results we find LSTM cells that keep track of long-range dependencies such as line lengths, quotes and brackets.</div>
-<div class="puba">Andrej Karpathy*, Justin Johnson*, Li Fei-Fei</div>
-<div class="pubv">ICLR 2016 Workshop</div>
-<div class="publ">
-<ul>
-<li><a href="http://arxiv.org/abs/1506.02078">PDF</a></li>
-<li><a href="http://github.com/karpathy/char-rnn">Code (char-rnn)</a></li>
-<li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Blog Post</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="rnn7.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Deep Visual-Semantic Alignments for Generating Image Descriptions</div>
-<div class="pubd">We present a model that generates natural language descriptions of full images and their regions. For generating sentences about a given image region we describe a Multimodal Recurrent Neural Network architecture. For inferring the latent alignments between segments of sentences and regions of images we describe a model based on a novel combination of Convolutional Neural Networks over image regions, bidirectional Recurrent Neural Networks over sentences, and a structured objective that aligns the two modalities through a multimodal embedding. This work was also featured in a recent <a href="http://www.nytimes.com/2014/11/18/science/researchers-announce-breakthrough-in-content-recognition-software.html">New York Times article</a>.</div>
-<div class="puba">Andrej Karpathy, Li Fei-Fei</div>
-<div class="pubv">CVPR 2015 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="cvpr2015.pdf">PDF</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/">Project</a></li>
-<li><a href="https://github.com/karpathy/neuraltalk2">Code (Github)</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepimagesent/rankingdemo">Retrieval demo</a></li>
-<li><a href="http://techtalks.tv/talks/deep-visual-semantic-alignments-for-generating-image-descriptions/61593/">Presentation</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="mosaic_sm.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">ImageNet Large Scale Visual Recognition Challenge</div>
-<div class="pubd">Everything you wanted to know about ILSVRC: data collection, results, trends, current computer vision accuracy, even a stab at computer vision vs. human vision accuracy -- all here! My own contribution to this work were the <a href="http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/">human accuracy evaluation experiments</a>.
-</div>
-<div class="puba">Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, Li Fei-Fei</div>
-<div class="pubv">IJCV 2015</div>
-<div class="publ">
-<ul>
-<li><a href="http://arxiv.org/abs/1409.0575">PDF</a></li>
-<li><a href="http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/">Blog Post</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/fragimg3.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Deep Fragment Embeddings for Bidirectional Image-Sentence Mapping</div>
-<div class="pubd">We train a multi-modal embedding to associate fragments of images (objects) and sentences (noun and verb phrases) with a structured, max-margin objective. Our model enables efficient and interpretible retrieval of images from sentence descriptions (and vice versa).</div>
-<div class="puba">Andrej Karpathy, Armand Joulin, Li Fei-Fei</div>
-<div class="pubv">NIPS 2014</div>
-<div class="publ">
-<ul>
-<li><a href="nips2014.pdf">PDF</a></li>
-<li><a href="nips2014_supp.pdf">Supplemental</a></li>
-<li><a href="defrag/index.html">Code</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/defragvis/">Web Demo of Results</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/videonets.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Large-Scale Video Classification with Convolutional Neural Networks</div>
-<div class="pubd">We introduce Sports-1M: a dataset of 1.1 million YouTube videos with 487 classes of Sport. This dataset allowed us to train large Convolutional Neural Networks that learn spatio-temporal features from video rather than single, static images.</div>
-<div class="puba">Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul Sukthankar, Li Fei-Fei</div>
-<div class="pubv">CVPR 2014 (Oral)</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepvideo/">Project</a></li>
-<li><a href="http://cs.stanford.edu/people/karpathy/deepvideo/deepvideo_cvpr2014.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/rnn.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Grounded Compositional Semantics for Finding and Describing Images with Sentences</div>
-<div class="pubd"> Our model learns to associate images and sentences in a common 
-
-We use a Recursive Neural Network to compute representation for sentences and a Convolutional Neural Network for images. We then learn a model that associates images and sentences through a structured, max-margin objective. </div>
-<div class="puba">Richard Socher, Andrej Karpathy, Quoc V. Le, Christopher D. Manning, Andrew Y. Ng</div>
-<div class="pubv">TACL 2013</div>
-<div class="publ">
-<ul>
-<li><a href="http://nlp.stanford.edu/~socherr/SocherKarpathyLeManningNg_TACL2013.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/discovernet.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Emergence of Object-Selective Features in Unsupervised Feature Learning</div>
-<div class="pubd">
-We introduce an unsupervised feature learning algorithm that is trained explicitly with k-means for simple cells and a form of agglomerative clustering for complex cells. When trained on a large dataset of YouTube frames, the algorithm automatically discovers semantic concepts, such as faces.
-</div>
-<div class="puba">Adam Coates, Andrej Karpathy, Andrew Ng</div>
-<div class="pubv">NIPS 2012</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/people/karpathy/nips2012.pdf">PDF</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap" style="border-bottom: none; padding-bottom:0px; margin-bottom:30px;">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/quadruped.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Locomotion Skills for Simulated Quadrupeds</div>
-<div class="pubd">We develop an integrated set of gaits and skills for a physics-based simulation of a quadruped. The controllers use a representation based on gait graphs, a dual leg frame model, a flexible spine model, and the extensive use of internal virtual forces applied via the Jacobian transpose.</div>
-<div class="puba">Stelian Coros, Andrej Karpathy, Benjamin Jones, Lionel Reveret, Michiel van de Panne</div>
-<div class="pubv">SIGGRAPH 2011</div>
-<div class="publ">
-<ul>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2011-TOG-quadruped/index.html">Project</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="showmore" id="showmorepubs">
-show more
-</div>
-
-<div id="morepubs">
-
-
-<div class="pubwrap">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/discovery.jpg">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Object Discovery in 3D scenes via Shape Analysis</div>
-<div class="pubd">Wouldn't it be great if our robots could drive around our environments and autonomously discovered and learned about objects? In this work we introduce a simple object discovery method that takes as input a scene mesh and outputs a ranked set of segments of the mesh that are likely to constitute objects.</div>
-<div class="puba">Andrej Karpathy, Stephen Miller, Li Fei-Fei</div>
-<div class="pubv">ICRA 2013</div>
-<div class="publ">
-<ul>
-<li><a href="http://cs.stanford.edu/~karpathy/discovery/">PDF, Code, Data</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="pubwrap" style="border-bottom: none;">
-<div class="row">
-<div class="col-md-6">
-<div class="pubimg">
-<img src="img/curriculum.png">
-</div>
-</div>
-<div class="col-md-6">
-<div class="pub">
-<div class="pubt">Curriculum Learning for Motor Skills </div>
-<div class="pubd">
-My UBC Master's thesis project. My work was on curriculum learning for motor skills. In particular, I was working with a heavily underactuated (single joint) footed acrobot. The acrobot used a devised curriculum to learn a large variety of parameterized motor skill policies, skill connectivites, and also hierarchical skills that depended on previously acquired skills. Almost all of it from scratch. The project was heavily influenced by intuitions about human development and learning (i.e. trial and error learning, the idea of gradually building skill competencies). The ideas in this work were good, but at the time I wasn't savvy enough to formulate them in a mathematically elaborate way. The video is a fun watch!
-</div>
-<div class="puba">Andrej Karpathy, Michiel van de Panne</div>
-<div class="pubv">AI 2012</div>
-<div class="publ">
-<ul>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/index.html">Project</a></li>
-<li><a href="http://www.cs.ubc.ca/~van/papers/2012-AI-curriculum/2012-AI-curriculum.pdf">PDF</a></li>
-<li><a href="http://vimeo.com/24446828">Video</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
-
--->
-
-        <!--
-<hr class="soft">
-
-<div class="container">
-<h2>Teaching</h2>
-<div class="ctr">
-<div class="hht">
-Winter 2015/2016: I was an intructor for <a href="http://vision.stanford.edu/teaching/cs231n/">CS231n: Convolutional Neural Networks for Visual Recognition</a>.
-</div>
-<a href="http://vision.stanford.edu/teaching/cs231n/">
-<img src="cs231n_class.jpg" style="max-width:100%;border-radius:3px;">
-</a>
-
-<div class="hht">
-<br>
-Have a look at the <a href="http://cs231n.github.io/">class notes</a>, the lecture slides on the <a href="http://cs231n.stanford.edu/syllabus.html">course syllabus page</a>, and on reddit <a href="https://www.reddit.com/r/cs231n">r/cs231n</a>. The lecture videos were available, but had to be <a href="https://www.reddit.com/r/MachineLearning/comments/4hqwza/andrej_karpathy_forced_to_take_down_stanford/">taken down</a> (we're working to bring them back).
-</div>
-
-</div>
-
-</div>
-
-<hr class="soft">
-
-<div class="container">
-<h2>Talks</h2>
-<div class="row">
-<div class="col-md-4">
-<div class="ts">CVPR 2016 Deep Learning Workshop</div>
-<a href="https://www.youtube.com/watch?v=CYwK8bQprBY" target="_blank"><img src="cvpr2016_talk.jpg" style="width:100%;border-radius:3px;"></a><br>
-</div>
-<div class="col-md-4">
-<div class="ts">CVPR 2015 Oral</div>
-<a href="http://techtalks.tv/talks/deep-visual-semantic-alignments-for-generating-image-descriptions/61593/" target="_blank"><img src="cvpr2015_talk.jpeg" style="width:100%;border-radius:3px;"></a><br>
-</div>
-<div class="col-md-4">
-<div class="ts">RE•WORK Deep Learning Summit 2016</div>
-<a href="https://www.youtube.com/watch?v=qPcCk1V1JO8" target="_blank"><img src="rework_talk.jpeg" style="width:100%;border-radius:3px;"></a><br>
-</div>
-</div>
-<br>
-<div class="row">
-<div class="col-md-6">
-<div>Academic</div>
-<div class="ts"><a href="http://svg.dmi.unict.it/icvss2016/">ICVSS 2016 Summer School Keynote Invited Speaker</a></div>
-<div class="ts"><a href="http://www.deep-vision.net/">Deep Vision Workshop at CVPR 2016</a></div>
-<div class="ts"><a href="https://www.eecs.mit.edu/news-events/calendar/events/eecs-special-seminar-andrej-karpathy-connecting-images-and-natural">MIT EECS Special Seminar: Andrej Karpathy "Connecting Images and Natural Language"</a></div>
-<div class="ts"><a href="https://www.cs.princeton.edu/events/25394">Princeton CS Department Colloquium: "Connecting Images and Natural Language"</a></div>
-<div class="ts"><a href="http://www.deep-vision.net/">Deep Vision Workshop at CVPR 2015</a></div>
-<div class="ts"><a href="https://www.youtube.com/watch?v=yk6XDFm3J2c">Language & Vision Workshop 2015</a></div>
-<div class="ts"><a href="https://vimeo.com/101555393">Bay Area Multimedia Forum: Large-scale Video Classification with CNNs</a></div>
-<div class="ts"><a href="http://techtalks.tv/talks/large-scale-video-classification-with-convolutional-neural-networks-2/60272/">CVPR 2014 Oral: Large-scale Video Classification with Convolutional Neural Networks</a></div>
-<div class="ts"><a href="http://techtalks.tv/talks/object-discovery-in-3d-scenes-via-shape-analysis/58848/">ICRA 2014: Object Discovery in 3D Scenes Via Shape Analysis</a></div>
-</div>
-<div class="col-md-6">
-<div>On a side</div>
-<div class="ts"><a href="https://www.youtube.com/watch?v=u6aEYuemt0M">Bay Area Deep Learning School: Convolutional Neural Networks</a></div>
-<div class="ts"><a href="http://www.eventbrite.com/e/stanford-university-nvidia-tech-talks-and-hands-on-labs-tickets-18729102249?aff=Stanford">Stanford University and NVIDIA Tech Talks and Hands-on Labs</a></div>
-<div class="ts"><a href="http://www.meetup.com/sfmachinelearning/events/219842815/">SF ML meetup: Automated Image Captioning with ConvNets and Recurrent Nets</a></div>
-<div class="ts"><a href="https://www.robots.ox.ac.uk/seminars/previousseminars.html">Oxford Robotics Research Group Seminar</a></div>
-<div class="ts"><a href="">Imperial College London Seminar</a></div>
-<div class="ts"><a href="">Cambridge Computer Science Seminar</a></div>
-<div class="ts"><a href="http://www.meetup.com/London-Machine-Learning-Meetup/events/224514964/">London Machine Learning Meetup</a></div>
-<div class="ts"><a href="http://www.meetup.com/Data-Science-London/events/224712911/">London Data Science Meetup</a></div>
-<div class="ts"><a href="http://www.meetup.com/Deep-Learning-London/events/224948095/">London Deep Learning Meetup</a></div>
-<div class="ts"><a href="https://www.youtube.com/watch?v=8AnV7xAvpLQ&feature=youtu.be&t=4m15s">NVIDIA GTC 2015 Keynote</a></div>
-</div>
-</div>
-<br><br>
-</div>
--->
-<div class="container">
-  <h2>Publications</h2>
-  <div id="pubs">
-  	
-      
-      
-      <div class="pubwrap">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pubimg">
-		    <img src="img/publication/Audio-Visual/DNN-Coupled.png"><br><br>
-<!--
-			<img src="pubs/gradient_mul.png" style="width: 49% ">
-			<img src="pubs/temporal_conv.png" style="width: 49% ">
--->
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pub">
-            <div class="pubt">3D Convolutional Neural Networks for Cross Audio-Visual Matching Recognition</div>
-			<div class="puba">Amirsina Torfi, Seyed Mehdi Iranmanesh, Nasser M. Nasrabadi, Jeremy Dawson</div>
-               <div class="pubv">Accepted to be published in IEEE Access (2017).</div>
-<!--            <div class="pubv">ArXiv</div>-->
-			 <div class="pubd">We propose the use of a coupled 3D Convolutional Neural Network (CNN) architecture that can map both modalities into a representation space to evaluate the correspondence of audio-visual streams using the learned multimodal features. The proposed architecture will incorporate both spatial and temporal information jointly to effectively find the correlation between temporal information for different modalities. By using a relatively small network architecture and much smaller dataset for training, our proposed method surpasses the performance of the existing similar methods for audio-visual matching which use CNNs for feature representation. We also demonstrate that an effective pair selection method can significantly increase the performance. The proposed method achieves relative improvements over 28% on the Equal Error Rate (EER) and over 7% on the Average Precision (AP) in comparison to the state-of-the-art method.
-			</div>
-			
-            <div class="publ">
-              <ul>
-				<li><a href="https://arxiv.org/abs/1706.05739">paper</a></li>
-                <li><a href="https://github.com/astorfi/lip-reading-deeplearning">code</a></li>	
-<!--                <li><a href="">code</a></li>		-->
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-	</div> 
-      
-      <div class="pubwrap">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pubimg">
-		    <img src="img/publication/Speaker-Recognition/pipeline.png"><br><br>
-<!--
-			<img src="pubs/gradient_mul.png" style="width: 49% ">
-			<img src="pubs/temporal_conv.png" style="width: 49% ">
--->
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pub">
-            <div class="pubt">Text-Independent Speaker Verification Using 3D Convolutional Neural Networks</div>
-			<div class="puba">Amirsina Torfi, Nasser M. Nasrabadi, Jeremy Dawson</div>
-<!--            <div class="pubv">ArXiv</div>-->
-			 <div class="pubd"> Previously-reported approaches create speaker models based on averaging the extracted features from utterances of the speaker, which is known as a d-vector system. In our paper, we propose to use the 3D-CNNs for direct speaker model creation in which, for both development and enrollment phases, an identical number of speaker utterances is fed to the network for representing the speaker utterances and creation of the speaker model. This leads to simultaneously capturing the speaker-related information and building a more robust system to cope with within-speaker variation. We demonstrate that the proposed method significantly outperforms the d-vector verification system.
-			</div>
-			
-            <div class="publ">
-              <ul>
-				<li><a href="https://arxiv.org/abs/1705.09422">paper</a></li>
-                <li><a href="https://github.com/astorfi/3D-convolutional-speaker-recognition">code</a></li>	
-<!--                <li><a href="">code</a></li>		-->
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-	</div>
-      
-      <div class="showmore" id="showmorepubs">
-                show more
-            </div>
-
-            <div id="morepubs">
-      
-      
-      
-      <div class="pubwrap">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pubimg">
-		    <img src="img/publication/CISS2017/architechture.jpg"><br><br>
-<!--
-			<img src="pubs/gradient_mul.png" style="width: 49% ">
-			<img src="pubs/temporal_conv.png" style="width: 49% ">
--->
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pub">
-            <div class="pubt">Polar Coding for Achieving the Capacity of Marginal Channels in Nonbinary-Input Setting</div>
-			<div class="puba">Amirsina Torfi, Sobhan Soleymani, Seyed Mehdi Iranmanesh, Hadi Kazemi, Rouzbeh Asghari Shirvani, Vahid Tabataba Vakili</div>
-            <div class="pubv">IEEE Conference on Information Sciences and Systems, 2017. (CISS 2017)</div>
-			 <div class="pubd">The first task of this paper is to propose a coding scheme to achieve secrecy capacity in asymmetric nonbinary-input channels while keeping reliability and security conditions satisfied. Our assumption is that the wiretap channel is stochastically degraded with respect to the main channel and message distribution is unspecified. The main idea is to send information set over good channels for Bob and bad channels for Eve and send random symbols for channels that are good for both. In this scheme the frozen vector is defined over all possible choices using polar codes ensemble concept. We proved that there exists a frozen vector for which the coding scheme satisfies reliability and security conditions. It is further shown that uniform distribution of the message is the necessary condition for achieving secrecy capacity.
-			</div>
-			
-            <div class="publ">
-              <ul>
-				<li><a href="https://arxiv.org/abs/1701.05955">paper</a></li>	
-<!--                <li><a href="">code</a></li>		-->
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-	</div>
-      
-      <div class="pubwrap">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="pubimg">
-		    <img src="img/publication/Allerton2017/Polar_code_encoding_graph.png"><br><br>
-<!--
-			<img src="pubs/gradient_mul.png" style="width: 49% ">
-			<img src="pubs/temporal_conv.png" style="width: 49% ">
--->
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pub">
-            <div class="pubt">On the Construction of Polar Codes for Achieving the Capacity of Marginal Channels</div>
-			<div class="puba">Amisina Torfi, Sobhan Soleymani, Vahid Tabataba Vakili</div>
-              <div class="pubv">Accepted to be published in 55th Annual Allerton Conference on Communication, Control, and Computing (2017)</div>
-<!--            <div class="pubv">ArXiv</div>-->
-			 <div class="pubd"> The proposed scheme satisfies security and reliability conditions. The wiretap channel is assumed to be stochastically degraded with respect to the main channel and message distribution is uniform. Information set is sent over channels that are good for Bob and bad for Eve. Random bits are sent over channels that are good for both Bob and Eve. A frozen vector is chosen randomly, and is sent over channels bad for both. We prove that there exists a frozen vector for which the coding scheme satisfies reliability and security conditions and approaches the secrecy capacity. We further empirically show that in the proposed scheme for non-symmetric binary-input discrete memoryless channels, the equivocation rate achieves its upper bound in the whole capacity-equivocation region.
-			</div>
-			
-            <div class="publ">
-              <ul>
-				<li><a href="https://arxiv.org/abs/1707.04512">paper</a></li>
-<!--                <li><a href="https://github.com/astorfi/3D-convolutional-speaker-recognition">code</a></li>	-->
-<!--                <li><a href="">code</a></li>		-->
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-	</div> 
-      
-    </div>
-    </div>
-    
-    
-        </div>
-	
-	
-      
-        <hr class="soft">
-
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
-
-                <div class="col-md-4">
-                        <div class="pp">
-                            <a href="https://github.com/astorfi/TensorFlow-World">
-                                <img src="img/project/TensorFlow_World.gif" class="imgb">
-                            </a>
-                            <div class="ppt">TensorFlow-World</div>
-                            <div class="ppd">
-                                This open source project is aimed to provide simple and ready-to-use tutorials for TensorFlow.
-                                The main goal of this project is providing well-documented tutorials and less-complicated codes
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="col-md-4">
-                    <div class="pp">
-                        <a href="https://github.com/astorfi/lip-reading-deeplearning">
-                            <img src="img/project/lipreading.gif" class="imgb">
-                        </a>
-                        <div class="ppt">Lip Reading - Cross Audio-Visual Recognition</div>
-                        <div class="ppd">
-                            This project is aimed to provide the implementation for Coupled 3D Convolutional Neural Networks for audio-visual matching. Lip-reading can be a specific application for this work. 
-                            </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pp">
-                        <a href="https://github.com/astorfi/3D-convolutional-speaker-recognition">
-                            <img src="img/project/conv_gif.gif" class="imgb">
-                        </a>
-                        <div class="ppt">3D Convolutional Neural Networks for Speaker Verification</div>
-                        <div class="ppd">
-                             This code is aimed to provide the implementation for Speaker Verification (SR) by using 3D convolutional neural networks following the SR protocol.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="showmore" id="showmoreprojects">
-                show more
-            </div>
-
-            <div id="moreprojects">
-                
-                <div class="row">
-
-                <div class="col-md-4">
-                        <div class="pp">
-                            <a href="https://github.com/astorfi/speech_feature_extraction">
-                                <img src="img/project/Speech_GIF.gif" class="imgb">
-                            </a>
-                            <div class="ppt">SpeechPy - Speech Feature Extraction Library</div>
-                            <div class="ppd">
-                                SpeechPy is a speech processing package consists of Python scripts and routines for speech feature extraction.
-                                Features such as MFCCs, MFECs are supported.
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="col-md-4">
-                    <div class="pp">
-                        <a href="http://astorfi.github.io/QR_Code/">
-                            <img src="img/project/qrcode.png" class="imgb">
-                        </a>
-                        <div class="ppt">QR Code Pattern Recognition and Message Extraction</div>
-                        <div class="ppd">
-                            The goal of this project is to successfully detect and reconstruct perfect QR-code pattern and then decode and extract the message and information within. 
-                            </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="pp">
-                        <a href="https://github.com/astorfi/pythonic-automatic-email">
-                            <img src="img/project/multipleemail.gif" class="imgb">
-                        </a>
-                        <div class="ppt">Sending Multiple Customized Emails Using Gmail API & Python</div>
-                        <div class="ppd">
-                             This project is aimed to provide an interface to send multiple automated emails with customized features.
-                        </div>
-                    </div>
-                </div>
-                    
-                    
-
-            </div>
-                
-                <div class="row">
-
-                <div class="col-md-4">
-                        <div class="pp">
-                            <a href="https://github.com/astorfi/Local-Histogram-Equalization">
-                                <img src="img/project/hist.png" class="imgb">
-                            </a>
-                            <div class="ppt">Local Histogram Equalization</div>
-                            <div class="ppd">
-                                The project aim is to locally equalize the histogram of an image which has been proven to be more effective than the normal Histogram Localization.
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="col-md-4">
-                    <div class="pp">
-                        <a href="https://github.com/astorfi/Create-LMDB-from-Numpy/">
-                            <img src="img/project/numpy.jpg" class="imgb">
-                        </a>
-                        <div class="ppt">Create LMDB file from Numpy -- A Pythonic Approach for Creating Caffe DATA files</div>
-                        <div class="ppd">
-                             This project is aimed to transform a pack of numpy files to a single LMDB file.
-                        </div>
-                    </div>
-                </div>
-                    
-                    
-
-            </div>
- 
-
-
-                </div>
-            </div>
-
-
-
-
+            <div class="site-info-holder">
+                <div class="site-title">Menu</div>
                 <!--
-This part is for different uncategorized elements!!
+                    <p class="site-description">
+                        Suppablog is simple and yet cool wordpress theme to lorem ipsum dolor sit.
+                    </p>
 -->
+            </div>
+            <nav id="header-main-menu">
+                <ul class="main-menu sm sm-clean">
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <div class="footer-info">
+                    © 2018 Amirsina Torfi.
+                </div>
+            </footer>
+        </div>
+        <div class="menu-right-part">
+            <div class="logo-holder">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Suppablog WP">
+                </a>
+            </div>
+            <div class="toggle-holder">
+                <div id="toggle">
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+            <div class="social-holder">
+                <div class="social-list">
+                    <a href="https://twitter.com/amirsina_torfi"><i class="fa fa-twitter"></i></a>
+                    <!--                        <a href="#"><i class="fa fa-youtube-play"></i></a>-->
+                    <a href="https://www.facebook.com/amirsina.torfi"><i class="fa fa-facebook"></i></a>
+                    <a href="https://github.com/astorfi"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/amirsinatorfi/"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>
+        </div>
+        <div class="clear"></div>
+    </div>
 
-                <hr class="soft">
+    <!-- Home Content -->
+    <div id="content" class="site-content">
 
-                <div class="container">
-
-                    <h2>Misc</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-
-                            <div class="miscitem">
-                                <div class="miscimg">
-                                    <img src="icon/linkedin-logo.svg" class="img-circle">
-                                </div>
-                                <div class="miscd">
-                                    My <a href="https://www.linkedin.com/in/amirsinatorfi/">Linkedin</a> page which you can find more detailed information about my academic background.
-                                </div>
-                            </div>
-                            
-                            
-                            </div>
-                        </div>
-                    </div>
-        
-        
-<!--
-        <div class="miscitem">
-                                <div class="miscimg">
-                                    <img src="icon/github-logo.svg" class="img-circle">
-                                </div>
-                                <div class="miscd">
-                                    Ranked by <a href="http://git-awards.com/users/search?login=astorfi">Git Awards</a> as top 300 Python developers in the world!
-                                </div>
-                            </div>
-        
+        <!--
+        <div class="page-header-image relative">
+                        style="width: auto; height: auto;max-width: 400px;max-height: 400px"
+            <img src="demo-images/nature.jpg" alt="About" style="width: auto; height: auto;max-width: 100%;max-height: 100%">
+        </div>
 -->
-                            <!--
+        <article>
+            <div id="blog-wrapper">
+                <div class="blog-holder center-relative">
 
-                        </div>
-                        <div class="col-md-6">
 
-                            <div class="miscitem">
-                                <div class="miscimg">
-                                    <img src="icon/twitter-logo.svg" class="img-circle">
+                    <article id="post-1" class="blog-item-holder featured-post">
+                        <div class="entry-content relative">
+                            <div class="content-1170 center-relative">
+
+                                <div class="page-header-image relative">
+                                    <img src="demo-images/nature.jpg" alt="About" style="width: auto; height: auto;max-width: 100%;max-height: 100%">
                                 </div>
-                                <div class="miscd">
-                                    Find me on <a href="https://twitter.com/amirsina_torfi">Twitter</a>, <a href="https://github.com/astorfi">Github</a>, and <a href="https://www.goodreads.com/amirsinatorfi">Goodreads</a>.
+
+
+
+                                <div class="blockquote">
+                                    Whatever is begun in anger ends in shame. Benjamin Franklin.
                                 </div>
+
+                                <!--                            </div>-->
+
+
+                                <h1> Self Portrayal </h1>
+                                <div class="excerpt">
+                                    <p align="justify">Currently, as a CS Ph.D. student, I'm a research assistant at <a href="http://www.cs.vt.edu/" target="_blank"><b><u>Virginia Tech</u></b></a> affiliated with <a href="http://dac.cs.vt.edu/" target="_blank"><b><u>Discovery Analytics Center (DAC)</u></b></a>. Previously I was a graduate student at West Virginia University and a visiting student at the University of Maryland College Park. My research is mainly about Machine Learning & Deep Learning and their applications in Computer Vision and NLP. I'm interested in developing software packages and open-source projects. Please refer to my <a href="https://github.com/astorfi/" target="_blank"><b><u>GitHub page</u></b></a> to take a look at my repositories.</p>
+
+                                    <a class="read-more" href="about.html"></a>
+                                </div>
+
+                                <hr class="soft">
+                                <section class="cd-horizontal-timeline">
+                                    <h1> TimeLine </h1>
+                                    <div class="timeline">
+                                        <div class="events-wrapper">
+                                            <div class="events">
+                                                <ol>
+                                                    <li><a href="#0" data-date="15/09/2011">Sep '11</a></li>
+                                                    <li><a href="#0" data-date="20/02/2014">Feb '14</a></li>
+                                                    <li><a href="#0" data-date="01/01/2015">Jan '15</a></li>
+                                                    <li><a href="#0" data-date="01/01/2016">Jan '16</a></li>
+                                                    <li><a href="#0" data-date="01/01/2018" class="selected">Jan '18</a></li>
+                                                </ol>
+
+                                                <span class="filling-line" aria-hidden="true"></span>
+                                            </div>
+                                            <!-- .events -->
+                                        </div>
+                                        <!-- .events-wrapper -->
+
+                                        <ul class="cd-timeline-navigation">
+                                            <li><a href="#0" class="prev inactive">Prev</a></li>
+                                            <li><a href="#0" class="next">Next</a></li>
+                                        </ul>
+                                        <!-- .cd-timeline-navigation -->
+                                    </div>
+                                    <!-- .timeline -->
+
+                                    <div class="events-content">
+                                        <ol>
+                                            <li data-date="15/09/2011">
+                                                <h3>Earned my Bachelor's Degree</h3>
+                                                <em>September 15th, 2011</em>
+                                                <p> Graduated from Iran University of Science and Technology. Earned a Bachelor's Degree in Electrical Engineering.</p>
+                                            </li>
+
+                                            <li data-date="20/02/2014">
+                                                <h3>Earned my Master's Degree</h3>
+                                                <em>February 28th, 2014</em>
+                                                <p>Graduated from Iran University of Science and Technology. Earned a Master's Degree in Information Technology. Specialized in Communication Systems, Information Theory and Coding Theory.</p>
+                                            </li>
+
+                                            <li data-date="01/01/2015">
+                                                <h3>Starting graduate studies in USA</h3>
+                                                <em>January 1st, 2015</em>
+                                                <p>Joining <u><b>Howard University</b></u>. Area of research: Machine Learning, Language Processing, Image Processing.</p>
+                                            </li>
+
+                                            <li data-date="01/01/2016">
+                                                <h3>Joing West Virginia University</h3>
+                                                <em>January 1st, 2016</em>
+                                                <p>Joining <u><b>West Virginia University</b></u>. Area of research: Machine Learning, Deep Learning, Computer Vision, Image Processing, Speech Processing and Biometrics.</p>
+                                            </li>
+
+                                            <li class="selected" data-date="01/01/2018">
+                                                <h3>Joing Virginia Tech</h3>
+                                                <em>January 1st, 2018</em>
+                                                <p>Joining <u><b>Virginia Tech</b></u> as a Ph.D. student in Computer Science department. Area of research: Machine Learning, Deep Learning, Data Mining and NLP.</p>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+                                    <!-- .events-content -->
+                                </section>
+
                             </div>
- 
-
                         </div>
+                    </article>
 
+                    <hr class="soft">
+
+
+                    <!--                <div class="container">-->
+                    <h1>News</h1>
+
+                    <!--
+
+
+                    <div id="news">
+                        <div id="left">
+                            <!--                        <div class="titlenews"><b>Academic</b></div>-->
+                    <!--
+                        <div class="miscimg">
+                                <img src="icon/linkedin-logo.svg" class="img-circle">
+                        </div>
+-->
+                    <div class="entry-date published">January, 2018</div>
+                    <div class="ts"><a href="https://www.cs.vt.edu/"> &diams; Just move to <u>Virginia Tech</u> CS Ph.D. Program</a></div>
+
+                    <div class="entry-date published">October, 2017</div>
+                    <div class="ts"><a href="http://ieeexplore.ieee.org/document/8063416"> &diams; A paper got accepted to <u>IEEE Access</u></a></div>
+                    <div class="ts"><a href="https://arxiv.org/abs/1707.04512"> &diams; A paper got accepted to <u>Allerton Conference</u> on Communication, Control, and Computing (2017) </a></div>
+                </div>
+                <!--
+                    <div id="right">
+                        <div class="titlenews"><b>On the side</b></div>
+                        <div class="ts"><a href="https://www.youtube.com/watch?v=u6aEYuemt0M">Bay Area Deep Learning School: Convolutional Neural Networks</a></div>
                     </div>
-
-                    <!-- place js at end for faster loading -->
-                    <script src="jscript.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
-                    <script>
-
-                        var more_projects_shown = false;
-                        function start() {
-                            $("#showmoreprojects").click(function() {
-                                if(!more_projects_shown) {
-                                    $("#moreprojects").slideDown('fast', function() {
-                                        $("#showmoreprojects").text('hide');
-                                    });
-                                    more_projects_shown = true;
-                                } else {
-                                    $("#moreprojects").slideUp('fast', function() {
-                                        $("#showmoreprojects").text('show more');
-                                    });
-                                    more_projects_shown = false;
-                                }
-                            });
-
-                            var more_pubs_shown = false;
-                            $("#showmorepubs").click(function() {
-                                if(!more_pubs_shown) {
-                                    $("#morepubs").slideDown('fast', function() {
-                                        $("#showmorepubs").text('hide');
-                                    });
-                                    more_pubs_shown = true;
-                                } else {
-                                    $("#morepubs").slideUp('fast', function() {
-                                        $("#showmorepubs").text('show more');
-                                    });
-                                    more_pubs_shown = false;
-                                }
-                            });
-
-                        }
-
-                    </script>
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-104453614-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+-->
+                <div class="clear"></div>
+            </div>
 
 
 
-                    </body>
-                </html>
+
+
+
+    </div>
+    <div class="clear"></div>
+    <!--            <div class="block load-more-holder">LOAD MORE ENTRIES</div>-->
+    </div>
+
+    <div class="featured-image-holder">
+        <div class="featured-post-image" style="background-image: url(demo-images/featured-image.jpg)"></div>
+
+    </div>
+    <div class="clear"></div>
+    </article>
+    </div>
+
+
+
+    <!--Load JavaScript-->
+    <script src="jscript.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+    <script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
+    <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+    <script type='text/javascript' src='js/jquery.carouFredSel-6.0.0-packed.js'></script>
+    <script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+    <script type='text/javascript' src='js/jquery.touchSwipe.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+</body>
+
+</html>
