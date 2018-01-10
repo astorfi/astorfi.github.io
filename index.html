@@ -15,12 +15,13 @@
 
 
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!--    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href='css/clear.css' />
     <link rel="stylesheet" type="text/css" href='css/common.css' />
     <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' />
     <link rel="stylesheet" type="text/css" href='css/carouFredSel.css' />
     <link rel="stylesheet" type="text/css" href='css/sm-clean.css' />
+    <link rel="stylesheet" type="text/css" href='css/articlenews.css' />
     <link rel="stylesheet" type="text/css" href='css/style.css' />
     <script src="js/modernizr.js"></script>
     <!--    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
@@ -29,23 +30,6 @@
     <!--[if lt IE 9]>
                 <script src="js/html5.js"></script>
         <![endif]-->
-
-    <style>
-        #left {
-            width: 80%;
-            float: left;
-        }
-        
-        #right {
-            margin-left: 50%;
-            width: 45%;
-            /* Change this to whatever the width of your left column is*/
-        }
-        
-        .clear {
-            clear: both;
-        }
-    </style>
 
     <!--[if lt IE 9]>
                 <script src="js/html5.js"></script>
@@ -233,44 +217,66 @@
                     <hr class="soft">
 
 
-                    <!--                <div class="container">-->
+                    <h1>News</h1>
+                    <div id="newswrap">
+
+                        <!--
+                        <headernews>
+                            <h1>3 Column Responsive Layout</h1>
+                        </headernews>
+-->
+
+                        <section id="left">
+                            <h3>Academic</h3>
+
+                            <div class="entry-date published">January, 2018</div>
+                            <div class="newsitem"><a href="https://www.cs.vt.edu/"> &diams; Just move to <u>Virginia Tech</u> CS Ph.D. Program</a></div>
+
+                            <div class="entry-date published">October, 2017</div>
+                            <div class="newsitem"><a href="http://ieeexplore.ieee.org/document/8063416"> &diams; A paper got accepted to <u>IEEE Access</u></a></div>
+                            <div class="newsitem"><a href="https://arxiv.org/abs/1707.04512"> &diams; A paper got accepted to <u>Allerton Conference</u> on Communication, Control, and Computing (2017) </a></div>
+
+
+                        </section>
+
+                        <aside id="right">
+                            <h3>Twitter</h3>
+
+                            <a class="twitter-timeline" href="https://twitter.com/amirsina_torfi?ref_src=twsrc%5Etfw" data-width="400" data-height="220" data-chrome="noheader" data-aria-polite="assertive">Tweets by amirsina_torfi</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                        </aside>
+
+                    </div>
+
+                    <div class="clear"></div>
+                    
+<!--
                     <h1>News</h1>
 
-                    <!--
-
-
-                    <div id="news">
-                        <div id="left">
-                            <!--                        <div class="titlenews"><b>Academic</b></div>-->
-                    <!--
-                        <div class="miscimg">
-                                <img src="icon/linkedin-logo.svg" class="img-circle">
-                        </div>
--->
                     <div class="entry-date published">January, 2018</div>
-                    <div class="ts"><a href="https://www.cs.vt.edu/"> &diams; Just move to <u>Virginia Tech</u> CS Ph.D. Program</a></div>
+                    <div class="newsitem"><a href="https://www.cs.vt.edu/"> &diams; Just move to <u>Virginia Tech</u> CS Ph.D. Program</a></div>
 
                     <div class="entry-date published">October, 2017</div>
-                    <div class="ts"><a href="http://ieeexplore.ieee.org/document/8063416"> &diams; A paper got accepted to <u>IEEE Access</u></a></div>
-                    <div class="ts"><a href="https://arxiv.org/abs/1707.04512"> &diams; A paper got accepted to <u>Allerton Conference</u> on Communication, Control, and Computing (2017) </a></div>
-                </div>
-                <!--
-                    <div id="right">
-                        <div class="titlenews"><b>On the side</b></div>
-                        <div class="ts"><a href="https://www.youtube.com/watch?v=u6aEYuemt0M">Bay Area Deep Learning School: Convolutional Neural Networks</a></div>
-                    </div>
+                    <div class="newsitem"><a href="http://ieeexplore.ieee.org/document/8063416"> &diams; A paper got accepted to <u>IEEE Access</u></a></div>
+                    <div class="newsitem"><a href="https://arxiv.org/abs/1707.04512"> &diams; A paper got accepted to <u>Allerton Conference</u> on Communication, Control, and Computing (2017) </a></div>
+
+                    <h1>Twitter</h1>
+                    <a class="twitter-timeline" href="https://twitter.com/amirsina_torfi?ref_src=twsrc%5Etfw" data-width="400" data-height="400" data-chrome="noheader" data-aria-polite="assertive">Tweets by amirsina_torfi</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 -->
+
+
+                </div>
+
                 <div class="clear"></div>
             </div>
+        </article>
 
 
 
-
-
-
-    </div>
-    <div class="clear"></div>
-    <!--            <div class="block load-more-holder">LOAD MORE ENTRIES</div>-->
+        <div class="clear"></div>
+        <!--            <div class="block load-more-holder">LOAD MORE ENTRIES</div>-->
     </div>
 
     <div class="featured-image-holder">
@@ -278,8 +284,6 @@
 
     </div>
     <div class="clear"></div>
-    </article>
-    </div>
 
 
 
