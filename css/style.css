@@ -424,6 +424,7 @@ body.open .site-content {
     font-size: 20px;
     line-height: 28px;
     color: #5d5d5d;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .read-more {
@@ -1571,7 +1572,7 @@ hr.soft {
     color: black margin: 5px 2px;
     display: inline-block;
     background-color:aliceblue
-    
+
 }
 
 .pubwrap {
@@ -1757,10 +1758,11 @@ hr.soft {
 .newsitem {
     font-size: 20px;
     margin-bottom: 5px;
-    font-weight: 300;
+    font-weight: 200;
     color: #111;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    /* font-family: 'Helvetica Neue', sans-serif; */
+    font-family: "Times New Roman", Times, serif;
+    /* font-weight: bold; */
 }
 
 .titlenews {
@@ -1774,16 +1776,16 @@ hr.soft {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Main Components for timeline
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 
