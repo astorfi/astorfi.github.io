@@ -341,7 +341,7 @@ a.w3_agile_vimeo:hover{
 }
 .w3_banner_info {
     margin: 13em 0 0em;
-    width: 600px;
+    width: auto;
     padding: 10px;
 }
 .w3_banner_info_grid h2 {
@@ -371,9 +371,11 @@ a.w3_agile_vimeo:hover{
 .w3_banner_info_grid ul li{
 	display:inline-block;
 	font-size:1em;
+  text-align: center;
 }
 .w3_banner_info_grid ul li a{
-	padding:9px 30px;
+	padding:9px 25px;
+  text-align: center;
 	text-decoration:none;
 	color:#212121;
 }
