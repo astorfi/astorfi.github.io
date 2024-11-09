@@ -2,96 +2,108 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Amirsina Torfi
+    - name: Location
+      value: Reston, VA, USA
+    - name: Email
+      value: amirsina{dot}torfi{AT}gmail{dot}com
+    - name: Work Authorization
+      value: U.S. Green Card Holder
     - name: Languages
-      value: English, German
+      value: English, Persian
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: Virginia Polytechnic Institute and State University (Virginia Tech)
+      year: Completed
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - Focused on privacy-preserving deep learning for sensitive data in the medical domain.
+        - Thesis: Synthetic data generation for privacy-preserving deep learning in the medical domain.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Lead Machine Learning Engineer - Tech Lead
+      institution: Nike
+      year: May 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed generative AI models for design innovation, reducing prototyping time by 50%.
+        - Led projects on human pose estimation and motion tracking using 3D convolutional networks.
+        - Engineered AI-driven personalization for consumer experiences on digital platforms.
+        - Led multi-view 3D reconstruction for digital twins using voxel-based autoencoders.
+        - Implemented Vision Transformer networks for apparel detection in retail environments.
+
+    - title: AI Research Scientist
+      institution: Meta (Facebook)
+      year: May 2022 - May 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Directed interdisciplinary projects integrating NLP, Computer Vision, and Generative AI.
+        - Improved semantic segmentation accuracy by 7% using Vision Transformers.
+        - Developed cross-modal systems combining Generative AI with NLP for enhanced content creation.
+        - Led deployment and optimization of NLP models using RAG Fusion and advanced ranking algorithms.
+        - Enhanced computational efficiency threefold, contributing to a 33% revenue increase.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Senior Data Scientist
+      institution: Huma AI
+      year: Jun 2020 – May 2022
       description:
+        - Developed a Q&A system using LLMs and zero-shot learning, generating over $1M in annual revenue.
+        - Enhanced free-text Q&A system accuracy by 20% and reduced latency by 40%.
+        - Optimized data flow in automated Q&A systems, resulting in a 70% reduction in manual labeling costs.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Graduate Research Assistant
+      institution: Virginia Tech (Academic Experience)
+      year: Jan 2018 – Aug 2020
+      description:
+        - Conducted research on privacy-preserving techniques in deep learning, focusing on federated learning.
+        - Developed algorithms for privacy enhancement in large language models.
+
+    - title: Graduate Research Assistant
+      institution: West Virginia University (Academic Experience)
+      year: Jan 2016 – Dec 2017
+      description:
+        - Conducted research in computer vision and speech technology for multimodal interaction systems.
+        - Developed a novel lip-reading system integrated with speech recognition to aid communication.
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/astorfi">GitHub Projects</a>
+      year: Ongoing
+      description:
+        - A portfolio of open-source projects related to machine learning, computer vision, and NLP.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Excellence in Innovation Award - Nike
+    - year: 2022
       items:
-        - Max Planck Medal
+        - Meta Research Award for AI-driven consumer experiences
 
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Machine Learning and AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Generative AI, Computer Vision, Natural Language Processing (NLP), Transformers, CNNs, RNNs
+        - Large Language Models (LLMs), Transfer Learning, Model Optimization
+    - title: Domain Applications
       items:
-        - Description 1.
-        - Description 2.
+        - Medical Imaging, Sports Analytics, Augmented Reality, E-commerce Personalization
+    - title: Frameworks and Tools
+      items:
+        - TensorFlow, PyTorch, Keras, Hugging Face, SQL, BigQuery, Docker, AWS SageMaker
+    - title: Data Processing & Analysis
+      items:
+        - Data Preprocessing, Model Evaluation, Statistical Analysis, A/B Testing, Experiment Tracking
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Blogging on Machine Learning, Data Science, and AI advancements.
+    - <u>Professional Interests:</u> AI Ethics, Data Privacy, Emerging Trends in Deep Learning.
