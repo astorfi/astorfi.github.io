@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case Study
+title: Low-Resource LLMs
 description: Cross-Lingual Low-Resource Language Processing Using Self-Supervised Transformers.
 img: assets/img/projects/low_resource_llm.png
 importance: 1

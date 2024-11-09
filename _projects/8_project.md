@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case Study
+title: Recommender Systems
 description: Advanced Recommender System Leveraging Deep Sequence Modeling and NLP for Enhanced User Personalization.
 img: assets/img/projects/recommender_system_dsm.png
 importance: 1

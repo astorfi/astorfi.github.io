@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case Study
+title: Disease Prediction
 description: Disease prediction with Adversarial AI, leveraging advanced Machine Learning techniques for enhanced diagnostic accuracy.
 img: assets/img/projects/disease_prediction.png
 importance: 1

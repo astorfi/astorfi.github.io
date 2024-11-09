@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case Study
+title: MultiModal Knowledge Transfer
 description: Advanced Cross-Modal Knowledge Transfer for Enhanced Visual Question Answering and Image Captioning Using CLIP and Vision Transformers.
 img: assets/img/projects/multi_modal_clip.png
 importance: 1
