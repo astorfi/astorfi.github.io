@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Case Study
+title: AI-Driven Cancer Detection
 description: Advanced AI-driven pathology analysis for cancer diagnostics for detection and localization of yumor cells.
 img: assets/img/projects/cancer_detection.png
 importance: 1
