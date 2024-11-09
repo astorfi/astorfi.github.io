@@ -49,11 +49,14 @@
       "url": "",
       "startDate": "2024-05-01",
       "endDate": "",
-      "summary": "Leading development of advanced AI systems for personalized consumer experiences, generative design, and human motion tracking.",
+      "summary": "Directing the development of advanced machine learning systems to revolutionize personalized consumer experiences, accelerate generative design processes, and enable precise human motion tracking. Focused on integrating AI into Nike's design, testing, and consumer engagement initiatives to drive innovation and optimize operational efficiency.",
       "highlights": [
-        "Reduced prototyping time by 50% with generative AI models.",
-        "Engineered multi-view 3D reconstruction pipelines for digital twins.",
-        "Developed Vision Transformer networks for real-time retail inventory tracking."
+        "Reduced prototyping time by 50% by developing generative AI models utilizing GANs, Diffusion Models, and Neural Style Transfer, empowering designers to quickly create and iterate on innovative product concepts aligned with brand aesthetics and consumer preferences.",
+        "Led the engineering of multi-view 3D reconstruction pipelines using voxel-based autoencoders, Neural Radiance Fields (NeRFs), and point cloud processing, enabling the creation of high-fidelity digital twins for virtual try-ons and precise 3D product modeling.",
+        "Developed and deployed Vision Transformer (ViT) networks for accurate real-time segmentation, detection, and classification of apparel and footwear in retail environments, reducing out-of-stock occurrences by 20% through effective inventory tracking.",
+        "Pioneered human motion tracking and pose estimation models using 3D convolutional networks, optical flow, and temporal attention mechanisms, enhancing athlete product testing and biomechanics analysis to optimize footwear ergonomics and performance.",
+        "Implemented AI-driven personalization systems combining generative AI and recommendation algorithms, enabling on-demand generation of personalized footwear designs based on individual style and fit preferences using large-scale, multi-modal consumer datasets.",
+        "Optimized cross-functional collaboration by aligning machine learning research with design and consumer insights teams, ensuring AI solutions are both technically robust and strategically aligned with consumer experience goals."
       ]
     },
     {
@@ -62,11 +65,15 @@
       "url": "",
       "startDate": "2022-05-01",
       "endDate": "2024-05-01",
-      "summary": "Directed interdisciplinary projects combining NLP, Computer Vision, and Generative AI to advance consumer and content experience.",
+      "summary": "Led cutting-edge AI research and development, focusing on the integration of NLP, Computer Vision, and Generative AI to drive advancements in consumer engagement and content personalization. Directed end-to-end initiatives from conceptualization through deployment, consistently enhancing computational efficiency and accuracy across Meta's digital platforms.",
       "highlights": [
-        "Increased semantic segmentation accuracy by 7% using Vision Transformers.",
-        "Deployed Retrieval-Augmented Generation systems to enhance query relevance.",
-        "Improved computational efficiency threefold, increasing revenue by 33%."
+        "Developed advanced Vision Transformer (ViT) and SWIN Transformer models, enhancing semantic segmentation accuracy by 7% and achieving a 15% improvement in user engagement metrics.",
+        "Successfully deployed Retrieval-Augmented Generation (RAG) systems using Large Language Models (LLMs), significantly improving query relevance and enhancing user satisfaction across various applications.",
+        "Increased computational efficiency threefold by implementing techniques like mixed-precision training and model quantization, contributing to a 33% increase in revenue by reducing computational costs and accelerating processing times.",
+        "Engineered cross-modal AI systems that seamlessly combined NLP and Computer Vision, advancing Visual Question Answering (VQA) and Image Captioning to enhance multi-modal user interactions.",
+        "Spearheaded the deployment of generative AI models for personalized content generation, leveraging diffusion models and transformer-based architectures to elevate user experience across Meta’s platforms.",
+        "Optimized model deployment with TorchScript and ONNX, ensuring adaptability and performance across diverse hardware environments while reducing latency in real-time applications.",
+        "Built robust data pipelines and managed large-scale data analytics with SQL and BigQuery, directly enhancing data-driven decision-making and model training efficiency."
       ]
     },
     {
@@ -75,10 +82,13 @@
       "url": "",
       "startDate": "2020-06-01",
       "endDate": "2022-05-01",
-      "summary": "Developed and optimized LLM-based automated Q&A systems, generating significant revenue and improving operational efficiency.",
+      "summary": "Specialized in developing and optimizing automated Q&A systems powered by large language models (LLMs) to drive revenue growth and operational efficiency. Led initiatives that leveraged cutting-edge NLP techniques to deliver accurate, responsive answers and streamline workflows, contributing to substantial cost savings and enhanced user experience.",
       "highlights": [
-        "Boosted answer accuracy by 20% and reduced response latency by 40%.",
-        "Enhanced data flow for Q&A systems, reducing manual labeling costs by 70%."
+        "Increased answer accuracy by 20% and reduced response latency by 40% by deploying advanced zero-shot learning techniques and clustering methods, significantly improving system responsiveness and accuracy for a diverse range of user queries.",
+        "Engineered end-to-end data flow optimizations for the Q&A system, reducing manual labeling costs by 70% through efficient data utilization and automation strategies, resulting in substantial operational cost savings.",
+        "Led the integration of AWS services, including SageMaker, for scalable deployment of the Q&A models, enabling reliable and high-performance model management across production environments.",
+        "Contributed over $1M in annual revenue through strategic enhancements in model accuracy and system reliability, optimizing the user experience and establishing the Q&A system as a revenue-generating asset for the organization.",
+        "Utilized advanced natural language processing frameworks and tools (e.g., Hugging Face, LangChain) to build robust NLP pipelines, improving both model training efficiency and the overall responsiveness of the Q&A system."
       ]
     },
     {
@@ -129,54 +139,130 @@
     }
   ],
   "skills": [
-    {
-      "name": "Machine Learning & AI",
-      "level": "Expert",
-      "keywords": [
-        "Generative AI",
-        "Computer Vision",
-        "Natural Language Processing",
-        "Transformers",
-        "CNNs",
-        "RNNs",
-        "Model Optimization"
-      ]
-    },
-    {
-      "name": "Domain Applications",
-      "level": "Advanced",
-      "keywords": [
-        "Medical Imaging",
-        "Sports Analytics",
-        "AR/VR",
-        "E-commerce Personalization"
-      ]
-    },
-    {
-      "name": "Frameworks & Tools",
-      "level": "Expert",
-      "keywords": [
-        "TensorFlow",
-        "PyTorch",
-        "Keras",
-        "Hugging Face",
-        "SQL",
-        "BigQuery",
-        "Docker",
-        "AWS SageMaker"
-      ]
-    },
-    {
-      "name": "Data Processing & Analysis",
-      "level": "Advanced",
-      "keywords": [
-        "Data Preprocessing",
-        "Model Evaluation",
-        "Statistical Analysis",
-        "A/B Testing",
-        "Experiment Tracking"
-      ]
-    }
+  {
+    "name": "Machine Learning & AI",
+    "level": "Expert",
+    "keywords": [
+      "Generative AI",
+      "Transformers (BERT, GPT-3, T5)",
+      "Computer Vision",
+      "NLP (Natural Language Processing)",
+      "Sequence-to-Sequence Models",
+      "Self-Supervised Learning",
+      "Zero-Shot Learning",
+      "Transfer Learning",
+      "Model Optimization & Compression (Quantization, Mixed-Precision)",
+      "Federated Learning",
+      "Privacy-Preserving ML"
+    ]
+  },
+  {
+    "name": "Domain Applications",
+    "level": "Expert",
+    "keywords": [
+      "Medical Imaging",
+      "Sports Analytics",
+      "AR/VR Applications",
+      "E-commerce Personalization",
+      "Digital Twins",
+      "Human Pose Estimation",
+      "Multimodal Interaction Systems",
+      "Predictive Modeling",
+      "Cluster Analysis"
+    ]
+  },
+  {
+    "name": "Frameworks & Tools",
+    "level": "Expert",
+    "keywords": [
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "Hugging Face",
+      "LangChain",
+      "LlamaIndex",
+      "SQL",
+      "BigQuery",
+      "Docker",
+      "AWS SageMaker",
+      "Vertex AI (GCP)",
+      "TorchScript",
+      "ONNX",
+      "MLflow",
+      "Weights & Biases",
+      "Optuna"
+    ]
+  },
+  {
+    "name": "Data Processing & Analysis",
+    "level": "Expert",
+    "keywords": [
+      "Data Preprocessing (Normalization, Scaling, Augmentation)",
+      "Model Evaluation Metrics (AUC-ROC, F1-score, mIoU)",
+      "Advanced Statistical Analysis",
+      "Experiment Tracking",
+      "A/B Testing",
+      "K-Fold Cross-Validation",
+      "Hyperparameter Tuning",
+      "ETL Pipelines",
+      "Data Warehousing (Snowflake, Redshift)"
+    ]
+  },
+  {
+    "name": "Programming & Systems",
+    "level": "Advanced",
+    "keywords": [
+      "Python",
+      "Shell Scripting",
+      "SQL & BigQuery",
+      "CI/CD",
+      "PostgreSQL",
+      "DynamoDB",
+      "Elasticsearch",
+      "Version Control (Git, Mercurial)",
+      "React (Full-Stack Development)"
+    ]
+  },
+  {
+    "name": "Cloud & Distributed Computing",
+    "level": "Advanced",
+    "keywords": [
+      "AWS (Lambda, ECR, SageMaker)",
+      "GCP (Vertex AI)",
+      "Apache Spark",
+      "Hadoop",
+      "Apache Kafka",
+      "Distributed Training"
+    ]
+  },
+  {
+    "name": "Visualization & Reporting",
+    "level": "Advanced",
+    "keywords": [
+      "Seaborn",
+      "Matplotlib",
+      "Plotly",
+      "Tableau",
+      "Power BI",
+      "Dashboard Development",
+      "Interactive Visualizations"
+    ]
+  },
+  {
+    "name": "Project Management & Collaboration",
+    "level": "Advanced",
+    "keywords": [
+      "Agile Methodologies",
+      "Team Leadership & Mentoring",
+      "Cross-Functional Collaboration",
+      "Slack",
+      "JIRA",
+      "Confluence",
+      "Data Governance",
+      "Strategic Planning",
+      "Stakeholder Communication"
+    ]
+  }
   ],
   "languages": [
     {
@@ -189,14 +275,42 @@
     }
   ],
   "interests": [
-    {
-      "name": "Machine Learning & Data Science",
-      "keywords": [
-        "AI Ethics",
-        "Data Privacy",
-        "Deep Learning Trends"
-      ]
-    }
+  {
+    "name": "Machine Learning & Data Science",
+    "keywords": [
+      "AI Ethics",
+      "Data Privacy",
+      "Federated Learning",
+      "Synthetic Data Generation",
+      "Deep Learning Trends",
+      "Explainable AI (XAI)",
+      "Bias & Fairness in AI",
+      "Edge AI",
+      "Human-AI Collaboration",
+      "Self-Supervised Learning",
+      "Reinforcement Learning Applications"
+    ]
+  },
+  {
+    "name": "Applications of AI",
+    "keywords": [
+      "Medical Imaging",
+      "Augmented & Virtual Reality (AR/VR)",
+      "Personalized User Experiences",
+      "Digital Twins",
+      "Smart Retail",
+      "Environmental Sustainability through AI"
+    ]
+  },
+  {
+    "name": "Emerging Technologies",
+    "keywords": [
+      "Quantum Computing for AI",
+      "Neurosymbolic AI",
+      "Neuromorphic Computing",
+      "Graph Neural Networks",
+      "Blockchain for Data Security"
+    ]}
   ],
   "projects": [
     {
