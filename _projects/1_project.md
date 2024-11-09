@@ -182,5 +182,3 @@ Building on the success of this project, several future initiatives aim to furth
 - **Regulatory and Ethical Compliance:** Continuously refining data handling and model deployment practices to comply with evolving regulatory standards and ethical guidelines, ensuring responsible and equitable AI integration in healthcare.
 
 By pursuing these future directions, the project envisions a future where AI-driven pathology analysis becomes an indispensable component of global healthcare, driving advancements in medical diagnostics, personalized treatment, and patient care excellence.
-
-{% endraw %}
