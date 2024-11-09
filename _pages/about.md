@@ -4,22 +4,41 @@ title: about
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
+
+# more_info: >
+#     <p>555 your office number</p>
+#     <p>123 your address street</p>
+#     <p>Your City, State 12345</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to my personal site! I’m **Amirsina Torfi**, an accomplished Machine Learning Engineer with over 8 years of experience, having worked on advanced AI projects at Meta, Nike, and Huma AI. I specialize in **Generative AI**, **Natural Language Processing (NLP)**, **Computer Vision**, and **deep learning model optimization**. My work has spanned various industries, including augmented reality, sports analytics, e-commerce personalization, and healthcare AI.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I lead innovative AI projects as a Machine Learning Engineer, where I develop state-of-the-art generative AI and computer vision systems that enhance user experience, optimize performance, and drive revenue growth. I hold a Ph.D. in Computer Science from Virginia Tech, where my research focused on privacy-preserving techniques in deep learning for sensitive data applications.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my free time, I share insights into machine learning and data science through my [Medium blog](https://medium.com/machine-learning-mindset), exploring practical techniques and the latest advancements in AI.
+
+### Connect with Me
+
+Feel free to connect with me on my professional and academic profiles:
+
+- [GitHub](https://github.com/astorfi)
+- [LinkedIn](https://www.linkedin.com/in/sinalk)
+- [Google Scholar](https://scholar.google.com/citations?user=2wkpsVwAAAAJ&hl=en)
+- [Medium Blog](https://medium.com/machine-learning-mindset)
+- [Project Portfolio](https://portfolium.com/astorfi/portfolio)
+
+
+### Contact Information
+
+- **Location**: Virginia, USA
+- **Email**: amirsina{dot}torfi{AT}gmail{dot}com
+
+If you’d like to reach out or collaborate on a project, please feel free to contact me!
