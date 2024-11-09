@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Retrieval RAG
+title: Enhanced RAG
 description: Enhanced Retrieval Augmented Generation System, Advanced Techniques for Improved Context and Accuracy in Conversational AI
 img: assets/img/projects/enhanced_rag.png
 importance: 1
