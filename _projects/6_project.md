@@ -4,7 +4,7 @@ title: Case Study
 description: Synthetic Data Generation with Diffusion Models for Privacy-Preserving Healthcare Applications.
 img: assets/img/projects/privacy_preserving_ai.png
 importance: 1
-category: Ethical AI
+category: [Ethical AI, Generative AI]
 related_publications: false
 ---
 

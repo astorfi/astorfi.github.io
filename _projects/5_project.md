@@ -4,7 +4,7 @@ title: Case Study
 description: Enhanced Retrieval Augmented Generation System, Advanced Techniques for Improved Context and Accuracy in Conversational AI
 img: assets/img/projects/enhanced_rag.png
 importance: 1
-category: Generative AI
+category: [Generative AI, Large Language Models]
 related_publications: false
 ---
 
