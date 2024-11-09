@@ -2,12 +2,14 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: During my career, I worked on many different projects. Below you see the selected ones. I created <strong>case studies</strong> to clarify the details for each. For the full list of projects, refer to my <a href="https://portfolium.com/astorfi/portfolio">Project Portfolio</a>.
+description: During my career, I worked on many different projects. Below you see the selected ones. I created <strong>case studies</strong> to clarify the details for each.
 nav: true
 nav_order: 3
 display_categories: [Computer Vision, Generative AI, Recommender Systems, Ethical AI, Large Language Models, Healthcare]
 horizontal: false
 ---
+
+<!-- For the full list of projects, refer to my <a href="https://portfolium.com/astorfi/portfolio">Project Portfolio</a>. -->
 
 <!-- pages/projects.md -->
 <div class="projects">
