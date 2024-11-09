@@ -4,7 +4,7 @@ title: Case Study
 description: Enhanced Semantic Segmentation for AR/VR, by leveraging SWIN vision transformers, knowledge distillation, and domain adaptation.
 img: assets/img/projects/eye_semantic_segmentation.png
 importance: 1
-category: Vision
+category: Computer Vision
 related_publications: false
 ---
 

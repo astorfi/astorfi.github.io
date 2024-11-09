@@ -4,7 +4,7 @@ title: Case Study
 description: Advanced AI-driven pathology analysis for cancer diagnostics for detection and localization of yumor cells.
 img: assets/img/projects/cancer_detection.png
 importance: 1
-category: Vision
+category: [Computer Vision, Healthcare]
 related_publications: false
 ---
 
