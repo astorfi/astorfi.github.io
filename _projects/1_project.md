@@ -8,7 +8,7 @@ category: Vision
 related_publications: false
 ---
 
-### **Case Study: Advanced AI-Driven Pathology for Enhanced Cancer Detection and Tumor Localization**
+<!-- ### **Case Study: Advanced AI-Driven Pathology for Enhanced Cancer Detection and Tumor Localization** -->
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
