@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - astorfi
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - astorfi/TensorFlow-World
+  - astorfi/3D-convolutional-speaker-recognition
+  - astorfi/lip-reading-deeplearning
+  - astorfi/speechpy
+  - astorfi/Large-Scale-AI-Blueprint
+  - instillai/TensorFlow-Course
