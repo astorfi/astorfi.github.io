@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: During my career, I worked on many different projects. Below you see the selected ones. I created <strong>case studies</strong> to clarify the details for each.
+description: During my career, I worked on many different projects. Below you see the selected ones. I created <strong>case studies</strong> to clarify the details for each. You WILL SEE REPEATED PROJECTS AS THEY WERE <strong>TAGGED BY CATEGORY</strong>.
 nav: true
 nav_order: 3
 display_categories: [Computer Vision, Generative AI, Recommender Systems, Ethical AI, Large Language Models, Healthcare]
