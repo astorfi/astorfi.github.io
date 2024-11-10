@@ -25,6 +25,123 @@ related_publications: false
 
 This project focused on enhancing the accuracy and contextual relevance of responses in conversational AI, particularly for customer support. Using advanced techniques to fine-tune embeddings and language models without labeled data, I built a Retrieval-Augmented Generation (RAG) system. This system integrates Large Language Models (LLMs) with retrieval techniques to improve user satisfaction, especially in customer support contexts, by delivering responses that are both accurate and contextually relevant.
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional vs. Enhanced RAG System Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Traditional vs. Enhanced RAG System Comparison</h1>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Traditional RAG System</th>
+                <th>Enhanced RAG System</th>
+            </tr>
+            <tr>
+                <td>Embeddings Quality</td>
+                <td>Basic pre-trained embeddings</td>
+                <td>Enhanced embeddings with Contrastive Learning and MoCo</td>
+            </tr>
+            <tr>
+                <td>Retrieval Accuracy</td>
+                <td>Standard retrieval with basic ranking</td>
+                <td>Improved retrieval using Reciprocal Rank Fusion (RRF)</td>
+            </tr>
+            <tr>
+                <td>Relevance of Responses</td>
+                <td>Moderately relevant responses</td>
+                <td>High contextual relevance with fine-tuned embeddings</td>
+            </tr>
+            <tr>
+                <td>Fine-Tuning Data Requirements</td>
+                <td>Requires labeled data</td>
+                <td>Uses self-supervised learning with no labeled data needed</td>
+            </tr>
+            <tr>
+                <td>Handling Domain-Specific Queries</td>
+                <td>Limited adaptability</td>
+                <td>Domain-Adaptive Pretraining (DAPT) for in-domain accuracy</td>
+            </tr>
+            <tr>
+                <td>Prompt Engineering</td>
+                <td>Minimal or no prompt tuning</td>
+                <td>Custom prompts for high response accuracy and relevance</td>
+            </tr>
+            <tr>
+                <td>Response Generation Quality</td>
+                <td>Standard response generation</td>
+                <td>Enhanced contextual depth and detail in generated responses</td>
+            </tr>
+            <tr>
+                <td>User Satisfaction</td>
+                <td>Moderate satisfaction</td>
+                <td>Higher satisfaction with 30% reduction in irrelevant answers</td>
+            </tr>
+            <tr>
+                <td>Technologies Used</td>
+                <td>Basic retrieval techniques, pre-trained LLMs</td>
+                <td>FAISS for similarity search, advanced RAG-Fusion, tuned LLMs</td>
+            </tr>
+            <tr>
+                <td>Training Techniques</td>
+                <td>Basic or supervised learning only</td>
+                <td>Advanced self-supervised techniques like Contrastive Learning</td>
+            </tr>
+            <tr>
+                <td>Quantitative Improvements</td>
+                <td>Limited response accuracy</td>
+                <td>+25% response accuracy, reduced irrelevant responses by 30%</td>
+            </tr>
+            <tr>
+                <td>Application Suitability</td>
+                <td>General-purpose conversational AI</td>
+                <td>Tailored for customer support and high-accuracy applications</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
 ---
 
 #### **2. Interesting Questions Answered in the Case Study**
