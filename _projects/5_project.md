@@ -25,7 +25,6 @@ related_publications: false
 
 This project focused on enhancing the accuracy and contextual relevance of responses in conversational AI, particularly for customer support. Using advanced techniques to fine-tune embeddings and language models without labeled data, I built a Retrieval-Augmented Generation (RAG) system. This system integrates Large Language Models (LLMs) with retrieval techniques to improve user satisfaction, especially in customer support contexts, by delivering responses that are both accurate and contextually relevant.
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
