@@ -36,7 +36,6 @@ Feel free to connect with me on my professional and academic profiles:
 - [Medium Blog](https://medium.com/machine-learning-mindset)
 - [Project Portfolio](https://portfolium.com/astorfi/portfolio)
 
-
 ### Contact Information
 
 - **Location**: Virginia, USA

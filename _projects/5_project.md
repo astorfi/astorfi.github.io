@@ -140,7 +140,6 @@ This project focused on enhancing the accuracy and contextual relevance of respo
 </body>
 </html>
 
-
 ---
 
 #### **2. Interesting Questions Answered in the Case Study**
@@ -198,6 +197,7 @@ The project used a combination of tools and technologies, including **FAISS** fo
 The system workflow starts when a user submits a query. The retrieval process utilizes FAISS and RAG-Fusion to search for relevant information. The retrieved data is then passed to the LLM, where prompt engineering and in-context learning help generate a response aligned with the user’s intent.
 
 **Steps in the Workflow**:
+
 1. **User Query**: A user submits a query.
 2. **Retrieval**: FAISS and RAG-Fusion retrieve the most relevant information based on the query.
 3. **Response Generation**: The retrieved information is fed into the LLM, which, guided by prompt engineering, produces a response.
@@ -208,6 +208,7 @@ The system workflow starts when a user submits a query. The retrieval process ut
 #### **7. Results and Outcomes**
 
 The project produced substantial quantitative improvements:
+
 - **Response Accuracy**: Increased by 25%, thanks to enhanced embeddings that improved contextual relevance in retrievals.
 - **Reduction in Irrelevant Responses**: Decreased by 30%, resulting in a smoother user experience and higher satisfaction.
 
@@ -229,7 +230,3 @@ This project effectively improved the response accuracy and contextual relevance
 - **Techniques**: Prompt Engineering, Reciprocal Rank Fusion (RRF)
 - **Machine Learning Techniques**: Contrastive Learning, Momentum Contrast (MoCo), Domain-Adaptive Pretraining (DAPT), In-Context Learning
 - **Application Focus**: NLP, Conversational AI, Customer Support Systems
-
-
-
-

@@ -30,34 +30,41 @@ This project focused on improving semantic segmentation accuracy in AR/VR applic
 #### **2. Questions This Case Study Answers**
 
 **Project Overview and Problem Understanding**
+
 - What specific challenge did this project address in AR/VR applications?
 - Why is achieving high segmentation accuracy important for AR/VR?
 
 **Technical Approach and Architecture**
+
 - What was the core model architecture used for segmentation?
 - Why were SWIN Vision Transformers chosen over traditional CNNs?
 - How did the UperNet framework enhance SWIN Vision Transformers?
 
 **Optimization Techniques**
+
 - How was knowledge distillation applied, and what benefits did it provide?
 - How was Quantization-Aware Training (QAT) used in the model?
 - How did adversarial domain adaptation improve model performance in diverse AR/VR environments?
 
 **Data Handling and Augmentation**
+
 - What data strategies were used to handle the high data needs of transformers?
 - How were weak supervision and active learning incorporated into data labeling?
 - How did synthetic data generation with diffusion models enhance the dataset?
 
 **Implementation and Tools**
+
 - What tools were used to integrate SWIN Vision Transformers with UperNet?
 - How was real-time performance achieved in AR/VR applications?
 
 **Results and Impact**
+
 - What quantitative improvements did the model achieve over baseline models?
 - How did these enhancements impact user experience in AR/VR?
 - What benchmarks or standards did this project set for AR/VR semantic segmentation?
 
 **Skills and Learning**
+
 - Which techniques were most effective in improving segmentation accuracy?
 - What challenges did the project face, and how were they resolved?
 - How were diffusion models used in the segmentation pipeline, and what benefits did they offer?
@@ -137,5 +144,3 @@ This project successfully addressed a major challenge in AR/VR semantic segmenta
 - **Optimization Techniques:** Knowledge Distillation, Quantization-Aware Training, Adversarial Domain Adaptation
 - **Data Handling:** AugMix, Diffusion Models, Weak Supervision, Active Learning
 - **Application Focus:** AR/VR Technologies
-
-

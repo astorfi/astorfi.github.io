@@ -98,9 +98,7 @@
       "startDate": "2018-01-01",
       "endDate": "2020-08-01",
       "summary": "Conducted research on privacy-preserving techniques for deep learning, focusing on federated learning in NLP and Computer Vision.",
-      "highlights": [
-        "Developed privacy enhancement algorithms for large language models."
-      ]
+      "highlights": ["Developed privacy enhancement algorithms for large language models."]
     },
     {
       "name": "West Virginia University",
@@ -109,9 +107,7 @@
       "startDate": "2016-01-01",
       "endDate": "2017-12-01",
       "summary": "Researched the integration of computer vision and speech technologies for multimodal interaction systems.",
-      "highlights": [
-        "Engineered a lip-reading system to enhance communication aids for the hearing-impaired."
-      ]
+      "highlights": ["Engineered a lip-reading system to enhance communication aids for the hearing-impaired."]
     }
   ],
   "education": [
@@ -124,9 +120,7 @@
       "startDate": "",
       "endDate": "",
       "score": "",
-      "courses": [
-        "Thesis: Synthetic data generation for privacy-preserving deep learning in medical applications."
-      ]
+      "courses": ["Thesis: Synthetic data generation for privacy-preserving deep learning in medical applications."]
     }
   ],
   "awards": [
@@ -139,130 +133,115 @@
     }
   ],
   "skills": [
-  {
-    "name": "Machine Learning & AI",
-    "level": "Expert",
-    "keywords": [
-      "Generative AI",
-      "Transformers (BERT, GPT-3, T5)",
-      "Computer Vision",
-      "NLP (Natural Language Processing)",
-      "Sequence-to-Sequence Models",
-      "Self-Supervised Learning",
-      "Zero-Shot Learning",
-      "Transfer Learning",
-      "Model Optimization & Compression (Quantization, Mixed-Precision)",
-      "Federated Learning",
-      "Privacy-Preserving ML"
-    ]
-  },
-  {
-    "name": "Domain Applications",
-    "level": "Expert",
-    "keywords": [
-      "Medical Imaging",
-      "Sports Analytics",
-      "AR/VR Applications",
-      "E-commerce Personalization",
-      "Digital Twins",
-      "Human Pose Estimation",
-      "Multimodal Interaction Systems",
-      "Predictive Modeling",
-      "Cluster Analysis"
-    ]
-  },
-  {
-    "name": "Frameworks & Tools",
-    "level": "Expert",
-    "keywords": [
-      "TensorFlow",
-      "PyTorch",
-      "Keras",
-      "Hugging Face",
-      "LangChain",
-      "LlamaIndex",
-      "SQL",
-      "BigQuery",
-      "Docker",
-      "AWS SageMaker",
-      "Vertex AI (GCP)",
-      "TorchScript",
-      "ONNX",
-      "MLflow",
-      "Weights & Biases",
-      "Optuna"
-    ]
-  },
-  {
-    "name": "Data Processing & Analysis",
-    "level": "Expert",
-    "keywords": [
-      "Data Preprocessing (Normalization, Scaling, Augmentation)",
-      "Model Evaluation Metrics (AUC-ROC, F1-score, mIoU)",
-      "Advanced Statistical Analysis",
-      "Experiment Tracking",
-      "A/B Testing",
-      "K-Fold Cross-Validation",
-      "Hyperparameter Tuning",
-      "ETL Pipelines",
-      "Data Warehousing (Snowflake, Redshift)"
-    ]
-  },
-  {
-    "name": "Programming & Systems",
-    "level": "Advanced",
-    "keywords": [
-      "Python",
-      "Shell Scripting",
-      "SQL & BigQuery",
-      "CI/CD",
-      "PostgreSQL",
-      "DynamoDB",
-      "Elasticsearch",
-      "Version Control (Git, Mercurial)",
-      "React (Full-Stack Development)"
-    ]
-  },
-  {
-    "name": "Cloud & Distributed Computing",
-    "level": "Advanced",
-    "keywords": [
-      "AWS (Lambda, ECR, SageMaker)",
-      "GCP (Vertex AI)",
-      "Apache Spark",
-      "Hadoop",
-      "Apache Kafka",
-      "Distributed Training"
-    ]
-  },
-  {
-    "name": "Visualization & Reporting",
-    "level": "Advanced",
-    "keywords": [
-      "Seaborn",
-      "Matplotlib",
-      "Plotly",
-      "Tableau",
-      "Power BI",
-      "Dashboard Development",
-      "Interactive Visualizations"
-    ]
-  },
-  {
-    "name": "Project Management & Collaboration",
-    "level": "Advanced",
-    "keywords": [
-      "Agile Methodologies",
-      "Team Leadership & Mentoring",
-      "Cross-Functional Collaboration",
-      "Slack",
-      "JIRA",
-      "Confluence",
-      "Data Governance",
-      "Strategic Planning",
-      "Stakeholder Communication"
-    ]
-  }
+    {
+      "name": "Machine Learning & AI",
+      "level": "Expert",
+      "keywords": [
+        "Generative AI",
+        "Transformers (BERT, GPT-3, T5)",
+        "Computer Vision",
+        "NLP (Natural Language Processing)",
+        "Sequence-to-Sequence Models",
+        "Self-Supervised Learning",
+        "Zero-Shot Learning",
+        "Transfer Learning",
+        "Model Optimization & Compression (Quantization, Mixed-Precision)",
+        "Federated Learning",
+        "Privacy-Preserving ML"
+      ]
+    },
+    {
+      "name": "Domain Applications",
+      "level": "Expert",
+      "keywords": [
+        "Medical Imaging",
+        "Sports Analytics",
+        "AR/VR Applications",
+        "E-commerce Personalization",
+        "Digital Twins",
+        "Human Pose Estimation",
+        "Multimodal Interaction Systems",
+        "Predictive Modeling",
+        "Cluster Analysis"
+      ]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "level": "Expert",
+      "keywords": [
+        "TensorFlow",
+        "PyTorch",
+        "Keras",
+        "Hugging Face",
+        "LangChain",
+        "LlamaIndex",
+        "SQL",
+        "BigQuery",
+        "Docker",
+        "AWS SageMaker",
+        "Vertex AI (GCP)",
+        "TorchScript",
+        "ONNX",
+        "MLflow",
+        "Weights & Biases",
+        "Optuna"
+      ]
+    },
+    {
+      "name": "Data Processing & Analysis",
+      "level": "Expert",
+      "keywords": [
+        "Data Preprocessing (Normalization, Scaling, Augmentation)",
+        "Model Evaluation Metrics (AUC-ROC, F1-score, mIoU)",
+        "Advanced Statistical Analysis",
+        "Experiment Tracking",
+        "A/B Testing",
+        "K-Fold Cross-Validation",
+        "Hyperparameter Tuning",
+        "ETL Pipelines",
+        "Data Warehousing (Snowflake, Redshift)"
+      ]
+    },
+    {
+      "name": "Programming & Systems",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "Shell Scripting",
+        "SQL & BigQuery",
+        "CI/CD",
+        "PostgreSQL",
+        "DynamoDB",
+        "Elasticsearch",
+        "Version Control (Git, Mercurial)",
+        "React (Full-Stack Development)"
+      ]
+    },
+    {
+      "name": "Cloud & Distributed Computing",
+      "level": "Advanced",
+      "keywords": ["AWS (Lambda, ECR, SageMaker)", "GCP (Vertex AI)", "Apache Spark", "Hadoop", "Apache Kafka", "Distributed Training"]
+    },
+    {
+      "name": "Visualization & Reporting",
+      "level": "Advanced",
+      "keywords": ["Seaborn", "Matplotlib", "Plotly", "Tableau", "Power BI", "Dashboard Development", "Interactive Visualizations"]
+    },
+    {
+      "name": "Project Management & Collaboration",
+      "level": "Advanced",
+      "keywords": [
+        "Agile Methodologies",
+        "Team Leadership & Mentoring",
+        "Cross-Functional Collaboration",
+        "Slack",
+        "JIRA",
+        "Confluence",
+        "Data Governance",
+        "Strategic Planning",
+        "Stakeholder Communication"
+      ]
+    }
   ],
   "languages": [
     {
@@ -275,52 +254,43 @@
     }
   ],
   "interests": [
-  {
-    "name": "Machine Learning & Data Science",
-    "keywords": [
-      "AI Ethics",
-      "Data Privacy",
-      "Federated Learning",
-      "Synthetic Data Generation",
-      "Deep Learning Trends",
-      "Explainable AI (XAI)",
-      "Bias & Fairness in AI",
-      "Edge AI",
-      "Human-AI Collaboration",
-      "Self-Supervised Learning",
-      "Reinforcement Learning Applications"
-    ]
-  },
-  {
-    "name": "Applications of AI",
-    "keywords": [
-      "Medical Imaging",
-      "Augmented & Virtual Reality (AR/VR)",
-      "Personalized User Experiences",
-      "Digital Twins",
-      "Smart Retail",
-      "Environmental Sustainability through AI"
-    ]
-  },
-  {
-    "name": "Emerging Technologies",
-    "keywords": [
-      "Quantum Computing for AI",
-      "Neurosymbolic AI",
-      "Neuromorphic Computing",
-      "Graph Neural Networks",
-      "Blockchain for Data Security"
-    ]}
+    {
+      "name": "Machine Learning & Data Science",
+      "keywords": [
+        "AI Ethics",
+        "Data Privacy",
+        "Federated Learning",
+        "Synthetic Data Generation",
+        "Deep Learning Trends",
+        "Explainable AI (XAI)",
+        "Bias & Fairness in AI",
+        "Edge AI",
+        "Human-AI Collaboration",
+        "Self-Supervised Learning",
+        "Reinforcement Learning Applications"
+      ]
+    },
+    {
+      "name": "Applications of AI",
+      "keywords": [
+        "Medical Imaging",
+        "Augmented & Virtual Reality (AR/VR)",
+        "Personalized User Experiences",
+        "Digital Twins",
+        "Smart Retail",
+        "Environmental Sustainability through AI"
+      ]
+    },
+    {
+      "name": "Emerging Technologies",
+      "keywords": ["Quantum Computing for AI", "Neurosymbolic AI", "Neuromorphic Computing", "Graph Neural Networks", "Blockchain for Data Security"]
+    }
   ],
   "projects": [
     {
       "name": "Open Source Projects on GitHub",
       "summary": "A collection of machine learning, computer vision, and NLP projects.",
-      "highlights": [
-        "Applications in Generative AI",
-        "Multi-modal AI",
-        "Optimization for real-time systems"
-      ],
+      "highlights": ["Applications in Generative AI", "Multi-modal AI", "Optimization for real-time systems"],
       "url": "https://github.com/astorfi"
     }
   ]

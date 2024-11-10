@@ -30,45 +30,53 @@ This project explored the use of diffusion models for generating synthetic healt
 #### **2. Questions Addressed by the Case Study**
 
 **Project Overview and Problem Understanding**
+
 - What specific challenge in healthcare data processing did this project address?
 - Why are traditional anonymization techniques insufficient for ensuring data privacy in healthcare AI applications?
 - How does limited access to healthcare data impact the development and deployment of machine learning models in healthcare?
 
 **Technical Approach and Architecture**
+
 - Can you describe the diffusion model architecture used for generating synthetic healthcare data?
 - Why were diffusion models chosen over other generative models?
 - How does the iterative noise addition and removal process in diffusion models help maintain data privacy while preserving data fidelity?
 - What key variables were selected for training the diffusion model on healthcare data, and why?
 
 **Optimization Techniques**
+
 - How was controlled noise scheduling designed to balance detail retention and privacy?
 - What privacy auditing techniques were used to ensure no identifiable patterns were leaked in the synthetic data?
 - How was the U-Net architecture optimized for high-dimensional healthcare data?
 
 **Data Handling and Augmentation**
+
 - What types of real and synthetic data were used for training the diffusion model, and how were they sourced?
 - How was the synthetic data designed to capture the diversity and variability of real healthcare data?
 - What strategies were implemented to handle potential biases in synthetic data generation?
 
 **Implementation and Tools**
+
 - Which tools and frameworks supported building and training the diffusion model with the U-Net architecture?
 - How was privacy auditing integrated into the synthetic data generation pipeline?
 - How were membership inference tests implemented to assess the privacy-preserving capabilities of the synthetic data?
 - What computational resources were required, and how were they managed during model training?
 
 **Results and Impact**
+
 - What quantitative metrics assessed the fidelity of the synthetic healthcare data, and what were the outcomes?
 - How did predictive models trained on synthetic data compare to those trained on real data in terms of accuracy?
 - What key findings from the privacy audits validated the effectiveness of this approach?
 - How does this synthetic data generation approach contribute to advancing privacy-preserving machine learning in healthcare?
 
 **Skills and Learning**
+
 - Which advanced techniques were most effective in generating high-fidelity synthetic healthcare data?
 - What challenges arose when using diffusion models for synthetic data generation, and how were they overcome?
 - How did expertise in U-Net architectures and diffusion models contribute to the project’s success?
 - What insights on privacy-preserving machine learning techniques were gained from this project?
 
 **Future Directions**
+
 - What potential improvements or future work could further enhance synthetic data generation?
 - How can the diffusion model-based approach be adapted for other domains requiring privacy-preserving data?
 - What additional privacy auditing methods could improve data security in future projects?
@@ -99,13 +107,14 @@ To ensure the synthetic data reflected the diversity of real data while maintain
 
 #### **6. Technical Implementation**
 
-The diffusion model was based on a U-Net architecture optimized for high-dimensional healthcare data. During training, noise was added to the healthcare dataset in a stepwise manner, with the model learning to reverse this noise and reconstruct realistic data distributions. 
+The diffusion model was based on a U-Net architecture optimized for high-dimensional healthcare data. During training, noise was added to the healthcare dataset in a stepwise manner, with the model learning to reverse this noise and reconstruct realistic data distributions.
 
 **Privacy Auditing**: I implemented privacy auditing using **membership inference tests** to evaluate the synthetic data for privacy risks. These tests helped ensure that the data generation process did not expose any identifiable information. To further evaluate the synthetic data’s utility, I trained predictive models on both synthetic and real data and compared their performance on diagnostic accuracy metrics.
 
 **Tools and Frameworks**: Key tools included FAISS for efficient similarity search, the U-Net architecture for data processing, and frameworks for implementing self-supervised learning.
 
 **Steps in the Workflow**:
+
 1. **Noise Addition and Removal**: The diffusion model added noise to real healthcare data in steps, and then learned to reconstruct data from noisy inputs.
 2. **Privacy Auditing**: Membership inference tests were used to confirm that synthetic data was non-identifiable.
 3. **Model Training and Comparison**: Predictive models were trained on both synthetic and real data to verify that synthetic data preserved essential data properties and yielded high predictive accuracy.
@@ -134,8 +143,3 @@ This project demonstrated the potential of diffusion models to generate high-fid
 - **Techniques**: Synthetic Data Generation, Privacy Auditing, Membership Inference
 - **Data Handling**: Controlled Noise Scheduling, Diversity and Bias Management
 - **Applications**: Healthcare Data, Unsupervised Learning, Privacy-Preserving AI
-
-
-
-
-

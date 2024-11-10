@@ -30,42 +30,50 @@ This project focused on developing a cross-lingual language model capable of und
 #### **2. Questions This Project Addresses**
 
 **Project Overview and Problem Understanding**
+
 - What specific challenge in low-resource language processing did this project address?
 - Why is developing language models for low-resource languages essential for global AI accessibility and effectiveness?
 
 **Technical Approach and Architecture**
+
 - What was the cross-lingual model architecture used for low-resource language processing?
 - Why were pre-trained multilingual transformers like mBERT and XLM-R chosen for this project?
 - How does masked language modeling (MLM) enhance the model’s understanding of low-resource languages?
 - What is cross-lingual alignment, and how was it implemented to benefit low-resource languages in the model?
 
 **Optimization Techniques**
+
 - How did adversarial training align semantic spaces between high-resource and low-resource languages?
 - What role did the language discriminator play in achieving language-invariant representations?
 - How was domain shift in low-resource languages addressed using synthetic and real data generated through back-translation?
 
 **Data Handling and Augmentation**
+
 - Which datasets were used for training the cross-lingual model, and why were they selected?
 - How did back-translation help in generating synthetic data for low-resource languages, and what impact did it have on model performance?
 - What strategies were implemented to balance training data between high-resource and low-resource languages?
 
 **Implementation and Tools**
+
 - What tools and frameworks were used to fine-tune models like mBERT and XLM-R for low-resource languages?
 - How was adversarial training integrated into the model pipeline?
 - How was cross-lingual alignment incorporated within the transformer architecture to improve low-resource language processing?
 
 **Results and Impact**
+
 - What quantitative improvements were achieved in low-resource language tasks compared to baseline models?
 - How did BLEU scores for low-resource language translations improve due to this project?
 - What qualitative feedback highlighted the model’s contextual understanding and relevance in translations?
 - How does this cross-lingual, low-resource model contribute to more inclusive AI systems?
 
 **Skills and Learning**
+
 - Which advanced techniques were most effective for enhancing cross-lingual knowledge transfer in low-resource languages?
 - What challenges arose while fine-tuning multilingual transformers for low-resource languages, and how were they overcome?
 - How did experience with adversarial training and cross-lingual alignment contribute to this project’s success?
 
 **Future Directions**
+
 - What potential improvements or future work could enhance cross-lingual low-resource language processing?
 - How can this approach be scaled or adapted to support additional low-resource languages in the future?
 - What other self-supervised learning techniques could improve low-resource language model performance?
@@ -86,7 +94,7 @@ Addressing the gap in low-resource language support is essential to make AI more
 
 #### **5. Solution Approach**
 
-To build a cross-lingual model capable of supporting low-resource languages, I fine-tuned a pre-trained multilingual transformer model using self-supervised and cross-lingual transfer techniques. Starting with a base model trained on high-resource languages, I applied masked language modeling (MLM) and sequence-to-sequence tasks to help the model learn contextual information without labeled data. 
+To build a cross-lingual model capable of supporting low-resource languages, I fine-tuned a pre-trained multilingual transformer model using self-supervised and cross-lingual transfer techniques. Starting with a base model trained on high-resource languages, I applied masked language modeling (MLM) and sequence-to-sequence tasks to help the model learn contextual information without labeled data.
 
 **Cross-Lingual Alignment**: I implemented a cross-lingual alignment process, where the model aligned shared subword embeddings across languages, allowing low-resource languages to benefit from knowledge acquired from high-resource languages.
 
@@ -98,11 +106,12 @@ In addition to MLM, I employed **adversarial training** to align semantic spaces
 
 Pre-trained models like **mBERT** and **XLM-R** were fine-tuned on a combination of high-resource and low-resource languages. Self-supervised techniques, such as MLM, were applied across multilingual corpora, and adversarial training ensured robust cross-lingual representations.
 
-**Data**: Training data included both real and synthetic low-resource data generated through back-translation, supplemented with multilingual Wikipedia corpora. 
+**Data**: Training data included both real and synthetic low-resource data generated through back-translation, supplemented with multilingual Wikipedia corpora.
 
 **Implementation of Cross-Lingual Alignment**: Cross-lingual alignment was integrated within the transformer architecture, ensuring that subword embeddings aligned across languages, enhancing the model’s capability to generalize across linguistic boundaries.
 
 **Steps in the Workflow**:
+
 1. **Masked Language Modeling (MLM)**: MLM helped the model learn contextual cues within multilingual data, strengthening understanding without labeled data.
 2. **Adversarial Training**: A language discriminator was used to encourage language-invariant representations.
 3. **Back-Translation**: Synthetic data was generated through back-translation to supplement real low-resource data.
@@ -114,7 +123,7 @@ Pre-trained models like **mBERT** and **XLM-R** were fine-tuned on a combination
 
 **Quantitative Results**: The model showed a **30% increase in accuracy** on cross-lingual natural language understanding (NLU) tasks for low-resource languages compared to baseline models. BLEU scores for low-resource language translations improved by **25%**, demonstrating improved translation quality.
 
-**User Feedback**: Qualitative feedback highlighted the model’s enhanced contextual understanding, making translations more relevant and nuanced. 
+**User Feedback**: Qualitative feedback highlighted the model’s enhanced contextual understanding, making translations more relevant and nuanced.
 
 **Impact**: This model supports more inclusive AI by improving low-resource language processing, broadening AI’s reach to diverse linguistic communities.
 
@@ -132,9 +141,3 @@ This project demonstrated the potential of cross-lingual models to enhance langu
 - **Techniques**: Adversarial Training, Back-Translation, Cross-Lingual Alignment
 - **Data Handling**: Multilingual Datasets, Language Discriminators
 - **Applications**: Low-Resource NLP, Multilingual NLP, Cross-Lingual Language Models
-
-
-
-
-
-
