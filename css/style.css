@@ -766,9 +766,118 @@ section + section { padding-top: 0; }
 .contact-card h3 { font-size: 1rem; margin-bottom: 6px; }
 .contact-card p { font-size: .88rem; color: var(--stone-500); margin: 0; max-width: none; }
 
+/* ---------- CV ---------- */
+.cv-section { padding-top: 0; }
+.cv-container { max-width: 860px; }
+
+.cv-print-header { display: none; }
+
+.cv-block { margin-bottom: 40px; }
+.cv-block:last-child { margin-bottom: 0; }
+
+.cv-heading {
+  font-size: 1.15rem; font-weight: 700; color: var(--teal);
+  text-transform: uppercase; letter-spacing: .06em;
+  padding-bottom: 10px; border-bottom: 2px solid var(--teal);
+  margin-bottom: 20px;
+}
+
+.cv-summary {
+  font-size: 1rem; line-height: 1.7; color: var(--stone-700); max-width: none;
+}
+
+.cv-entry { margin-bottom: 28px; }
+.cv-entry:last-child { margin-bottom: 0; }
+.cv-entry-compact { margin-bottom: 16px; }
+
+.cv-entry-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 16px; margin-bottom: 8px;
+}
+.cv-entry-header h3 { font-size: 1.05rem; margin: 0; }
+.cv-company { color: var(--teal); font-weight: 500; font-size: .95rem; margin-top: 2px; }
+.cv-date {
+  flex-shrink: 0; text-align: right;
+  font-size: .85rem; color: var(--stone-500); white-space: nowrap;
+}
+.cv-location { color: var(--stone-400); font-size: .8rem; }
+
+.cv-list {
+  padding-left: 20px; margin: 0;
+  font-size: .93rem; line-height: 1.6; color: var(--stone-600);
+}
+.cv-list li { margin-bottom: 6px; }
+.cv-list li::marker { color: var(--teal); }
+.cv-list li:last-child { margin-bottom: 0; }
+
+.cv-skills { font-size: .93rem; line-height: 1.7; color: var(--stone-600); }
+.cv-skill-group { margin-bottom: 6px; }
+.cv-skill-group:last-child { margin-bottom: 0; }
+.cv-skill-group strong { color: var(--stone-900); font-weight: 600; }
+
+.cv-pub-list {
+  padding-left: 20px; margin: 0;
+  font-size: .9rem; line-height: 1.6; color: var(--stone-600);
+}
+.cv-pub-list li { margin-bottom: 10px; }
+.cv-pub-list li:last-child { margin-bottom: 0; }
+.cv-pub-list strong { color: var(--stone-900); }
+.cv-pub-list em { font-style: italic; color: var(--stone-500); }
+.cv-cite {
+  display: inline-block; padding: 1px 8px; border-radius: 4px;
+  background: var(--teal-light); color: var(--teal);
+  font-size: .75rem; font-weight: 600; margin-left: 4px;
+}
+.cv-scholar-link {
+  margin-top: 12px; font-size: .88rem; color: var(--stone-500);
+}
+
+@media (max-width: 640px) {
+  .cv-entry-header { flex-direction: column; gap: 4px; }
+  .cv-date { text-align: left; }
+}
+
 /* ---------- Print ---------- */
+.no-print { }
 @media print {
-  .navbar, .footer, .nav-toggle { display: none; }
-  section { padding: 20px 0; }
-  body { font-size: 12px; }
+  .navbar, .footer, .nav-toggle, .no-print { display: none !important; }
+  body { font-size: 11px; color: #222; background: #fff; }
+  section { padding: 0; }
+  .cv-section { padding-top: 0; }
+
+  .cv-print-header {
+    display: block; text-align: center; margin-bottom: 20px;
+    padding-bottom: 14px; border-bottom: 2px solid #0F766E;
+  }
+  .cv-print-header h1 {
+    font-size: 22px; margin: 0; color: #111;
+  }
+  .cv-print-subtitle {
+    font-size: 13px; color: #0F766E; font-weight: 600; margin-top: 2px;
+  }
+  .cv-print-contact {
+    font-size: 10px; color: #555; margin-top: 6px;
+  }
+
+  .cv-block { margin-bottom: 16px; }
+  .cv-heading { font-size: 11px; padding-bottom: 4px; margin-bottom: 8px; border-bottom-width: 1.5px; }
+  .cv-summary { font-size: 10.5px; line-height: 1.5; }
+  .cv-entry { margin-bottom: 12px; }
+  .cv-entry-compact { margin-bottom: 6px; }
+  .cv-entry-header h3 { font-size: 11px; }
+  .cv-company { font-size: 10.5px; }
+  .cv-date { font-size: 9.5px; }
+  .cv-list { font-size: 10px; line-height: 1.45; padding-left: 16px; }
+  .cv-list li { margin-bottom: 2px; }
+  .cv-skills { font-size: 10px; line-height: 1.45; }
+  .cv-skill-group { margin-bottom: 2px; }
+  .cv-pub-list { font-size: 9.5px; line-height: 1.4; padding-left: 16px; }
+  .cv-pub-list li { margin-bottom: 4px; }
+  .cv-cite { font-size: 8px; padding: 0 4px; background: #eee; color: #0F766E; }
+  .cv-scholar-link { font-size: 9px; margin-top: 4px; }
+
+  .page-header { padding-top: 0; padding-bottom: 0; }
+
+  a { color: inherit; }
+  a[href]::after { content: none !important; }
 }
