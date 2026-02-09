@@ -67,4 +67,13 @@
       el.classList.add('visible');
     });
   }
+  /* ---------- Email obfuscation ---------- */
+  // Assemble email from data attributes so bots can't scrape it from HTML
+  document.querySelectorAll('.js-email').forEach(function (el) {
+    var addr = el.dataset.user + '@' + el.dataset.domain;
+    el.href = 'mailto:' + addr;
+  });
+  document.querySelectorAll('.js-email-text').forEach(function (el) {
+    el.textContent = el.dataset.user + '@' + el.dataset.domain;
+  });
 })();
