@@ -1,23 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#F0FDFA"/>
-  <rect x="60" y="60" width="680" height="380" rx="24" fill="#fff" stroke="#D6D3D1" stroke-width="1.5"/>
-  <!-- Shield outer -->
-  <path d="M400 120 L340 155 L340 240 Q340 300 400 340 Q460 300 460 240 L460 155 Z" fill="#0F766E" fill-opacity=".08" stroke="#0F766E" stroke-width="2" stroke-opacity=".3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect x="0" y="0" width="800" height="500" rx="0" ry="0" fill="#F0FDFA"/>
+  <rect x="60" y="60" width="680" height="380" rx="24" ry="24" fill="#ffffff" stroke="#D6D3D1" stroke-width="1.5"/>
+
+  <!-- Shield background -->
+  <polygon points="400,100 330,140 330,230 400,290 470,230 470,140" fill="#0F766E" opacity="0.08" stroke="#0F766E" stroke-width="2" stroke-opacity="0.3"/>
   <!-- Shield inner -->
-  <path d="M400 150 L360 172 L360 230 Q360 275 400 305 Q440 275 440 230 L440 172 Z" fill="#0F766E" fill-opacity=".15"/>
-  <!-- Checkmark in shield -->
-  <polyline points="380,230 395,250 425,210" stroke="#0F766E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Pipeline stages -->
-  <rect x="120" y="370" width="100" height="36" rx="8" fill="#0F766E" fill-opacity=".1" stroke="#0F766E" stroke-width="1" stroke-opacity=".3"/>
-  <text x="170" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#0F766E">SFT</text>
-  <rect x="260" y="370" width="100" height="36" rx="8" fill="#0F766E" fill-opacity=".15" stroke="#0F766E" stroke-width="1" stroke-opacity=".3"/>
-  <text x="310" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#0F766E">DPO</text>
-  <rect x="400" y="370" width="120" height="36" rx="8" fill="#0F766E" fill-opacity=".2" stroke="#0F766E" stroke-width="1" stroke-opacity=".3"/>
-  <text x="460" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#0F766E">Guardrails</text>
-  <rect x="560" y="370" width="120" height="36" rx="8" fill="#0F766E" fill-opacity=".25" stroke="#0F766E" stroke-width="1" stroke-opacity=".3"/>
-  <text x="620" y="393" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#0F766E">Red-Team</text>
-  <!-- Arrows between stages -->
-  <path d="M220 388h40" stroke="#0F766E" stroke-width="1.5" stroke-opacity=".4" fill="none"/>
-  <path d="M360 388h40" stroke="#0F766E" stroke-width="1.5" stroke-opacity=".4" fill="none"/>
-  <path d="M520 388h40" stroke="#0F766E" stroke-width="1.5" stroke-opacity=".4" fill="none"/>
+  <polygon points="400,130 350,160 350,225 400,270 450,225 450,160" fill="#0F766E" opacity="0.18"/>
+  <!-- Checkmark -->
+  <polyline points="378,215 393,238 425,195" fill="none" stroke="#0F766E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pipeline label -->
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#78716C" letter-spacing="2">ALIGNMENT PIPELINE</text>
+
+  <!-- Stage 1: SFT -->
+  <rect x="110" y="365" width="100" height="38" rx="10" ry="10" fill="#0F766E" opacity="0.1" stroke="#0F766E" stroke-width="1"/>
+  <text x="160" y="389" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0F766E">SFT</text>
+
+  <!-- Arrow 1 -->
+  <line x1="215" y1="384" x2="250" y2="384" stroke="#0F766E" stroke-width="2" opacity="0.4"/>
+  <polygon points="250,380 258,384 250,388" fill="#0F766E" opacity="0.4"/>
+
+  <!-- Stage 2: DPO -->
+  <rect x="260" y="365" width="100" height="38" rx="10" ry="10" fill="#0F766E" opacity="0.15" stroke="#0F766E" stroke-width="1"/>
+  <text x="310" y="389" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0F766E">DPO</text>
+
+  <!-- Arrow 2 -->
+  <line x1="365" y1="384" x2="400" y2="384" stroke="#0F766E" stroke-width="2" opacity="0.4"/>
+  <polygon points="400,380 408,384 400,388" fill="#0F766E" opacity="0.4"/>
+
+  <!-- Stage 3: Guardrails -->
+  <rect x="410" y="365" width="120" height="38" rx="10" ry="10" fill="#0F766E" opacity="0.2" stroke="#0F766E" stroke-width="1"/>
+  <text x="470" y="389" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0F766E">Guardrails</text>
+
+  <!-- Arrow 3 -->
+  <line x1="535" y1="384" x2="570" y2="384" stroke="#0F766E" stroke-width="2" opacity="0.4"/>
+  <polygon points="570,380 578,384 570,388" fill="#0F766E" opacity="0.4"/>
+
+  <!-- Stage 4: Red-Team -->
+  <rect x="580" y="365" width="120" height="38" rx="10" ry="10" fill="#0F766E" opacity="0.25" stroke="#0F766E" stroke-width="1"/>
+  <text x="640" y="389" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0F766E">Red-Team</text>
 </svg>
