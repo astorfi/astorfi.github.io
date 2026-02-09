@@ -127,7 +127,185 @@
         </div>
       </div>
 
-      <!-- 2. Semantic Segmentation for AR/VR -->
+      <!-- 2. Agentic Function Calling & Tool Orchestration -->
+      <div class="project-card reveal" data-domains="llms">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/agentic_function_calling.svg" alt="Agentic Function Calling" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Agentic Function Calling &amp; Tool Orchestration</h3>
+          <p>Multi-step agentic reasoning framework with structured function calling, tree-of-thought planning, and constrained decoding for enterprise tool orchestration.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Enterprise LLMs must decompose complex user requests into sequences of API calls, database queries, and tool invocations — maintaining coherence across multi-hop reasoning chains while handling errors gracefully and respecting authorization boundaries.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Structured function-calling framework with JSON schema validation and type-safe tool definitions supporting parallel and sequential execution</li>
+                  <li>ReAct-style iterative reasoning with tree-of-thought planning for multi-step task decomposition and dependency graph construction</li>
+                  <li>Constrained decoding via grammar-guided generation (GCD) for guaranteed schema adherence and valid structured outputs</li>
+                  <li>Fine-tuned function-calling models using synthetic trajectory generation and DPO on execution feedback signals — learning from whether tool calls succeed, not just human preference</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Significant improvement in multi-step task completion rate over chain-of-thought baselines</li>
+                  <li>Near-perfect schema adherence via constrained generation, eliminating malformed tool calls</li>
+                  <li>Robust error recovery and autonomous re-planning when tool calls fail mid-chain</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Core orchestration layer for enterprise agentic AI, enabling complex multi-tool workflows with reliable structured outputs across diverse enterprise knowledge sources and APIs.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">ReAct</span>
+              <span class="tech-pill">Tree-of-Thought</span>
+              <span class="tech-pill">Constrained Decoding</span>
+              <span class="tech-pill">DPO</span>
+              <span class="tech-pill">Function Calling</span>
+              <span class="tech-pill">JSON Schema</span>
+              <span class="tech-pill">Trajectory Synthesis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. LLM Post-Training Alignment & Safety -->
+      <div class="project-card reveal" data-domains="llms,genai">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/llm_alignment_safety.svg" alt="LLM Alignment & Safety" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+                <span class="domain-pill">Generative AI</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>LLM Post-Training Alignment &amp; Safety</h3>
+          <p>End-to-end alignment pipeline combining DPO/KTO preference optimization, constitutional AI guardrails, automated red-teaming, and PII-aware decoding for enterprise LLM deployment.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Deploying LLMs in enterprise environments demands rigorous alignment — balancing helpfulness with safety, preventing PII leakage, mitigating hallucination, and ensuring compliance with enterprise policies — where a single violation can have serious consequences.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Multi-stage post-training pipeline: supervised fine-tuning &rarr; DPO/KTO preference optimization &rarr; constitutional AI filtering, eliminating the reward model bottleneck of classical RLHF</li>
+                  <li>Automated red-teaming infrastructure with adversarial prompt generation, gradient-based attack simulation, and jailbreak taxonomy coverage analysis</li>
+                  <li>PII-aware decoding with named entity recognition guardrails and real-time output sanitization layers</li>
+                  <li>Reward model ensembles with uncertainty quantification for calibrated refusal — the model knows when it doesn't know</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Significant reduction in policy violations while maintaining task performance on enterprise benchmarks</li>
+                  <li>Near-zero PII leakage rate across enterprise deployment surfaces</li>
+                  <li>Scalable red-teaming pipeline generating diverse adversarial test cases at thousands per hour</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Safety and alignment infrastructure for trusted enterprise LLM deployment, ensuring compliant and reliable AI interactions at scale across regulated industries.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">DPO</span>
+              <span class="tech-pill">KTO</span>
+              <span class="tech-pill">Constitutional AI</span>
+              <span class="tech-pill">Red-Teaming</span>
+              <span class="tech-pill">PII Detection</span>
+              <span class="tech-pill">Reward Modeling</span>
+              <span class="tech-pill">Safety Classifiers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Efficient LLM Serving & Speculative Decoding -->
+      <div class="project-card reveal" data-domains="llms">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/efficient_llm_serving.svg" alt="Efficient LLM Serving" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Efficient LLM Serving &amp; Speculative Decoding</h3>
+          <p>Production LLM serving stack combining speculative decoding, KV-cache compression, quantization-aware fine-tuning, and continuous batching for enterprise-scale inference.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Serving large language models at enterprise scale demands sub-second latency, high throughput, and cost efficiency — while preserving output quality across diverse workloads with millions of concurrent users.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Speculative decoding with a distilled draft model — small model proposes token sequences, large model verifies in parallel, achieving 2-3x throughput with mathematically identical outputs</li>
+                  <li>KV-cache compression with grouped-query attention (GQA) and sliding window strategies for long-context serving without linear memory growth</li>
+                  <li>Quantization-aware fine-tuning (AWQ/GPTQ) with task-specific calibration sets for INT4 deployment with minimal quality degradation</li>
+                  <li>Dynamic continuous batching with PagedAttention for GPU memory management, maximizing hardware utilization across heterogeneous request lengths</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>2.5x inference throughput improvement via speculative decoding at matched output quality</li>
+                  <li>60% memory reduction through KV-cache compression, enabling 4x longer context windows</li>
+                  <li>Production INT4 quantization with &lt;1% quality degradation on enterprise benchmarks</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Powers high-throughput, low-latency LLM serving infrastructure for millions of concurrent enterprise users, reducing inference cost while maintaining quality guarantees.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Speculative Decoding</span>
+              <span class="tech-pill">AWQ</span>
+              <span class="tech-pill">GPTQ</span>
+              <span class="tech-pill">PagedAttention</span>
+              <span class="tech-pill">KV-Cache</span>
+              <span class="tech-pill">GQA</span>
+              <span class="tech-pill">Continuous Batching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Semantic Segmentation for AR/VR -->
       <div class="project-card reveal" data-domains="cv,multimodal">
         <div class="project-card-header">
           <div class="project-thumb-wrap">
