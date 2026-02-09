@@ -45,12 +45,6 @@
   <div class="container">
     <div class="section-label">Resume</div>
     <h1>Curriculum Vitae</h1>
-    <p>
-      <button class="btn btn-primary" onclick="window.print()" style="margin-top:12px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        Print / Save as PDF
-      </button>
-    </p>
   </div>
 </header>
 
@@ -58,195 +52,357 @@
 <section class="cv-section">
   <div class="container cv-container">
 
-    <!-- Print-only header -->
+    <!-- ==================== PRINT-ONLY HEADER ==================== -->
     <div class="cv-print-header">
       <h1>Sina Torfi</h1>
       <div class="cv-print-subtitle">Senior Applied Scientist</div>
       <div class="cv-print-contact">
-        San Jose, CA &ensp;|&ensp; amirsina.torfi@gmail.com &ensp;|&ensp; linkedin.com/in/sinalk &ensp;|&ensp; github.com/astorfi &ensp;|&ensp; scholar.google.com
+        San Jose, CA &ensp;&bull;&ensp; amirsina.torfi@gmail.com &ensp;&bull;&ensp; linkedin.com/in/sinalk &ensp;&bull;&ensp; github.com/astorfi &ensp;&bull;&ensp; scholar.google.com
       </div>
     </div>
 
-    <!-- Summary -->
+    <!-- ==================== WEB HERO CARD ==================== -->
+    <div class="cv-hero no-print">
+      <div class="cv-hero-photo">
+        <img src="assets/img/prof_pic.png" alt="Sina Torfi" width="96" height="96">
+      </div>
+      <div class="cv-hero-info">
+        <h2 class="cv-hero-name">Sina Torfi</h2>
+        <p class="cv-hero-title">Senior Applied Scientist &mdash; Amazon Q</p>
+        <div class="cv-hero-links">
+          <a href="mailto:amirsina.torfi@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/sinalk" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/astorfi" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?user=2wkpsVwAAAAJ&hl=en" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+            Scholar
+          </a>
+        </div>
+      </div>
+      <button class="btn btn-primary cv-print-btn" onclick="window.print()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Save as PDF
+      </button>
+    </div>
+
+    <!-- Highlight Stats -->
+    <div class="cv-stats no-print">
+      <div class="cv-stat">
+        <span class="cv-stat-value">8+</span>
+        <span class="cv-stat-label">Years Experience</span>
+      </div>
+      <div class="cv-stat">
+        <span class="cv-stat-value">15+</span>
+        <span class="cv-stat-label">Publications</span>
+      </div>
+      <div class="cv-stat">
+        <span class="cv-stat-value">1,000+</span>
+        <span class="cv-stat-label">Citations</span>
+      </div>
+      <div class="cv-stat">
+        <span class="cv-stat-value">40K+</span>
+        <span class="cv-stat-label">GitHub Stars</span>
+      </div>
+    </div>
+
+    <!-- ==================== SUMMARY ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Summary</h2>
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Summary
+      </h2>
       <p class="cv-summary">
         Senior Applied Scientist with 8+ years of experience building production AI systems at Amazon, Meta, and high-growth startups. Currently contributing to Amazon Q's LLM capabilities &mdash; function calling, alignment, and post-training optimization. Research spans large language models, NLP, computer vision, and privacy-preserving AI, with 15+ peer-reviewed publications (1,000+ citations) and 40,000+ GitHub stars across open-source projects. Ph.D. in Computer Science from Virginia Tech.
       </p>
     </div>
 
-    <!-- Experience -->
+    <!-- ==================== EXPERIENCE ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Professional Experience</h2>
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        Professional Experience
+      </h2>
 
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <div>
-            <h3>Senior Applied Scientist</h3>
-            <div class="cv-company">Amazon &mdash; Amazon Q</div>
+      <div class="cv-entry cv-entry-card">
+        <div class="cv-entry-accent"></div>
+        <div class="cv-entry-content">
+          <div class="cv-entry-header">
+            <div>
+              <h3>Senior Applied Scientist</h3>
+              <div class="cv-company">Amazon &mdash; Amazon Q</div>
+            </div>
+            <div class="cv-date">Jan 2025 &ndash; Present<br><span class="cv-location">San Jose, CA</span></div>
           </div>
-          <div class="cv-date">Jan 2025 &ndash; Present<br><span class="cv-location">San Jose, CA</span></div>
+          <ul class="cv-list">
+            <li>Design and implement advanced function-calling and tool-use capabilities for Amazon Q, enabling multi-step agentic reasoning and orchestration across enterprise knowledge sources.</li>
+            <li>Develop post-training pipelines including instruction tuning, DPO-based preference optimization, and targeted fine-tuning strategies that improve response quality, factual grounding, and task completion in complex enterprise workflows.</li>
+            <li>Research and deploy privacy-preserving inference techniques and alignment methods &mdash; including constitutional AI guardrails, PII-aware generation, and safety classifiers &mdash; for trusted enterprise LLM deployment at scale.</li>
+            <li>Build comprehensive evaluation frameworks for agentic LLM behaviors, incorporating multi-turn reasoning benchmarks, function-calling accuracy metrics, and automated red-teaming to drive rapid iteration cycles.</li>
+          </ul>
         </div>
-        <ul class="cv-list">
-          <li>Design and implement advanced function-calling and tool-use capabilities for Amazon Q, enabling multi-step agentic reasoning and orchestration across enterprise knowledge sources.</li>
-          <li>Develop post-training pipelines including instruction tuning, DPO-based preference optimization, and targeted fine-tuning strategies that improve response quality, factual grounding, and task completion in complex enterprise workflows.</li>
-          <li>Research and deploy privacy-preserving inference techniques and alignment methods &mdash; including constitutional AI guardrails, PII-aware generation, and safety classifiers &mdash; for trusted enterprise LLM deployment at scale.</li>
-          <li>Build comprehensive evaluation frameworks for agentic LLM behaviors, incorporating multi-turn reasoning benchmarks, function-calling accuracy metrics, and automated red-teaming to drive rapid iteration cycles.</li>
-        </ul>
       </div>
 
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <div>
-            <h3>Research Scientist</h3>
-            <div class="cv-company">Meta &mdash; Reality Labs &amp; Recommendations</div>
+      <div class="cv-entry cv-entry-card">
+        <div class="cv-entry-accent"></div>
+        <div class="cv-entry-content">
+          <div class="cv-entry-header">
+            <div>
+              <h3>Research Scientist</h3>
+              <div class="cv-company">Meta &mdash; Reality Labs &amp; Recommendations</div>
+            </div>
+            <div class="cv-date">May 2022 &ndash; Dec 2024<br><span class="cv-location">Redmond, WA</span></div>
           </div>
-          <div class="cv-date">May 2022 &ndash; Dec 2024<br><span class="cv-location">Redmond, WA</span></div>
+          <ul class="cv-list">
+            <li>Designed and shipped multimodal foundation model architectures for AR/VR, achieving 0.96 mIoU on semantic segmentation through novel SWIN-based Vision Transformer pipelines with knowledge distillation and quantization-aware training.</li>
+            <li>Built cross-modal knowledge transfer systems using CLIP and cross-attention mechanisms for VQA and image captioning, enabling zero-shot generalization across unseen domains.</li>
+            <li>Developed large-scale deep sequence recommendation models serving billions of daily predictions, incorporating Transformer-XL architectures with meta-learning for cold-start optimization.</li>
+            <li>Drove research on self-supervised pre-training, contrastive learning, and domain-adaptive strategies adopted across multiple product surfaces.</li>
+          </ul>
         </div>
-        <ul class="cv-list">
-          <li>Designed and shipped multimodal foundation model architectures for AR/VR, achieving 0.96 mIoU on semantic segmentation through novel SWIN-based Vision Transformer pipelines with knowledge distillation and quantization-aware training.</li>
-          <li>Built cross-modal knowledge transfer systems using CLIP and cross-attention mechanisms for VQA and image captioning, enabling zero-shot generalization across unseen domains.</li>
-          <li>Developed large-scale deep sequence recommendation models serving billions of daily predictions, incorporating Transformer-XL architectures with meta-learning for cold-start optimization.</li>
-          <li>Drove research on self-supervised pre-training, contrastive learning, and domain-adaptive strategies adopted across multiple product surfaces.</li>
-        </ul>
       </div>
 
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <div>
-            <h3>Senior Data Scientist</h3>
-            <div class="cv-company">Huma AI</div>
+      <div class="cv-entry cv-entry-card">
+        <div class="cv-entry-accent"></div>
+        <div class="cv-entry-content">
+          <div class="cv-entry-header">
+            <div>
+              <h3>Senior Data Scientist</h3>
+              <div class="cv-company">Huma AI</div>
+            </div>
+            <div class="cv-date">Jun 2020 &ndash; May 2022</div>
           </div>
-          <div class="cv-date">Jun 2020 &ndash; May 2022</div>
+          <ul class="cv-list">
+            <li>Architected end-to-end cancer detection pipelines combining hierarchical CNNs, attention mechanisms, and self-supervised pre-training on pathology images, deployed on AWS SageMaker for clinical-scale inference.</li>
+            <li>Invented differentially private synthetic data generation frameworks using convolutional GANs and diffusion models, enabling HIPAA-compliant model training (published in Information Sciences, 140+ citations).</li>
+            <li>Designed adversarial debiasing and causal inference frameworks (Double ML) for disease prediction, reducing diagnostic bias while maintaining clinical accuracy.</li>
+          </ul>
         </div>
-        <ul class="cv-list">
-          <li>Architected end-to-end cancer detection pipelines combining hierarchical CNNs, attention mechanisms, and self-supervised pre-training on pathology images, deployed on AWS SageMaker for clinical-scale inference.</li>
-          <li>Invented differentially private synthetic data generation frameworks using convolutional GANs and diffusion models, enabling HIPAA-compliant model training (published in Information Sciences, 140+ citations).</li>
-          <li>Designed adversarial debiasing and causal inference frameworks (Double ML) for disease prediction, reducing diagnostic bias while maintaining clinical accuracy.</li>
-        </ul>
       </div>
 
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <div>
-            <h3>Graduate Research Assistant</h3>
-            <div class="cv-company">Virginia Tech / West Virginia University</div>
+      <div class="cv-entry cv-entry-card">
+        <div class="cv-entry-accent"></div>
+        <div class="cv-entry-content">
+          <div class="cv-entry-header">
+            <div>
+              <h3>Graduate Research Assistant</h3>
+              <div class="cv-company">Virginia Tech / West Virginia University</div>
+            </div>
+            <div class="cv-date">Jan 2016 &ndash; Aug 2020<br><span class="cv-location">Blacksburg, VA</span></div>
           </div>
-          <div class="cv-date">Jan 2016 &ndash; Aug 2020<br><span class="cv-location">Blacksburg, VA</span></div>
+          <ul class="cv-list">
+            <li>Published 15+ peer-reviewed papers in top venues (IEEE Access, Information Sciences, arXiv) spanning NLP, computer vision, generative models, and audio-visual learning &mdash; accumulating 1,000+ citations.</li>
+            <li>Pioneered 3D CNN architectures for audio-visual speaker recognition and lip reading, establishing new benchmarks (150+ citations, IEEE Access 2017).</li>
+            <li>Authored a comprehensive NLP deep learning survey that became a widely referenced resource in the field (380+ citations).</li>
+            <li>Created high-impact open-source projects (TensorFlow-World, lip-reading-deeplearning, speechpy) with 8,000+ combined GitHub stars.</li>
+          </ul>
         </div>
-        <ul class="cv-list">
-          <li>Published 15+ peer-reviewed papers in top venues (IEEE Access, Information Sciences, arXiv) spanning NLP, computer vision, generative models, and audio-visual learning &mdash; accumulating 1,000+ citations.</li>
-          <li>Pioneered 3D CNN architectures for audio-visual speaker recognition and lip reading, establishing new benchmarks (150+ citations, IEEE Access 2017).</li>
-          <li>Authored a comprehensive NLP deep learning survey that became a widely referenced resource in the field (380+ citations).</li>
-          <li>Created high-impact open-source projects (TensorFlow-World, lip-reading-deeplearning, speechpy) with 8,000+ combined GitHub stars.</li>
-        </ul>
       </div>
 
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <div>
-            <h3>DSP Engineer</h3>
-            <div class="cv-company">Stealth Company</div>
+      <div class="cv-entry cv-entry-card">
+        <div class="cv-entry-accent"></div>
+        <div class="cv-entry-content">
+          <div class="cv-entry-header">
+            <div>
+              <h3>DSP Engineer</h3>
+              <div class="cv-company">Stealth Company</div>
+            </div>
+            <div class="cv-date">Sep 2012 &ndash; Dec 2014</div>
           </div>
-          <div class="cv-date">Sep 2012 &ndash; Dec 2014</div>
+          <ul class="cv-list">
+            <li>Designed and optimized real-time digital signal processing algorithms for embedded systems, including adaptive filtering and spectral analysis modules.</li>
+            <li>Built low-latency audio processing pipelines for production hardware with strict throughput and memory constraints.</li>
+          </ul>
         </div>
-        <ul class="cv-list">
-          <li>Designed and optimized real-time digital signal processing algorithms for embedded systems, including adaptive filtering and spectral analysis modules.</li>
-          <li>Built low-latency audio processing pipelines for production hardware with strict throughput and memory constraints.</li>
-        </ul>
       </div>
     </div>
 
-    <!-- Education -->
+    <!-- ==================== EDUCATION ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Education</h2>
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="m4 6 8-4 8 4"/><path d="m18 10 4-2"/><path d="m2 10 4-2"/><path d="M4 6v6s0 4 8 4 8-4 8-4V6"/></svg>
+        Education
+      </h2>
 
-      <div class="cv-entry cv-entry-compact">
-        <div class="cv-entry-header">
+      <div class="cv-edu-grid">
+        <div class="cv-edu-card">
+          <div class="cv-edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="m4 6 8-4 8 4"/><path d="m18 10 4-2"/><path d="m2 10 4-2"/><path d="M4 6v6s0 4 8 4 8-4 8-4V6"/></svg>
+          </div>
           <div>
             <h3>Ph.D. in Computer Science</h3>
             <div class="cv-company">Virginia Tech</div>
+            <div class="cv-date-inline">2016 &ndash; 2020</div>
           </div>
-          <div class="cv-date">2016 &ndash; 2020</div>
         </div>
-      </div>
-
-      <div class="cv-entry cv-entry-compact">
-        <div class="cv-entry-header">
+        <div class="cv-edu-card">
+          <div class="cv-edu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="m4 6 8-4 8 4"/><path d="m18 10 4-2"/><path d="m2 10 4-2"/><path d="M4 6v6s0 4 8 4 8-4 8-4V6"/></svg>
+          </div>
           <div>
             <h3>M.Sc. in Electrical Engineering</h3>
             <div class="cv-company">West Virginia University</div>
+            <div class="cv-date-inline">2014 &ndash; 2016</div>
           </div>
-          <div class="cv-date">2014 &ndash; 2016</div>
         </div>
       </div>
     </div>
 
-    <!-- Technical Skills -->
+    <!-- ==================== TECHNICAL SKILLS ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Technical Skills</h2>
-      <div class="cv-skills">
-        <div class="cv-skill-group">
-          <strong>LLM &amp; NLP:</strong> Large Language Models, Function Calling, Post-Training (DPO/KTO/RLHF), Alignment, RAG, Transformers, Instruction Tuning, Constitutional AI, Red-Teaming
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        Technical Skills
+      </h2>
+
+      <div class="cv-skills-grid">
+        <div class="cv-skill-card">
+          <h4>LLM &amp; NLP</h4>
+          <div class="cv-skill-pills">
+            <span>Large Language Models</span><span>Function Calling</span><span>Post-Training (DPO/KTO/RLHF)</span><span>Alignment</span><span>RAG</span><span>Transformers</span><span>Instruction Tuning</span><span>Constitutional AI</span><span>Red-Teaming</span>
+          </div>
         </div>
-        <div class="cv-skill-group">
-          <strong>ML &amp; Deep Learning:</strong> PyTorch, TensorFlow, Computer Vision, Diffusion Models, GANs, Knowledge Distillation, Self-Supervised Learning, Contrastive Learning, Recommender Systems
+        <div class="cv-skill-card">
+          <h4>ML &amp; Deep Learning</h4>
+          <div class="cv-skill-pills">
+            <span>PyTorch</span><span>TensorFlow</span><span>Computer Vision</span><span>Diffusion Models</span><span>GANs</span><span>Knowledge Distillation</span><span>Self-Supervised Learning</span><span>Contrastive Learning</span><span>Recommender Systems</span>
+          </div>
         </div>
-        <div class="cv-skill-group">
-          <strong>Infrastructure:</strong> AWS SageMaker, Distributed Training, Speculative Decoding, Quantization (AWQ/GPTQ), ONNX, TensorRT, Kubernetes, Docker
+        <div class="cv-skill-card">
+          <h4>Infrastructure</h4>
+          <div class="cv-skill-pills">
+            <span>AWS SageMaker</span><span>Distributed Training</span><span>Speculative Decoding</span><span>Quantization (AWQ/GPTQ)</span><span>ONNX</span><span>TensorRT</span><span>Kubernetes</span><span>Docker</span>
+          </div>
         </div>
-        <div class="cv-skill-group">
-          <strong>Languages &amp; Tools:</strong> Python, C++, SQL, Git, Linux, FAISS, Weights &amp; Biases, MLflow
+        <div class="cv-skill-card">
+          <h4>Languages &amp; Tools</h4>
+          <div class="cv-skill-pills">
+            <span>Python</span><span>C++</span><span>SQL</span><span>Git</span><span>Linux</span><span>FAISS</span><span>Weights &amp; Biases</span><span>MLflow</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Selected Publications -->
+    <!-- ==================== SELECTED PUBLICATIONS ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Selected Publications</h2>
-      <ol class="cv-pub-list">
-        <li>
-          <strong>Natural Language Processing Advancements By Deep Learning: A Survey.</strong>
-          A. Torfi, R.A. Shirvani, Y. Keneshloo, N. Tavaf, E.A. Fox. <em>arXiv, 2020.</em> <span class="cv-cite">380+ citations</span>
-        </li>
-        <li>
-          <strong>Differentially Private Synthetic Medical Data Generation using Convolutional GANs.</strong>
-          A. Torfi, E.A. Fox, C.K. Reddy. <em>Information Sciences, 2022.</em> <span class="cv-cite">140+ citations</span>
-        </li>
-        <li>
-          <strong>3D Convolutional Neural Networks for Cross Audio-Visual Matching Recognition.</strong>
-          A. Torfi, S.M. Iranmanesh, N.M. Nasrabadi, J.M. Dawson. <em>IEEE Access, 2017.</em> <span class="cv-cite">150+ citations</span>
-        </li>
-        <li>
-          <strong>CorGAN: Correlation-Capturing Convolutional GANs for Generating Synthetic Healthcare Records.</strong>
-          A. Torfi, E.A. Fox. <em>FLAIRS, 2020.</em>
-        </li>
-        <li>
-          <strong>GASL: Guided Attention for Sparsity Learning in Deep Neural Networks.</strong>
-          A. Torfi, R.A. Shirvani, S. Soleymani, N.M. Nasrabadi. <em>arXiv, 2019.</em>
-        </li>
-        <li>
-          <strong>Text-Independent Speaker Verification Using 3D Convolutional Neural Networks.</strong>
-          A. Torfi, J.M. Dawson, N.M. Nasrabadi. <em>IEEE ICMLA, 2018.</em>
-        </li>
-        <li>
-          <strong>SpeechPy &mdash; A Library for Speech Processing and Recognition.</strong>
-          A. Torfi. <em>Journal of Open Source Software, 3(27), 2018.</em>
-        </li>
-      </ol>
-      <p class="cv-scholar-link">Full list: <a href="https://scholar.google.com/citations?user=2wkpsVwAAAAJ&hl=en">Google Scholar</a></p>
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+        Selected Publications
+      </h2>
+
+      <div class="cv-pubs">
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">1</div>
+          <div class="cv-pub-body">
+            <strong>Natural Language Processing Advancements By Deep Learning: A Survey.</strong>
+            <span class="cv-pub-authors">A. Torfi, R.A. Shirvani, Y. Keneshloo, N. Tavaf, E.A. Fox.</span>
+            <em>arXiv, 2020.</em>
+            <span class="cv-cite">380+ citations</span>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">2</div>
+          <div class="cv-pub-body">
+            <strong>Differentially Private Synthetic Medical Data Generation using Convolutional GANs.</strong>
+            <span class="cv-pub-authors">A. Torfi, E.A. Fox, C.K. Reddy.</span>
+            <em>Information Sciences, 2022.</em>
+            <span class="cv-cite">140+ citations</span>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">3</div>
+          <div class="cv-pub-body">
+            <strong>3D Convolutional Neural Networks for Cross Audio-Visual Matching Recognition.</strong>
+            <span class="cv-pub-authors">A. Torfi, S.M. Iranmanesh, N.M. Nasrabadi, J.M. Dawson.</span>
+            <em>IEEE Access, 2017.</em>
+            <span class="cv-cite">150+ citations</span>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">4</div>
+          <div class="cv-pub-body">
+            <strong>CorGAN: Correlation-Capturing Convolutional GANs for Generating Synthetic Healthcare Records.</strong>
+            <span class="cv-pub-authors">A. Torfi, E.A. Fox.</span>
+            <em>FLAIRS, 2020.</em>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">5</div>
+          <div class="cv-pub-body">
+            <strong>GASL: Guided Attention for Sparsity Learning in Deep Neural Networks.</strong>
+            <span class="cv-pub-authors">A. Torfi, R.A. Shirvani, S. Soleymani, N.M. Nasrabadi.</span>
+            <em>arXiv, 2019.</em>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">6</div>
+          <div class="cv-pub-body">
+            <strong>Text-Independent Speaker Verification Using 3D Convolutional Neural Networks.</strong>
+            <span class="cv-pub-authors">A. Torfi, J.M. Dawson, N.M. Nasrabadi.</span>
+            <em>IEEE ICMLA, 2018.</em>
+          </div>
+        </div>
+        <div class="cv-pub-item">
+          <div class="cv-pub-num">7</div>
+          <div class="cv-pub-body">
+            <strong>SpeechPy &mdash; A Library for Speech Processing and Recognition.</strong>
+            <span class="cv-pub-authors">A. Torfi.</span>
+            <em>Journal of Open Source Software, 3(27), 2018.</em>
+          </div>
+        </div>
+      </div>
+      <p class="cv-scholar-link">Full list: <a href="https://scholar.google.com/citations?user=2wkpsVwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar Profile</a></p>
     </div>
 
-    <!-- Open Source -->
+    <!-- ==================== OPEN SOURCE ==================== -->
     <div class="cv-block">
-      <h2 class="cv-heading">Open Source &amp; Community Impact</h2>
-      <ul class="cv-list">
-        <li><strong>40,000+ combined GitHub stars</strong> across personal (astorfi) and organizational (instillai) repositories.</li>
-        <li><strong>TensorFlow-Course</strong> (16.3K stars) &mdash; Comprehensive TensorFlow tutorials adopted by thousands of learners globally.</li>
-        <li><strong>machine-learning-course</strong> (7.1K stars) &mdash; End-to-end ML course with interactive Python examples.</li>
-        <li><strong>deep-learning-roadmap</strong> (4.6K stars) &mdash; Curated roadmap covering DL foundations to cutting-edge research.</li>
-        <li><strong>TensorFlow-World</strong> (4.5K stars), <strong>lip-reading-deeplearning</strong> (1.9K stars), <strong>speechpy</strong> (884 stars) &mdash; Research-backed open-source libraries and educational resources.</li>
-      </ul>
+      <h2 class="cv-heading">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Open Source &amp; Community Impact
+      </h2>
+
+      <div class="cv-oss-grid">
+        <div class="cv-oss-card">
+          <div class="cv-oss-stars">16.3K</div>
+          <div>
+            <h4>TensorFlow-Course</h4>
+            <p>Comprehensive TensorFlow tutorials adopted by thousands of learners globally.</p>
+          </div>
+        </div>
+        <div class="cv-oss-card">
+          <div class="cv-oss-stars">7.1K</div>
+          <div>
+            <h4>machine-learning-course</h4>
+            <p>End-to-end ML course with interactive Python examples.</p>
+          </div>
+        </div>
+        <div class="cv-oss-card">
+          <div class="cv-oss-stars">4.6K</div>
+          <div>
+            <h4>deep-learning-roadmap</h4>
+            <p>Curated roadmap covering DL foundations to cutting-edge research.</p>
+          </div>
+        </div>
+        <div class="cv-oss-card">
+          <div class="cv-oss-stars">4.5K</div>
+          <div>
+            <h4>TensorFlow-World</h4>
+            <p>Research-backed TensorFlow library and educational resources.</p>
+          </div>
+        </div>
+      </div>
+      <p class="cv-oss-total no-print">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <strong>40,000+</strong> combined GitHub stars across personal and organizational repositories.
+      </p>
     </div>
 
   </div>
