@@ -34,123 +34,498 @@
   <div class="container">
     <div class="section-label">Work</div>
     <h1>Projects</h1>
-    <p>Selected research and applied AI projects spanning healthcare, NLP, computer vision, and generative AI.</p>
+    <p>Selected research and applied AI projects. Click any card to explore the full case study.</p>
   </div>
 </header>
 
-<!-- Projects Grid -->
+<!-- Domain Filters + Projects -->
 <section>
   <div class="container">
-    <div class="card-grid">
 
-      <!-- Cancer Detection -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/cancer_detection.png" alt="Cancer Detection" loading="lazy">
-        <div class="card-body">
-          <h3>Cancer Detection</h3>
-          <p>Advanced AI-driven pathology analysis system for cancer diagnostics with detection and localization of tumor cells using computer vision and self-supervised learning.</p>
-          <div class="card-tags">
-            <span class="card-tag">Computer Vision</span>
-            <span class="card-tag">Self-Supervised Learning</span>
-            <span class="card-tag">AWS SageMaker</span>
+    <!-- Filter Bar -->
+    <div class="filter-bar reveal" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="llms">LLMs</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      <button class="filter-btn" data-filter="genai">Generative AI</button>
+      <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+      <button class="filter-btn" data-filter="multimodal">Multimodal</button>
+      <button class="filter-btn" data-filter="recsys">Recommender Systems</button>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="card-grid" id="projectGrid">
+
+      <!-- 1. Enhanced RAG -->
+      <div class="project-card reveal" data-domains="llms,nlp">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/enhanced_rag.png" alt="Enhanced RAG" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+                <span class="domain-pill">NLP</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Disease Prediction -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/disease_prediction.png" alt="Disease Prediction" loading="lazy">
-        <div class="card-body">
-          <h3>Disease Prediction</h3>
-          <p>Advanced disease prediction system using adversarial AI and machine learning techniques to improve diagnostic accuracy and reduce biases in healthcare.</p>
-          <div class="card-tags">
-            <span class="card-tag">GANs</span>
-            <span class="card-tag">Adversarial Learning</span>
-            <span class="card-tag">Double ML</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Semantic Segmentation for AR/VR -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/eye_semantic_segmentation.png" alt="Semantic Segmentation" loading="lazy">
-        <div class="card-body">
-          <h3>Semantic Segmentation for AR/VR</h3>
-          <p>Enhanced semantic segmentation for AR/VR applications using SWIN Vision Transformers and UperNet framework, achieving 0.96 mIoU score.</p>
-          <div class="card-tags">
-            <span class="card-tag">Vision Transformers</span>
-            <span class="card-tag">Knowledge Distillation</span>
-            <span class="card-tag">AR/VR</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- MultiModal Knowledge Transfer -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/multi_modal_clip.png" alt="MultiModal Knowledge Transfer" loading="lazy">
-        <div class="card-body">
-          <h3>MultiModal Knowledge Transfer</h3>
-          <p>Advanced cross-modal knowledge transfer for Visual Question Answering and Image Captioning using CLIP and Vision Transformers with cross-attention mechanisms.</p>
-          <div class="card-tags">
-            <span class="card-tag">CLIP</span>
-            <span class="card-tag">Cross-Attention</span>
-            <span class="card-tag">Contrastive Learning</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Enhanced RAG -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/enhanced_rag.png" alt="Enhanced RAG" loading="lazy">
-        <div class="card-body">
+        <div class="project-summary">
           <h3>Enhanced RAG</h3>
-          <p>Enhanced Retrieval Augmented Generation system with advanced techniques for improved context and accuracy in conversational AI for customer support.</p>
-          <div class="card-tags">
-            <span class="card-tag">LLMs</span>
-            <span class="card-tag">RAG-Fusion</span>
-            <span class="card-tag">FAISS</span>
+          <p>Advanced Retrieval-Augmented Generation system with multi-stage retrieval, re-ranking, and query decomposition for enterprise conversational AI.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Enterprise conversational AI systems struggle with hallucination, outdated knowledge, and inability to reason over large proprietary corpora in real time.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Multi-stage RAG-Fusion pipeline with parallel query generation and reciprocal rank fusion (RRF) for robust document retrieval</li>
+                  <li>Dense retrieval with FAISS indexing over million-scale document collections</li>
+                  <li>Contrastive learning with Momentum Contrast (MoCo) for domain-adaptive embedding fine-tuning</li>
+                  <li>Domain-Adaptive Pretraining (DAPT) and in-context learning for specialized verticals</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Significant improvement in factual grounding and answer relevance across enterprise benchmarks</li>
+                  <li>Sub-second retrieval latency at million-document scale</li>
+                  <li>Reduced hallucination rate through multi-hop evidence aggregation</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Core architecture powering the Amazon Q Chat Engine, serving millions of enterprise users with accurate, grounded conversational AI.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">LLMs</span>
+              <span class="tech-pill">RAG-Fusion</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">MoCo</span>
+              <span class="tech-pill">DAPT</span>
+              <span class="tech-pill">RRF</span>
+              <span class="tech-pill">In-Context Learning</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Synthetic Data Generation -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/privacy_preserving_ai.png" alt="Synthetic Data Generation" loading="lazy">
-        <div class="card-body">
-          <h3>Synthetic Data Generation</h3>
-          <p>Synthetic data generation using diffusion models for privacy-preserving healthcare applications, enabling model training without compromising patient privacy.</p>
-          <div class="card-tags">
-            <span class="card-tag">Diffusion Models</span>
-            <span class="card-tag">Privacy</span>
-            <span class="card-tag">Synthetic Data</span>
+      <!-- 2. Semantic Segmentation for AR/VR -->
+      <div class="project-card reveal" data-domains="cv,multimodal">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/eye_semantic_segmentation.png" alt="Semantic Segmentation" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Computer Vision</span>
+                <span class="domain-pill">Multimodal</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Semantic Segmentation for AR/VR</h3>
+          <p>State-of-the-art semantic segmentation for AR/VR eye tracking using SWIN Vision Transformers, achieving 0.96 mIoU with on-device deployment.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>AR/VR devices require pixel-precise eye region segmentation at real-time speeds on power-constrained hardware, with robustness to extreme lighting and motion.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>SWIN Vision Transformer backbone with UperNet decoder for multi-scale feature fusion</li>
+                  <li>Knowledge distillation from large teacher to compact student model</li>
+                  <li>Quantization-aware training (QAT) for INT8 on-device inference</li>
+                  <li>Adversarial domain adaptation with diffusion-based augmentation for distribution shift</li>
+                  <li>Active learning pipeline with weak supervision for efficient annotation</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>0.96 mIoU on internal AR/VR eye segmentation benchmark</li>
+                  <li>4x inference speedup through distillation + quantization</li>
+                  <li>Robust to cross-device and cross-user distribution shifts</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Deployed in Meta Reality Labs AR/VR pipeline, enabling precise gaze tracking and foveated rendering for next-generation headsets.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">SWIN Transformer</span>
+              <span class="tech-pill">UperNet</span>
+              <span class="tech-pill">Knowledge Distillation</span>
+              <span class="tech-pill">QAT</span>
+              <span class="tech-pill">Domain Adaptation</span>
+              <span class="tech-pill">Active Learning</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Low-Resource LLMs -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/low_resource_llm.png" alt="Low-Resource LLMs" loading="lazy">
-        <div class="card-body">
+      <!-- 3. MultiModal Knowledge Transfer -->
+      <div class="project-card reveal" data-domains="cv,nlp,multimodal">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/multi_modal_clip.png" alt="MultiModal Knowledge Transfer" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Multimodal</span>
+                <span class="domain-pill">CV</span>
+                <span class="domain-pill">NLP</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>MultiModal Knowledge Transfer</h3>
+          <p>Cross-modal knowledge transfer framework using CLIP and Vision Transformers for zero-shot Visual Question Answering and Image Captioning.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Bridging vision and language modalities for VQA and captioning requires massive paired datasets. Enabling zero-shot transfer to new domains without task-specific fine-tuning remains an open problem.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>CLIP-based vision-language alignment with cross-attention fusion layers</li>
+                  <li>Contrastive learning objectives for joint embedding space optimization</li>
+                  <li>Masked language modeling + pseudo-labeling for self-training on unlabeled data</li>
+                  <li>Distributed training across multi-GPU clusters for billion-parameter models</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Zero-shot generalization to unseen visual domains and question types</li>
+                  <li>Competitive with supervised baselines using 10x less labeled data</li>
+                  <li>Scalable to billion-parameter models with linear training efficiency</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Framework adopted across Meta product surfaces for visual understanding tasks, reducing annotation cost and enabling rapid domain expansion.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">CLIP</span>
+              <span class="tech-pill">Vision Transformers</span>
+              <span class="tech-pill">Cross-Attention</span>
+              <span class="tech-pill">Contrastive Learning</span>
+              <span class="tech-pill">Pseudo-Labeling</span>
+              <span class="tech-pill">Distributed Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Low-Resource LLMs -->
+      <div class="project-card reveal" data-domains="llms,nlp">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/low_resource_llm.png" alt="Low-Resource LLMs" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+                <span class="domain-pill">NLP</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
           <h3>Low-Resource LLMs</h3>
-          <p>Cross-lingual low-resource language processing using self-supervised transformers, enabling better language understanding for underrepresented languages.</p>
-          <div class="card-tags">
-            <span class="card-tag">mBERT</span>
-            <span class="card-tag">XLM-R</span>
-            <span class="card-tag">Cross-Lingual</span>
+          <p>Cross-lingual language understanding using self-supervised transformers for underrepresented languages with minimal labeled data.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Most NLP advances concentrate on high-resource languages. Extending LLM capabilities to hundreds of low-resource languages requires novel transfer learning and data augmentation strategies.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Multilingual pre-training with mBERT and XLM-R on cross-lingual corpora</li>
+                  <li>Cross-lingual alignment via adversarial training on shared embedding spaces</li>
+                  <li>Back-translation augmentation to synthetically expand low-resource training data</li>
+                  <li>Masked language modeling (MLM) fine-tuning with language-adaptive layers</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Strong performance gains on NER, classification, and QA tasks for low-resource languages</li>
+                  <li>Effective zero-shot cross-lingual transfer from high-resource to unseen languages</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Enables language understanding for underrepresented populations, supporting equitable AI deployment across global markets.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">mBERT</span>
+              <span class="tech-pill">XLM-R</span>
+              <span class="tech-pill">Cross-Lingual Transfer</span>
+              <span class="tech-pill">Adversarial Training</span>
+              <span class="tech-pill">Back-Translation</span>
+              <span class="tech-pill">MLM</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Deep Sequence Recommender -->
-      <div class="card reveal">
-        <img class="card-thumb" src="assets/img/projects/recommender_system_dsm.png" alt="Deep Sequence Recommender" loading="lazy">
-        <div class="card-body">
+      <!-- 5. Cancer Detection -->
+      <div class="project-card reveal" data-domains="cv,healthcare">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/cancer_detection.png" alt="Cancer Detection" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Computer Vision</span>
+                <span class="domain-pill">Healthcare</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Cancer Detection</h3>
+          <p>AI-driven pathology analysis system for tumor detection and localization using hierarchical CNNs and self-supervised learning on whole-slide images.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Manual pathology review is slow and error-prone. Whole-slide images are gigapixel-scale, requiring architectures that handle extreme resolution while maintaining fine-grained localization.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Hierarchical CNN with attention mechanisms for multi-scale feature extraction from gigapixel slides</li>
+                  <li>Self-supervised pre-training on unlabeled pathology images to learn robust histological representations</li>
+                  <li>Transfer learning from ImageNet with progressive fine-tuning</li>
+                  <li>End-to-end deployment on AWS SageMaker with Lambda-based inference API</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>High sensitivity and specificity for tumor detection on clinical datasets</li>
+                  <li>Precise tumor localization with attention-guided heatmaps</li>
+                  <li>Scalable to clinical throughput on cloud infrastructure</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Accelerates pathology workflows and provides decision support for clinicians, reducing diagnostic turnaround time.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Hierarchical CNN</span>
+              <span class="tech-pill">Self-Supervised Learning</span>
+              <span class="tech-pill">Attention Mechanisms</span>
+              <span class="tech-pill">AWS SageMaker</span>
+              <span class="tech-pill">Transfer Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Disease Prediction -->
+      <div class="project-card reveal" data-domains="healthcare,genai">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/disease_prediction.png" alt="Disease Prediction" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Healthcare</span>
+                <span class="domain-pill">Generative AI</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Disease Prediction</h3>
+          <p>Adversarial AI and causal inference framework for unbiased disease prediction, combining GANs with Double ML for robust diagnostic models.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Clinical prediction models inherit biases from training data — demographic, socioeconomic, and selection biases — leading to disparate outcomes across patient populations.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Adversarial learning to decorrelate predictions from sensitive attributes</li>
+                  <li>Double ML framework for causal effect estimation under confounding</li>
+                  <li>VQ-VAE and GAN-based synthetic data augmentation for minority groups</li>
+                  <li>Clustering-based patient stratification for personalized risk scoring</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Measurable reduction in prediction disparity across demographic groups</li>
+                  <li>Maintained clinical accuracy while improving fairness metrics</li>
+                  <li>Robust causal estimates under confounding scenarios</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Advances equitable healthcare AI by ensuring diagnostic models perform fairly across all patient populations.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Adversarial Learning</span>
+              <span class="tech-pill">Double ML</span>
+              <span class="tech-pill">VQ-VAE</span>
+              <span class="tech-pill">GANs</span>
+              <span class="tech-pill">Causal Inference</span>
+              <span class="tech-pill">Patient Stratification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Synthetic Data Generation -->
+      <div class="project-card reveal" data-domains="genai,healthcare">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/privacy_preserving_ai.png" alt="Synthetic Data Generation" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Generative AI</span>
+                <span class="domain-pill">Healthcare</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>Synthetic Data Generation</h3>
+          <p>Privacy-preserving synthetic medical data using diffusion models and convolutional GANs with formal differential privacy guarantees.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Healthcare AI research is bottlenecked by data access — patient privacy regulations (HIPAA) prevent sharing real medical records, limiting model development and reproducibility.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Convolutional GAN architecture with differential privacy (DP-SGD) for formal privacy guarantees</li>
+                  <li>Diffusion model pipelines with controlled noise scheduling for high-fidelity generation</li>
+                  <li>Privacy auditing via membership inference attacks to validate protection</li>
+                  <li>Statistical fidelity metrics ensuring synthetic data preserves clinical distributions</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Synthetic data passes privacy audits while maintaining downstream model utility</li>
+                  <li>Published in Information Sciences (140+ citations)</li>
+                  <li>Enables HIPAA-compliant data sharing for multi-site research</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Unlocks healthcare AI research by providing shareable, privacy-safe synthetic datasets — cited 140+ times and adopted by research groups globally.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Diffusion Models</span>
+              <span class="tech-pill">DP-SGD</span>
+              <span class="tech-pill">Convolutional GANs</span>
+              <span class="tech-pill">Privacy Auditing</span>
+              <span class="tech-pill">FAISS</span>
+              <span class="tech-pill">U-Net</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Deep Sequence Recommender -->
+      <div class="project-card reveal" data-domains="nlp,recsys">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/recommender_system_dsm.png" alt="Deep Sequence Recommender" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">Recommender Systems</span>
+                <span class="domain-pill">NLP</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
           <h3>Deep Sequence Recommender</h3>
-          <p>Advanced recommender system leveraging deep sequence modeling and NLP for enhanced user personalization, addressing cold-start problems and temporal dynamics.</p>
-          <div class="card-tags">
-            <span class="card-tag">Transformer-XL</span>
-            <span class="card-tag">Recommender Systems</span>
-            <span class="card-tag">Meta-Learning</span>
+          <p>Production recommender system using Transformer-XL and meta-learning for temporal-aware personalization at billion-user scale.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>User preferences evolve over time and new users lack interaction history. Traditional collaborative filtering fails to capture temporal dynamics and suffers from cold-start problems.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Transformer-XL architecture for long-range sequential dependency modeling</li>
+                  <li>Model-Agnostic Meta-Learning (MAML) for few-shot cold-start user adaptation</li>
+                  <li>NLP-enriched item representations using BERT and contextual embeddings</li>
+                  <li>Production deployment with ONNX/TensorRT optimization and Kubernetes orchestration</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>Improvement in recommendation relevance metrics over production baseline</li>
+                  <li>Effective cold-start handling with meta-learned user priors</li>
+                  <li>Sub-100ms inference latency at billion-scale with optimized serving</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Serving billions of daily predictions in Meta's recommendation surfaces, directly impacting user engagement and content discovery.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Transformer-XL</span>
+              <span class="tech-pill">MAML</span>
+              <span class="tech-pill">BERT</span>
+              <span class="tech-pill">ONNX</span>
+              <span class="tech-pill">TensorRT</span>
+              <span class="tech-pill">Kubernetes</span>
+            </div>
           </div>
         </div>
       </div>
@@ -180,5 +555,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/projects.js"></script>
 </body>
 </html>
