@@ -742,6 +742,30 @@ section + section { padding-top: 0; }
 .scholar-cta h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .scholar-cta p { font-size: .9rem; color: var(--stone-500); margin: 0; max-width: none; }
 
+/* ---------- Contact ---------- */
+.contact-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px;
+}
+.contact-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  padding: 32px 24px; border-radius: var(--radius-lg);
+  background: var(--card); border: 1px solid var(--stone-200);
+  transition: all var(--transition);
+}
+.contact-card:hover {
+  border-color: var(--teal); box-shadow: var(--shadow-md);
+  transform: translateY(-3px); color: inherit;
+}
+.contact-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: var(--teal-light); color: var(--teal);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.contact-icon svg { width: 24px; height: 24px; }
+.contact-card h3 { font-size: 1rem; margin-bottom: 6px; }
+.contact-card p { font-size: .88rem; color: var(--stone-500); margin: 0; max-width: none; }
+
 /* ---------- Print ---------- */
 @media print {
   .navbar, .footer, .nav-toggle { display: none; }
