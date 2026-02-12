@@ -306,7 +306,69 @@
         </div>
       </div>
 
-      <!-- 5. Semantic Segmentation for AR/VR -->
+      <!-- 5. LLM Evaluation & Post-Training Optimization -->
+      <div class="project-card reveal" data-domains="llms,genai">
+        <div class="project-card-header">
+          <div class="project-thumb-wrap">
+            <img src="assets/img/projects/llm_eval_posttraining.svg" alt="LLM Evaluation & Post-Training" loading="lazy">
+            <div class="project-thumb-overlay">
+              <div class="domain-pills">
+                <span class="domain-pill">LLMs</span>
+                <span class="domain-pill">Generative AI</span>
+              </div>
+              <div class="expand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-summary">
+          <h3>LLM Evaluation &amp; Post-Training Optimization</h3>
+          <p>Comprehensive evaluation infrastructure and post-training optimization suite for measuring, diagnosing, and improving LLM capabilities across reasoning, instruction following, safety, and enterprise task completion.</p>
+        </div>
+        <div class="project-detail">
+          <div class="project-detail-inner">
+            <div class="detail-grid">
+              <div class="detail-block">
+                <h4>Challenge</h4>
+                <p>Post-training gains are invisible without rigorous, multi-dimensional evaluation. Standard benchmarks miss critical enterprise failure modes — instruction adherence, multi-turn consistency, tool-use accuracy, and safety regressions — making it impossible to iterate confidently on SFT, DPO, or distillation without a purpose-built eval harness.</p>
+              </div>
+              <div class="detail-block">
+                <h4>Approach</h4>
+                <ul>
+                  <li>Built a modular evaluation suite spanning 12+ benchmark dimensions: MMLU, GSM8K, HumanEval, IFEval, MT-Bench, TruthfulQA, safety, toxicity, function-calling accuracy, and custom enterprise task sets</li>
+                  <li>Automated pre vs. post-training regression testing — every SFT/DPO checkpoint evaluated in CI and compared against baseline with statistical significance tests</li>
+                  <li>LLM-as-judge pipelines with calibrated rubrics for open-ended generation quality, factual grounding, and instruction adherence scoring</li>
+                  <li>Post-training optimization loop: diagnosis from eval &rarr; targeted data curation &rarr; DPO/KTO preference tuning &rarr; re-evaluation, enabling data-driven alignment iteration</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Results</h4>
+                <ul>
+                  <li>18% average improvement across post-training benchmarks through eval-driven iteration cycles</li>
+                  <li>Caught critical safety regressions pre-deployment that standard benchmarks missed entirely</li>
+                  <li>Reduced post-training iteration cycles from weeks to days through automated evaluation and targeted data curation</li>
+                </ul>
+              </div>
+              <div class="detail-block">
+                <h4>Impact</h4>
+                <p>Core evaluation infrastructure driving post-training decisions for enterprise LLM deployment — every model checkpoint is evaluated, compared, and promoted through a data-driven pipeline, ensuring measurable quality gains at each iteration.</p>
+              </div>
+            </div>
+            <div class="tech-pills">
+              <span class="tech-pill">Evaluation Harness</span>
+              <span class="tech-pill">LLM-as-Judge</span>
+              <span class="tech-pill">IFEval</span>
+              <span class="tech-pill">MT-Bench</span>
+              <span class="tech-pill">DPO</span>
+              <span class="tech-pill">KTO</span>
+              <span class="tech-pill">SFT</span>
+              <span class="tech-pill">Regression Testing</span>
+              <span class="tech-pill">Data Curation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Semantic Segmentation for AR/VR -->
       <div class="project-card reveal" data-domains="cv,multimodal">
         <div class="project-card-header">
           <div class="project-thumb-wrap">

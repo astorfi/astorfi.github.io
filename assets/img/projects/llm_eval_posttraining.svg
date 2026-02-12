@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect x="0" y="0" width="800" height="500" fill="#F0FDFA"/>
+  <rect x="60" y="60" width="680" height="380" rx="24" ry="24" fill="#ffffff" stroke="#D6D3D1" stroke-width="1.5"/>
+
+  <!-- Dashboard grid lines -->
+  <line x1="120" y1="320" x2="680" y2="320" stroke="#E7E5E4" stroke-width="1"/>
+  <line x1="120" y1="270" x2="680" y2="270" stroke="#E7E5E4" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="220" x2="680" y2="220" stroke="#E7E5E4" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="170" x2="680" y2="170" stroke="#E7E5E4" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Bar chart - benchmark scores -->
+  <rect x="160" y="200" width="40" height="120" rx="4" ry="4" fill="#0F766E" opacity="0.7"/>
+  <rect x="220" y="230" width="40" height="90" rx="4" ry="4" fill="#0F766E" opacity="0.5"/>
+  <rect x="280" y="180" width="40" height="140" rx="4" ry="4" fill="#0F766E" opacity="0.85"/>
+  <rect x="340" y="250" width="40" height="70" rx="4" ry="4" fill="#0F766E" opacity="0.4"/>
+  <rect x="400" y="190" width="40" height="130" rx="4" ry="4" fill="#14B8A6" opacity="0.7"/>
+  <rect x="460" y="210" width="40" height="110" rx="4" ry="4" fill="#14B8A6" opacity="0.55"/>
+  <rect x="520" y="170" width="40" height="150" rx="4" ry="4" fill="#14B8A6" opacity="0.8"/>
+  <rect x="580" y="240" width="40" height="80" rx="4" ry="4" fill="#14B8A6" opacity="0.45"/>
+
+  <!-- Bar labels -->
+  <text x="180" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">MMLU</text>
+  <text x="240" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">GSM</text>
+  <text x="300" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">HumanE</text>
+  <text x="360" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">TQA</text>
+  <text x="420" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">IFEval</text>
+  <text x="480" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">MT-B</text>
+  <text x="540" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">Safety</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#78716C">Toxig</text>
+
+  <!-- Legend -->
+  <rect x="200" y="370" width="12" height="12" rx="2" ry="2" fill="#0F766E" opacity="0.7"/>
+  <text x="218" y="381" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#44403C">Pre-Training</text>
+  <rect x="320" y="370" width="12" height="12" rx="2" ry="2" fill="#14B8A6" opacity="0.7"/>
+  <text x="338" y="381" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#44403C">Post-Training</text>
+
+  <!-- Title -->
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#44403C">Evaluation Suite</text>
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#78716C">Benchmark Comparison: Pre vs Post-Training</text>
+
+  <!-- Score labels on bars -->
+  <text x="300" y="175" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F766E">92</text>
+  <text x="540" y="165" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#14B8A6">96</text>
+
+  <!-- Upward arrow indicator -->
+  <polygon points="490,395 497,385 504,395" fill="#0F766E" opacity="0.6"/>
+  <text x="497" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F766E">+18% avg</text>
+</svg>
