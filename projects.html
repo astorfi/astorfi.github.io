@@ -269,12 +269,12 @@
             <div class="detail-grid">
               <div class="detail-block">
                 <h4>Challenge</h4>
-                <p>Serving large language models at enterprise scale demands sub-second latency, high throughput, and cost efficiency — while preserving output quality across diverse workloads with millions of concurrent users.</p>
+                <p>Serving large language models at enterprise scale demands sub-second latency, high throughput, and cost efficiency — while preserving output quality across diverse concurrent workloads.</p>
               </div>
               <div class="detail-block">
                 <h4>Approach</h4>
                 <ul>
-                  <li>Speculative decoding with a distilled draft model — small model proposes token sequences, large model verifies in parallel, achieving 2-3x throughput with mathematically identical outputs</li>
+                  <li>Speculative decoding with a distilled draft model — small model proposes token sequences, large model verifies in parallel, improving throughput with mathematically identical outputs</li>
                   <li>KV-cache compression with grouped-query attention (GQA) and sliding window strategies for long-context serving without linear memory growth</li>
                   <li>Quantization-aware fine-tuning (AWQ/GPTQ) with task-specific calibration sets for INT4 deployment with minimal quality degradation</li>
                   <li>Dynamic continuous batching with PagedAttention for GPU memory management, maximizing hardware utilization across heterogeneous request lengths</li>
@@ -283,14 +283,14 @@
               <div class="detail-block">
                 <h4>Results</h4>
                 <ul>
-                  <li>2.5x inference throughput improvement via speculative decoding at matched output quality</li>
-                  <li>60% memory reduction through KV-cache compression, enabling 4x longer context windows</li>
-                  <li>Production INT4 quantization with &lt;1% quality degradation on enterprise benchmarks</li>
+                  <li>Significant inference throughput improvement via speculative decoding with mathematically identical outputs</li>
+                  <li>Substantial memory reduction through KV-cache compression, enabling longer context windows on existing hardware</li>
+                  <li>Production INT4 quantization with minimal quality degradation on task-specific benchmarks</li>
                 </ul>
               </div>
               <div class="detail-block">
                 <h4>Impact</h4>
-                <p>Powers high-throughput, low-latency LLM serving infrastructure for millions of concurrent enterprise users, reducing inference cost while maintaining quality guarantees.</p>
+                <p>Powers high-throughput, low-latency LLM serving infrastructure for enterprise-scale deployment, reducing inference cost while maintaining quality guarantees.</p>
               </div>
             </div>
             <div class="tech-pills">
@@ -337,15 +337,15 @@
                   <li>Built a modular evaluation suite spanning 12+ benchmark dimensions: MMLU, GSM8K, HumanEval, IFEval, MT-Bench, TruthfulQA, safety, toxicity, function-calling accuracy, and custom enterprise task sets</li>
                   <li>Automated pre vs. post-training regression testing — every SFT/DPO checkpoint evaluated in CI and compared against baseline with statistical significance tests</li>
                   <li>LLM-as-judge pipelines with calibrated rubrics for open-ended generation quality, factual grounding, and instruction adherence scoring</li>
-                  <li>Post-training optimization loop: diagnosis from eval &rarr; targeted data curation &rarr; DPO/KTO preference tuning &rarr; re-evaluation, enabling data-driven alignment iteration</li>
+                  <li>Eval-driven feedback loop: diagnosis from benchmark results &rarr; targeted training data curation &rarr; model retraining &rarr; re-evaluation, enabling data-driven quality iteration</li>
                 </ul>
               </div>
               <div class="detail-block">
                 <h4>Results</h4>
                 <ul>
-                  <li>18% average improvement across post-training benchmarks through eval-driven iteration cycles</li>
-                  <li>Caught critical safety regressions pre-deployment that standard benchmarks missed entirely</li>
-                  <li>Reduced post-training iteration cycles from weeks to days through automated evaluation and targeted data curation</li>
+                  <li>Measurable improvements across post-training benchmarks through eval-driven iteration cycles</li>
+                  <li>Identified safety regressions pre-deployment that standard benchmarks missed</li>
+                  <li>Accelerated post-training iteration cycles through automated evaluation and targeted data curation</li>
                 </ul>
               </div>
               <div class="detail-block">
@@ -358,11 +358,10 @@
               <span class="tech-pill">LLM-as-Judge</span>
               <span class="tech-pill">IFEval</span>
               <span class="tech-pill">MT-Bench</span>
-              <span class="tech-pill">DPO</span>
-              <span class="tech-pill">KTO</span>
-              <span class="tech-pill">SFT</span>
+              <span class="tech-pill">HumanEval</span>
               <span class="tech-pill">Regression Testing</span>
               <span class="tech-pill">Data Curation</span>
+              <span class="tech-pill">CI/CD</span>
             </div>
           </div>
         </div>
@@ -384,7 +383,7 @@
         </div>
         <div class="project-summary">
           <h3>Semantic Segmentation for AR/VR</h3>
-          <p>State-of-the-art semantic segmentation for AR/VR eye tracking using SWIN Vision Transformers, achieving 0.96 mIoU with on-device deployment.</p>
+          <p>High-accuracy semantic segmentation for AR/VR eye tracking using SWIN Vision Transformers with knowledge distillation for on-device deployment.</p>
         </div>
         <div class="project-detail">
           <div class="project-detail-inner">
@@ -406,8 +405,8 @@
               <div class="detail-block">
                 <h4>Results</h4>
                 <ul>
-                  <li>0.96 mIoU on internal AR/VR eye segmentation benchmark</li>
-                  <li>4x inference speedup through distillation + quantization</li>
+                  <li>State-of-the-art mIoU on internal AR/VR eye segmentation benchmark</li>
+                  <li>Significant inference speedup through distillation + quantization for on-device deployment</li>
                   <li>Robust to cross-device and cross-user distribution shifts</li>
                 </ul>
               </div>
@@ -766,7 +765,7 @@
               </div>
               <div class="detail-block">
                 <h4>Impact</h4>
-                <p>Serving billions of daily predictions in Meta's recommendation surfaces, directly impacting user engagement and content discovery.</p>
+                <p>Deployed in Meta's production recommendation surfaces, directly impacting user engagement and content discovery at scale.</p>
               </div>
             </div>
             <div class="tech-pills">

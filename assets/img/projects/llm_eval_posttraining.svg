@@ -44,5 +44,5 @@
 
   <!-- Upward arrow indicator -->
   <polygon points="490,395 497,385 504,395" fill="#0F766E" opacity="0.6"/>
-  <text x="497" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F766E">+18% avg</text>
+  <text x="497" y="408" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" fill="#0F766E">improved</text>
 </svg>
