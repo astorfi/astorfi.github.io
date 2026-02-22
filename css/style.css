@@ -1006,99 +1006,182 @@ section + section { padding-top: 0; }
 /* ---------- Print ---------- */
 .no-print { }
 @media print {
-  /* Reset everything for clean paper */
-  .navbar, .footer, .nav-toggle, .no-print { display: none !important; }
-  body {
-    font-size: 10.5px; color: #222; background: #fff;
-    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  @page {
+    size: letter;
+    margin: 0.5in 0.6in;
   }
-  * { box-shadow: none !important; }
-  section { padding: 0; }
-  .cv-section { padding-top: 0; }
-  .container { max-width: 100%; padding: 0; }
-  .cv-container { max-width: 100%; }
+
+  /* Reset everything for clean paper */
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  .navbar, .footer, .nav-toggle, .no-print { display: none !important; }
+  html {
+    font-size: 11px !important;
+  }
+  body {
+    font-family: "Outfit", "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 11px !important;
+    color: #222 !important;
+    background: #fff !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+  section, .cv-section, .cv-block, .cv-entry, .cv-entry-card,
+  .cv-entry-content, .cv-pubs, .cv-pub-item, .cv-edu-grid,
+  .cv-edu-card, .cv-skills-grid, .cv-skill-card, .cv-oss-grid,
+  .cv-oss-card {
+    visibility: visible !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  section { padding: 0 !important; }
+  .cv-section { padding-top: 0 !important; }
+  .container { max-width: 100% !important; padding: 0 !important; }
+  .cv-container { max-width: 100% !important; }
 
   /* Print header */
   .cv-print-header {
-    display: block; text-align: center; margin-bottom: 16px;
+    display: block !important; text-align: center; margin-bottom: 16px;
     padding-bottom: 12px; border-bottom: 2.5px solid #0F766E;
   }
   .cv-print-header h1 {
-    font-size: 24px; margin: 0; color: #111; letter-spacing: -.02em;
+    font-family: "Newsreader", Georgia, "Times New Roman", serif !important;
+    font-size: 24px !important; margin: 0 !important; color: #111 !important;
+    letter-spacing: -.02em;
   }
   .cv-print-subtitle {
-    font-size: 13px; color: #0F766E; font-weight: 600; margin-top: 3px;
+    font-size: 13px !important; color: #0F766E !important; font-weight: 600; margin-top: 3px;
   }
   .cv-print-contact {
-    font-size: 9.5px; color: #555; margin-top: 6px; letter-spacing: .02em;
+    font-size: 9.5px !important; color: #555 !important; margin-top: 6px; letter-spacing: .02em;
   }
 
   /* Blocks */
-  .cv-block { margin-bottom: 14px; }
+  .cv-block { margin-bottom: 14px !important; }
   .cv-heading {
-    font-size: 10.5px; padding-bottom: 4px; margin-bottom: 8px;
-    border-bottom-width: 1.5px; gap: 6px;
+    display: flex !important; align-items: center; gap: 6px;
+    font-size: 11px !important; padding-bottom: 4px; margin-bottom: 8px;
+    border-bottom: 1.5px solid #0F766E !important;
+    color: #0F766E !important;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-weight: 700 !important;
   }
-  .cv-heading svg { width: 12px; height: 12px; }
-  .cv-summary { font-size: 10px; line-height: 1.5; }
+  .cv-heading svg { width: 12px; height: 12px; color: #0F766E !important; }
+  .cv-summary { font-size: 10px !important; line-height: 1.55 !important; color: #444 !important; }
 
   /* Experience */
-  .cv-entry { margin-bottom: 10px; }
+  .cv-entry { margin-bottom: 10px !important; break-inside: avoid; }
   .cv-entry-card {
-    border: none; border-radius: 0;
-    background: transparent; break-inside: avoid;
+    display: flex !important;
+    border: none !important; border-radius: 0 !important;
+    background: transparent !important; break-inside: avoid;
   }
-  .cv-entry-accent { width: 3px; }
-  .cv-entry-content { padding: 4px 0 4px 12px; }
-  .cv-entry-header h3 { font-size: 11px; }
-  .cv-company { font-size: 10px; }
-  .cv-date { font-size: 9px; }
-  .cv-list { font-size: 9.5px; line-height: 1.45; padding-left: 14px; }
-  .cv-list li { margin-bottom: 2px; }
+  .cv-entry-accent {
+    width: 3px !important; flex-shrink: 0;
+    background: #0F766E !important;
+  }
+  .cv-entry-content { flex: 1; padding: 4px 0 4px 12px !important; }
+  .cv-entry-header { display: flex !important; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 6px !important; }
+  .cv-entry-header h3 { font-size: 11px !important; color: #111 !important; margin: 0 !important; }
+  .cv-company { font-size: 10px !important; color: #0F766E !important; }
+  .cv-date { font-size: 9px !important; color: #666 !important; }
+  .cv-location { color: #888 !important; font-size: 8px !important; }
+  .cv-list {
+    font-size: 9.5px !important; line-height: 1.45 !important; padding-left: 14px !important;
+    color: #333 !important; margin: 0 !important;
+  }
+  .cv-list li { margin-bottom: 2px !important; }
+  .cv-list li::marker { color: #0F766E !important; }
 
   /* Education */
-  .cv-edu-grid { gap: 8px; }
+  .cv-edu-grid { display: grid !important; gap: 8px; }
   .cv-edu-card {
-    padding: 8px 12px; border: none; background: transparent;
+    display: flex !important; align-items: center; gap: 12px;
+    padding: 8px 12px !important; border: none !important; background: transparent !important;
   }
-  .cv-edu-icon { width: 28px; height: 28px; border-radius: 6px; }
+  .cv-edu-icon {
+    width: 28px !important; height: 28px !important; border-radius: 6px;
+    display: flex !important; align-items: center; justify-content: center;
+    background: #E6F5F4 !important; color: #0F766E !important;
+  }
   .cv-edu-icon svg { width: 14px; height: 14px; }
-  .cv-edu-card h3 { font-size: 10.5px; }
-  .cv-date-inline { font-size: 9px; }
+  .cv-edu-card h3 { font-size: 10.5px !important; color: #111 !important; }
+  .cv-date-inline { font-size: 9px !important; color: #888 !important; }
 
   /* Skills */
-  .cv-skills-grid { gap: 8px; }
-  .cv-skill-card { padding: 8px 12px; border: none; background: transparent; }
-  .cv-skill-card h4 { font-size: 9px; margin-bottom: 6px; }
-  .cv-skill-pills span {
-    padding: 2px 8px; font-size: 8.5px; border-radius: 4px;
-    background: #f0f0f0;
+  .cv-skills-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+  .cv-skill-card { padding: 8px 12px !important; border: none !important; background: transparent !important; }
+  .cv-skill-card h4 {
+    font-size: 9px !important; margin-bottom: 6px !important;
+    color: #0F766E !important; text-transform: uppercase; letter-spacing: .06em;
   }
-  .cv-skill-pills { gap: 4px; }
+  .cv-skill-pills { display: flex !important; flex-wrap: wrap !important; gap: 4px !important; }
+  .cv-skill-pills span {
+    padding: 2px 8px !important; font-size: 8.5px !important; border-radius: 4px !important;
+    background: #f0f0f0 !important; color: #333 !important;
+    display: inline-block !important;
+  }
 
   /* Publications */
-  .cv-pub-item { padding: 6px 0; }
-  .cv-pub-num { width: 22px; height: 22px; font-size: .7rem; border-radius: 4px; }
-  .cv-pub-body { font-size: 9px; line-height: 1.4; }
-  .cv-cite {
-    font-size: 7.5px; padding: 1px 6px; background: #eee; color: #0F766E;
-    border-radius: 3px;
+  .cv-pubs { display: block !important; }
+  .cv-pub-item {
+    display: flex !important; gap: 12px; padding: 6px 0 !important;
+    border-bottom: 1px solid #e5e5e5 !important;
+    break-inside: avoid;
   }
-  .cv-scholar-link { font-size: 9px; margin-top: 4px; }
+  .cv-pub-item:last-child { border-bottom: none !important; }
+  .cv-pub-num {
+    width: 22px !important; height: 22px !important; font-size: 9px !important;
+    border-radius: 4px !important; display: flex !important;
+    align-items: center; justify-content: center;
+    background: #E6F5F4 !important; color: #0F766E !important;
+    font-weight: 700; flex-shrink: 0;
+  }
+  .cv-pub-body { font-size: 9px !important; line-height: 1.4 !important; color: #444 !important; }
+  .cv-pub-body strong { color: #111 !important; }
+  .cv-pub-authors { color: #666 !important; }
+  .cv-pub-body em { color: #666 !important; }
+  .cv-cite {
+    font-size: 7.5px !important; padding: 1px 6px !important;
+    background: #eee !important; color: #0F766E !important;
+    border-radius: 3px !important; display: inline-block !important;
+  }
+  .cv-scholar-link { font-size: 9px !important; margin-top: 4px; color: #666 !important; }
+  .cv-scholar-link a { color: #0F766E !important; }
 
   /* Open Source */
-  .cv-oss-grid { gap: 6px; }
+  .cv-oss-grid { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 6px; }
   .cv-oss-card {
-    padding: 6px 10px; border: none; background: transparent; gap: 10px;
+    display: flex !important; gap: 10px; align-items: flex-start;
+    padding: 6px 10px !important; border: none !important; background: transparent !important;
   }
   .cv-oss-stars {
-    padding: 3px 8px; font-size: 8px; border-radius: 4px;
+    padding: 3px 8px !important; font-size: 8px !important; border-radius: 4px !important;
+    background: #0F766E !important; color: #fff !important;
+    font-weight: 700; flex-shrink: 0;
   }
-  .cv-oss-card h4 { font-size: 9.5px; }
-  .cv-oss-card p { font-size: 8.5px; }
+  .cv-oss-card h4 { font-size: 9.5px !important; color: #111 !important; }
+  .cv-oss-card p { font-size: 8.5px !important; color: #666 !important; }
+
+  /* Ensure scroll-reveal elements are visible in print */
+  .reveal, .reveal.visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 
   /* General print cleanup */
-  .page-header { padding-top: 0; padding-bottom: 0; }
-  a { color: inherit; }
+  .page-header { padding-top: 0 !important; padding-bottom: 0 !important; }
+  a { color: inherit !important; text-decoration: none !important; }
   a[href]::after { content: none !important; }
 }
