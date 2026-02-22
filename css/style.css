@@ -1008,7 +1008,7 @@ section + section { padding-top: 0; }
 @media print {
   @page {
     size: letter;
-    margin: 0.5in 0.6in;
+    margin: 0;
   }
 
   /* Reset everything for clean paper */
@@ -1025,6 +1025,7 @@ section + section { padding-top: 0; }
   }
   body {
     font-family: "Outfit", "Helvetica Neue", Arial, sans-serif !important;
+    padding: 0.5in 0.6in !important;
     font-size: 11px !important;
     color: #222 !important;
     background: #fff !important;
